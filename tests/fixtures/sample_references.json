@@ -1,0 +1,39 @@
+{
+  "source_pdf": "sample_paper.pdf",
+  "references": [
+    {
+      "id": "ref_01",
+      "authors": ["Smith, J.", "Doe, A."],
+      "title": "Machine learning in healthcare",
+      "year": 2020,
+      "journal": "Nature Medicine",
+      "volume": "26(3)",
+      "pages": "309-316",
+      "doi": "10.1038/s41591-020-0803-x",
+      "raw_text": "Smith, J., & Doe, A. (2020). Machine learning in healthcare. Nature Medicine, 26(3), 309-316."
+    },
+    {
+      "id": "ref_02",
+      "authors": ["Zhang, W.", "Li, H.", "Chen, X."],
+      "title": "Deep learning for natural language processing: A review",
+      "year": 2021,
+      "journal": "IEEE Transactions on Neural Networks",
+      "volume": "32",
+      "pages": "1-20",
+      "doi": null,
+      "raw_text": "Zhang, W., Li, H., & Chen, X. (2021). Deep learning for natural language processing: A review. IEEE Transactions on Neural Networks, 32, 1-20."
+    },
+    {
+      "id": "ref_03",
+      "authors": ["Nonexistent, A."],
+      "title": "This Paper Does Not Exist Anywhere At All",
+      "year": 2099,
+      "journal": "Fake Journal",
+      "volume": "1",
+      "pages": "1-5",
+      "doi": null,
+      "raw_text": "Nonexistent, A. (2099). This Paper Does Not Exist Anywhere At All. Fake Journal, 1, 1-5."
+    }
+  ],
+  "model_used": "llama3.1"
+}
