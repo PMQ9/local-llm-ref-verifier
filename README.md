@@ -6,6 +6,8 @@ Privacy-preserving citation verification for unpublished research manuscripts. T
 
 Three-stage pipeline:
 
+<img src="doc/images/3_stages_pipeline.png" alt="Alt Text" width="75%"/>
+
 1. **Extract** (local, no internet) -- Parses the PDF reference section using regex. Auto-detects citation style (APA, IEEE, Vancouver, Harvard, Chicago). Outputs structured JSON.
 2. **Verify** (online, metadata only) -- Checks each reference title/author against CrossRef, Semantic Scholar, and Google Scholar APIs. Only minimal metadata is sent. Computes confidence scores via fuzzy matching. Also fetches paper abstracts and summaries (when available) for correctness checking in Stage 3.
 3. **Audit** (local, no internet) -- Uses a local LLM (Ollama) to compare the manuscript body against verified references. Flags uncited references, missing citations, year mismatches, misquoted claims, and unsupported claims. Uses fetched abstracts/summaries to verify that the manuscript accurately represents the cited work.
