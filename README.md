@@ -55,18 +55,9 @@ Each stage produces a JSON file:
 - `verification_results.json` -- Verification status (verified/ambiguous/not_found), confidence scores, canonical metadata, abstracts, and TLDR summaries.
 - `audit_report.json` -- Citation issues list with severity and a human-readable summary.
 
-## Project structure
+## To do list
 
-```
-src/ref_verifier/
-  cli.py              CLI entry point
-  models.py           Pydantic data models
-  pdf_parser.py       PDF text extraction
-  reference_extractor.py  Stage 1 orchestrator
-  verifier.py         Stage 2 orchestrator
-  auditor.py          Stage 3 orchestrator
-  ollama_client.py    Ollama wrapper
-  prompts.py          LLM prompts (edit to tune audit behavior)
-  parsers/            Regex parsers for APA, IEEE, Vancouver, Harvard, Chicago
-  sources/            API clients for CrossRef, Semantic Scholar, Google Scholar
-```
+- [ ] Support latex and .docx import
+- [ ] Measure different local LLM performance
+- [ ] Integrate the option for paid/premium scholar API
+- [ ] Improve front-end interface
