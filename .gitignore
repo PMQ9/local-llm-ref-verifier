@@ -15,4 +15,4 @@ env/
 .mypy_cache/
 output/
 *.pdf
-.claude/
+#.claude/
