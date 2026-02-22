@@ -5,6 +5,7 @@ string matching to compute a confidence score.
 """
 
 import logging
+import re
 from typing import Optional
 
 import httpx
@@ -65,11 +66,17 @@ def _extract_canonical(item: dict) -> dict:
     published = item.get("published", {}).get("date-parts", [[None]])
     year = published[0][0] if published and published[0] else None
 
+    # CrossRef abstracts sometimes contain JATS XML tags; strip them
+    abstract = item.get("abstract")
+    if abstract:
+        abstract = re.sub(r"<[^>]+>", "", abstract).strip()
+
     return {
         "canonical_title": titles[0] if titles else None,
         "canonical_doi": item.get("DOI"),
         "canonical_authors": authors or None,
         "canonical_year": year,
+        "abstract": abstract,
     }
 
 

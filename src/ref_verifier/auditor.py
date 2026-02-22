@@ -23,7 +23,7 @@ def audit_manuscript(
     # Prepare reference summary for the prompt
     refs_summary = []
     for vref in verification.references:
-        refs_summary.append({
+        entry = {
             "ref_id": vref.ref_id,
             "status": vref.status.value,
             "confidence": vref.confidence,
@@ -31,7 +31,13 @@ def audit_manuscript(
             "authors": vref.canonical_authors,
             "year": vref.canonical_year,
             "doi": vref.canonical_doi,
-        })
+        }
+        # Include paper content when available for correctness checking
+        if vref.tldr:
+            entry["tldr"] = vref.tldr
+        if vref.abstract:
+            entry["abstract"] = vref.abstract
+        refs_summary.append(entry)
 
     references_json = json.dumps(refs_summary, indent=2)
 

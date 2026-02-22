@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 S2_API_URL = "https://api.semanticscholar.org/graph/v1/paper/search"
 TIMEOUT = 30
-FIELDS = "title,authors,year,externalIds"
+FIELDS = "title,authors,year,externalIds,abstract,tldr"
 
 
 def _compute_confidence(ref: Reference, paper: dict) -> float:
@@ -46,11 +46,17 @@ def _extract_canonical(paper: dict) -> dict:
     authors = [a.get("name", "") for a in paper.get("authors", []) if a.get("name")]
     external_ids = paper.get("externalIds") or {}
 
+    # Extract TLDR text (Semantic Scholar returns {"model": ..., "text": ...})
+    tldr_obj = paper.get("tldr")
+    tldr_text = tldr_obj.get("text") if isinstance(tldr_obj, dict) else None
+
     return {
         "canonical_title": paper.get("title"),
         "canonical_doi": external_ids.get("DOI"),
         "canonical_authors": authors or None,
         "canonical_year": paper.get("year"),
+        "abstract": paper.get("abstract"),
+        "tldr": tldr_text,
     }
 
 

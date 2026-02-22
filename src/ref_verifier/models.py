@@ -59,6 +59,12 @@ class VerifiedReference(BaseModel):
     canonical_doi: Optional[str] = None
     canonical_authors: Optional[list[str]] = None
     canonical_year: Optional[int] = None
+    abstract: Optional[str] = Field(
+        None, description="Paper abstract from the source API"
+    )
+    tldr: Optional[str] = Field(
+        None, description="Short summary (e.g. Semantic Scholar TLDR)"
+    )
     notes: Optional[str] = None
 
 
@@ -83,7 +89,7 @@ class IssueSeverity(str, Enum):
 
 class AuditIssue(BaseModel):
     issue_type: str = Field(
-        description="e.g. uncited_reference, missing_from_list, misquoted_claim"
+        description="e.g. uncited_reference, missing_from_list, misquoted_claim, unsupported_claim"
     )
     severity: IssueSeverity
     ref_id: Optional[str] = None

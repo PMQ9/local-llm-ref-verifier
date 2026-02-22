@@ -60,6 +60,7 @@ def _extract_canonical(pub: dict) -> dict:
         "canonical_doi": None,  # scholarly doesn't reliably provide DOIs
         "canonical_authors": authors or None,
         "canonical_year": year,
+        "abstract": bib.get("abstract"),
     }
 
 
@@ -98,6 +99,12 @@ def verify_reference(ref: Reference) -> Optional[VerifiedReference]:
 
     if best_confidence < 0.3:
         return None
+
+    # Fill publication details to get abstract (extra request)
+    try:
+        best_pub = scholarly.fill(best_pub, sections=["bib"])
+    except Exception as e:
+        logger.debug("Could not fill Google Scholar details: %s", e)
 
     canonical = _extract_canonical(best_pub)
 

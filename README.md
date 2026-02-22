@@ -7,8 +7,8 @@ Privacy-preserving citation verification for unpublished research manuscripts. T
 Three-stage pipeline:
 
 1. **Extract** (local, no internet) -- Parses the PDF reference section using regex. Auto-detects citation style (APA, IEEE, Vancouver, Harvard, Chicago). Outputs structured JSON.
-2. **Verify** (online, metadata only) -- Checks each reference title/author against CrossRef, Semantic Scholar, and Google Scholar APIs. Only minimal metadata is sent. Computes confidence scores via fuzzy matching.
-3. **Audit** (local, no internet) -- Uses a local LLM (Ollama) to compare the manuscript body against verified references. Flags uncited references, missing citations, year mismatches, and misquoted claims.
+2. **Verify** (online, metadata only) -- Checks each reference title/author against CrossRef, Semantic Scholar, and Google Scholar APIs. Only minimal metadata is sent. Computes confidence scores via fuzzy matching. Also fetches paper abstracts and summaries (when available) for correctness checking in Stage 3.
+3. **Audit** (local, no internet) -- Uses a local LLM (Ollama) to compare the manuscript body against verified references. Flags uncited references, missing citations, year mismatches, misquoted claims, and unsupported claims. Uses fetched abstracts/summaries to verify that the manuscript accurately represents the cited work.
 
 ## Install
 
@@ -50,7 +50,7 @@ Options:
 Each stage produces a JSON file:
 
 - `extracted_references.json` -- Parsed references with authors, title, year, journal, volume, pages, DOI.
-- `verification_results.json` -- Verification status (verified/ambiguous/not_found), confidence scores, canonical metadata.
+- `verification_results.json` -- Verification status (verified/ambiguous/not_found), confidence scores, canonical metadata, abstracts, and TLDR summaries.
 - `audit_report.json` -- Citation issues list with severity and a human-readable summary.
 
 ## Project structure
