@@ -31,21 +31,24 @@ class BaseParser(ABC):
     def split_references(self, reference_section: str) -> list[str]:
         """Split a reference section into individual reference strings.
 
-        Default implementation splits on blank lines or numbered entries.
+        Default implementation tries numbered entries, blank lines, then
+        falls back to joining all lines into one block for subclass splitting.
         Override for style-specific splitting.
         """
+        text = reference_section.strip()
+
         # Try numbered splitting first: [1], [2], ... or 1. 2. ...
-        numbered = re.split(r"\n(?=\[\d+\]|\d+\.\s)", reference_section.strip())
+        numbered = re.split(r"\n(?=\[\d+\]|\d+\.\s)", text)
         if len(numbered) > 1:
-            return [r.strip() for r in numbered if r.strip()]
+            return [re.sub(r"\s*\n\s*", " ", r).strip() for r in numbered if r.strip()]
 
         # Fall back to blank-line splitting
-        paragraphs = re.split(r"\n\s*\n", reference_section.strip())
+        paragraphs = re.split(r"\n\s*\n", text)
         if len(paragraphs) > 1:
-            return [p.strip() for p in paragraphs if p.strip()]
+            return [re.sub(r"\s*\n\s*", " ", p).strip() for p in paragraphs if p.strip()]
 
         # Last resort: each line is a reference (common in dense reference lists)
-        lines = reference_section.strip().split("\n")
+        lines = text.split("\n")
         return [l.strip() for l in lines if l.strip()]
 
     def parse_all(self, reference_section: str) -> list[Reference]:

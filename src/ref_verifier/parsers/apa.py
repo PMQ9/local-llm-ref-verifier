@@ -47,8 +47,31 @@ def _parse_apa_authors(author_str: str) -> list[str]:
     return authors
 
 
+# Match a complete APA reference: starts with "Author, F." or "Author, F. M."
+# and contains "(Year)." — captures everything up to the next reference or end.
+_APA_FULL_REF = re.compile(
+    r"[A-Z][a-zA-Z'-]+,\s+[A-Z]\..*?\(\d{4}\)\..+?(?=\s[A-Z][a-zA-Z'-]+,\s+[A-Z]\..*?\(\d{4}\)\.|$)",
+    re.DOTALL,
+)
+
+
 class APAParser(BaseParser):
     name = "apa"
+
+    def split_references(self, reference_section: str) -> list[str]:
+        """Split APA references, handling line-wrapped PDF text."""
+        text = reference_section.strip()
+
+        # First join all lines (PDF wraps long references across lines)
+        joined = re.sub(r"\s*\n\s*", " ", text)
+
+        # Find all complete APA references using a greedy regex
+        refs = _APA_FULL_REF.findall(joined)
+        if refs:
+            return [r.strip() for r in refs if r.strip()]
+
+        # Fall back to base implementation
+        return super().split_references(reference_section)
 
     def score_match(self, raw_text: str) -> float:
         score = 0.0
