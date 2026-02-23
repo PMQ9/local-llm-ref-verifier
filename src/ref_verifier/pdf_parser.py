@@ -1,6 +1,8 @@
 """PDF text extraction and reference section isolation.
 
 Uses pdfplumber as primary extractor with PyMuPDF (fitz) as fallback.
+Multi-column layouts (e.g. IEEE two-column) are detected and extracted
+column-by-column so that body text and references are never interleaved.
 """
 
 import logging
@@ -25,28 +27,127 @@ class ParsedPDF:
     body_text: str
 
 
+def _find_column_gap_from_centers(
+    word_centers: list[float], page_width: float
+) -> float | None:
+    """Find the x-coordinate of a vertical gap between columns.
+
+    Takes a list of word center x-coordinates and the page width. Divides
+    the page into narrow vertical bins and looks for a low-density region
+    in the middle 40%. Returns the center of the gap, or None if single-column.
+    """
+    if not word_centers:
+        return None
+
+    bin_width = 10
+    n_bins = int(page_width / bin_width) + 1
+    bins = [0] * n_bins
+
+    for cx in word_centers:
+        b = min(int(cx / bin_width), n_bins - 1)
+        bins[b] += 1
+
+    # Look for a minimum in the middle 40% of the page
+    lo = int(n_bins * 0.30)
+    hi = int(n_bins * 0.70)
+    if lo >= hi:
+        return None
+
+    mid_bins = bins[lo:hi]
+    min_val = min(mid_bins)
+    avg_val = sum(bins) / n_bins
+
+    # The gap bin should have significantly fewer words than average
+    if min_val > avg_val * 0.25:
+        return None
+
+    gap_bin = lo + mid_bins.index(min_val)
+    return (gap_bin + 0.5) * bin_width
+
+
+# ---------------------------------------------------------------------------
+# pdfplumber extraction
+# ---------------------------------------------------------------------------
+
+
+def _extract_page_pdfplumber(page) -> str:
+    """Extract text from a pdfplumber page, splitting columns if detected."""
+    words = page.extract_words()
+    if not words:
+        return page.extract_text() or ""
+
+    centers = [(float(w["x0"]) + float(w["x1"])) / 2 for w in words]
+    gap_x = _find_column_gap_from_centers(centers, page.width)
+
+    if gap_x is None:
+        return page.extract_text() or ""
+
+    left = page.crop((0, 0, gap_x, page.height))
+    right = page.crop((gap_x, 0, page.width, page.height))
+
+    left_text = left.extract_text() or ""
+    right_text = right.extract_text() or ""
+
+    return left_text + "\n" + right_text
+
+
 def extract_text_pdfplumber(pdf_path: Path) -> str:
-    """Extract text from PDF using pdfplumber."""
+    """Extract text from PDF using pdfplumber with column-aware extraction."""
     import pdfplumber
 
     text_parts = []
     with pdfplumber.open(pdf_path) as pdf:
         for page in pdf.pages:
-            page_text = page.extract_text()
+            page_text = _extract_page_pdfplumber(page)
             if page_text:
                 text_parts.append(page_text)
     return "\n\n".join(text_parts)
 
 
+# ---------------------------------------------------------------------------
+# PyMuPDF (fitz) extraction
+# ---------------------------------------------------------------------------
+
+
+def _extract_page_pymupdf(page) -> str:
+    """Extract text from a PyMuPDF page, splitting columns if detected."""
+    import fitz
+
+    # page.get_text("words") returns (x0, y0, x1, y1, word, block, line, word_no)
+    words = page.get_text("words")
+    if not words:
+        return page.get_text()
+
+    centers = [(w[0] + w[2]) / 2 for w in words]
+    rect = page.rect
+    gap_x = _find_column_gap_from_centers(centers, rect.width)
+
+    if gap_x is None:
+        return page.get_text()
+
+    left_rect = fitz.Rect(0, 0, gap_x, rect.height)
+    right_rect = fitz.Rect(gap_x, 0, rect.width, rect.height)
+
+    left_text = page.get_text(clip=left_rect) or ""
+    right_text = page.get_text(clip=right_rect) or ""
+
+    return left_text + "\n" + right_text
+
+
 def extract_text_pymupdf(pdf_path: Path) -> str:
-    """Extract text from PDF using PyMuPDF (fallback)."""
+    """Extract text from PDF using PyMuPDF with column-aware extraction."""
     import fitz
 
     text_parts = []
     with fitz.open(pdf_path) as doc:
         for page in doc:
-            text_parts.append(page.get_text())
+            text_parts.append(_extract_page_pymupdf(page))
     return "\n\n".join(text_parts)
+
+
+# ---------------------------------------------------------------------------
+# Common extraction pipeline
+# ---------------------------------------------------------------------------
 
 
 def extract_text(pdf_path: Path) -> str:
@@ -86,6 +187,26 @@ def split_reference_section(full_text: str) -> tuple[str, str]:
     return body, refs
 
 
+def _normalize_unicode(text: str) -> str:
+    """Normalize common Unicode characters from PDF extraction to ASCII.
+
+    Curly quotes, en/em dashes, and other typographic characters are replaced
+    with their ASCII equivalents so that regex parsers work reliably.
+    """
+    replacements = {
+        "\u201c": '"',  # left double quotation mark
+        "\u201d": '"',  # right double quotation mark
+        "\u2018": "'",  # left single quotation mark
+        "\u2019": "'",  # right single quotation mark
+        "\u2013": "-",  # en dash
+        "\ufb01": "fi",  # fi ligature
+        "\ufb02": "fl",  # fl ligature
+    }
+    for old, new in replacements.items():
+        text = text.replace(old, new)
+    return text
+
+
 def parse_pdf(pdf_path: str | Path) -> ParsedPDF:
     """Parse a PDF and split into body text and reference section."""
     pdf_path = Path(pdf_path)
@@ -94,7 +215,7 @@ def parse_pdf(pdf_path: str | Path) -> ParsedPDF:
     if not pdf_path.suffix.lower() == ".pdf":
         raise ValueError(f"Expected a PDF file, got: {pdf_path.suffix}")
 
-    full_text = extract_text(pdf_path)
+    full_text = _normalize_unicode(extract_text(pdf_path))
     body_text, reference_section = split_reference_section(full_text)
 
     logger.info(

@@ -17,7 +17,7 @@ _IEEE_PATTERN = re.compile(
     r"(?P<journal>.+?),"  # Journal,
     r"\s*vol\.\s*(?P<volume>\S+),"  # vol. X,
     r"(?:\s*no\.\s*(?P<issue>\S+?),)?"  # no. Y, (optional)
-    r"\s*pp\.\s*(?P<pages>[\d]+[–—-][\d]+(?:[–—-][\d]+)?),"  # pp. Start-End,
+    r"\s*pp?\.\s*(?P<pages>[\d]+(?:\s*[–—-]\s*[\d]+)*),"  # pp. Start-End or p. X,
     r"\s*(?:(?P<month>[A-Z][a-z]+\.?\s+)?(?P<year>\d{4}))"  # Mon. Year
     r"(?:,\s*doi:\s*(?P<doi>\S+?))?"  # , doi: ... (optional)
     r"\.?\s*$",
@@ -124,9 +124,6 @@ class IEEEParser(BaseParser):
         authors_str = text[: title_match.start()].strip().rstrip(",")
         rest = text[title_match.end() :].strip().lstrip(",").strip()
 
-        year_match = re.search(r"(\d{4})", rest)
-        year = int(year_match.group(1)) if year_match else None
-
         doi = None
         doi_match = re.search(r"doi:\s*(\S+?)\.?\s*$", rest, re.IGNORECASE)
         if doi_match:
@@ -137,15 +134,21 @@ class IEEEParser(BaseParser):
         volume = vol_match.group(1) if vol_match else None
 
         # Extract pages
-        pages_match = re.search(r"pp\.\s*([\d]+[–—-][\d]+(?:[–—-][\d]+)?)", rest)
+        pages_match = re.search(r"pp?\.\s*([\d]+(?:\s*[–—-]\s*[\d]+)*)", rest)
         pages = pages_match.group(1) if pages_match else None
+
+        # Extract year: search after pages to avoid matching page numbers as years
+        year_search_start = pages_match.end() if pages_match else 0
+        year_match = re.search(r"(\d{4})", rest[year_search_start:])
+        year = int(year_match.group(1)) if year_match else None
 
         # Journal: text before "vol." or before the year
         journal = None
         if vol_match:
             journal = rest[: vol_match.start()].strip().rstrip(",").strip()
         elif year_match:
-            journal = rest[: year_match.start()].strip().rstrip(",").strip()
+            abs_year_start = year_search_start + year_match.start()
+            journal = rest[:abs_year_start].strip().rstrip(",").strip()
 
         return Reference(
             id=ref_id,

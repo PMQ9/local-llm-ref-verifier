@@ -61,3 +61,5 @@ Each stage produces a JSON file:
 - [ ] Measure different local LLM performance
 - [ ] Integrate the option for paid/premium scholar API
 - [ ] Improve front-end interface
+- [ ] Add JSON file cleanup
+- [ ] Improve test suite: download real papers with real citations and add fake citations
