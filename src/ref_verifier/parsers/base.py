@@ -38,7 +38,8 @@ class BaseParser(ABC):
         text = reference_section.strip()
 
         # Try numbered splitting first: [1], [2], ... or 1. 2. ...
-        numbered = re.split(r"\n(?=\[\d+\]|\d+\.\s)", text)
+        # Limit to 1-3 digit numbers to avoid splitting on years like "2020."
+        numbered = re.split(r"\n(?=\[\d+\]|\d{1,3}\.\s)", text)
         if len(numbered) > 1:
             return [re.sub(r"\s*\n\s*", " ", r).strip() for r in numbered if r.strip()]
 

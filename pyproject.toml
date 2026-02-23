@@ -27,5 +27,10 @@ dev = [
 [project.scripts]
 ref-verifier = "ref_verifier.cli:main"
 
+[tool.pytest.ini_options]
+markers = [
+    "slow: tests that hit live APIs or take >30s (deselect with -m 'not slow')",
+]
+
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -55,6 +55,22 @@ Each stage produces a JSON file:
 - `verification_results.json` -- Verification status (verified/ambiguous/not_found), confidence scores, canonical metadata, abstracts, and TLDR summaries.
 - `audit_report.json` -- Citation issues list with severity and a human-readable summary.
 
+## Testing
+
+Run tests (excluding slow live-API tests):
+
+```
+pytest -m "not slow"
+```
+
+Run all tests including live API verification:
+
+```
+pytest -m slow
+```
+
+The test suite includes 8 real research papers across 3 citation styles (IEEE, Vancouver, APA) with single-column and two-column layouts. Each paper has a companion JSON with 3 injected fake citations for verifier testing.
+
 ## To do list
 
 - [ ] Support latex and .docx import

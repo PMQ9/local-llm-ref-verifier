@@ -71,7 +71,8 @@ class VancouverParser(BaseParser):
 
     def split_references(self, reference_section: str) -> list[str]:
         """Vancouver refs are often numbered: 1. 2. etc."""
-        parts = re.split(r"\n(?=\s*\d+\.\s)", reference_section.strip())
+        # Limit to 1-3 digit numbers to avoid splitting on years like "2020."
+        parts = re.split(r"\n(?=\s*\d{1,3}\.\s)", reference_section.strip())
         refs = []
         for p in parts:
             p = re.sub(r"\s*\n\s*", " ", p.strip())
@@ -105,12 +106,19 @@ class VancouverParser(BaseParser):
 
     def _parse_loose(self, text: str, raw_text: str, ref_id: str) -> Reference | None:
         """Looser fallback for Vancouver-like references."""
-        # Need initials-style authors and a year
-        if not _INITIALS_NO_PERIODS.match(text):
-            return None
-
         year_match = re.search(r"(\d{4})", text)
         if not year_match:
+            return None
+
+        # Try colon-separated format: "Authors: Title. Journal. Year;..."
+        colon_match = re.match(r"^(.+?):\s+(.+)", text)
+        if colon_match and _INITIALS_NO_PERIODS.match(text):
+            return self._parse_colon_format(
+                colon_match, text, raw_text, ref_id, year_match
+            )
+
+        # Need initials-style authors for period-separated format
+        if not _INITIALS_NO_PERIODS.match(text):
             return None
 
         # Split on periods to find authors, title, journal
@@ -140,13 +148,69 @@ class VancouverParser(BaseParser):
             pages_match = re.search(r":([\w\d]+[–—-][\w\d]+)", rest)
             pages = pages_match.group(1) if pages_match else None
 
-            doi_match = re.search(r"doi:\s*(\S+?)\.?\s*$", rest, re.IGNORECASE)
+            doi_match = re.search(
+                r"(?:doi:\s*|https?://doi\.org/)(\S+?)\.?\s*$", rest, re.IGNORECASE
+            )
             doi = doi_match.group(1).rstrip(".") if doi_match else None
 
         return Reference(
             id=ref_id,
             authors=_parse_vancouver_authors(authors_str),
             title=title.strip().rstrip("."),
+            year=int(year_match.group(1)),
+            journal=journal,
+            volume=volume,
+            pages=pages,
+            doi=doi,
+            raw_text=raw_text.strip(),
+        )
+
+    def _parse_colon_format(
+        self,
+        colon_match: re.Match,
+        text: str,
+        raw_text: str,
+        ref_id: str,
+        year_match: re.Match,
+    ) -> Reference | None:
+        """Parse 'Authors: Title. Journal. Year;Vol(Issue):Pages.' format."""
+        authors_str = colon_match.group(1).strip()
+        rest = colon_match.group(2).strip()
+
+        # Split rest on periods
+        period_parts = re.split(r"\.\s+", rest, maxsplit=2)
+        title = period_parts[0].strip() if period_parts else ""
+        if len(title) < 5:
+            return None
+
+        journal = None
+        volume = None
+        pages = None
+        doi = None
+
+        if len(period_parts) > 1:
+            remaining = ". ".join(period_parts[1:])
+            journal_match = re.match(r"(.+?)\.?\s*\d{4}", remaining)
+            if journal_match:
+                journal = journal_match.group(1).strip().rstrip(".")
+
+            vol_match = re.search(r";(\d+)", remaining)
+            volume = vol_match.group(1) if vol_match else None
+
+            pages_match = re.search(r":([\w\d]+[–—-][\w\d]+)", remaining)
+            pages = pages_match.group(1) if pages_match else None
+
+            doi_match = re.search(
+                r"(?:doi:\s*|https?://doi\.org/)(\S+?)\.?\s*$",
+                remaining,
+                re.IGNORECASE,
+            )
+            doi = doi_match.group(1).rstrip(".") if doi_match else None
+
+        return Reference(
+            id=ref_id,
+            authors=_parse_vancouver_authors(authors_str),
+            title=title.rstrip("."),
             year=int(year_match.group(1)),
             journal=journal,
             volume=volume,

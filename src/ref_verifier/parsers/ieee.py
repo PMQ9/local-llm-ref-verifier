@@ -75,6 +75,11 @@ class IEEEParser(BaseParser):
         text = _BRACKET_NUM.sub("", raw_text).strip()
         if re.match(r"^[A-Z]\.\s", text):
             score += 0.1
+        # arXiv/conference style: [#] Authors. Title. Venue, Year.
+        if _BRACKET_START.match(raw_text) and not _QUOTED_TITLE.search(raw_text):
+            # Has bracket number but no quoted title — could be arXiv style
+            if re.search(r"\.\s+.+\.\s+.+,\s*\d{4}", text):
+                score += 0.15
         return min(score, 1.0)
 
     def split_references(self, reference_section: str) -> list[str]:
@@ -116,11 +121,18 @@ class IEEEParser(BaseParser):
 
     def _parse_loose(self, text: str, raw_text: str, ref_id: str) -> Reference | None:
         """Looser fallback for IEEE-like references."""
-        # Must have quoted title
+        # Try quoted title first
         title_match = re.search(r'"(.+?)"', text)
-        if not title_match:
-            return None
+        if title_match:
+            return self._parse_loose_quoted(text, raw_text, ref_id, title_match)
 
+        # Try unquoted title: Authors. Title. Venue, Year.
+        return self._parse_loose_unquoted(text, raw_text, ref_id)
+
+    def _parse_loose_quoted(
+        self, text: str, raw_text: str, ref_id: str, title_match: re.Match
+    ) -> Reference | None:
+        """Parse IEEE-like reference with quoted title."""
         authors_str = text[: title_match.start()].strip().rstrip(",")
         rest = text[title_match.end() :].strip().lstrip(",").strip()
 
@@ -155,6 +167,79 @@ class IEEEParser(BaseParser):
             authors=_parse_ieee_authors(authors_str),
             title=title_match.group(1).strip(),
             year=year,
+            journal=journal if journal else None,
+            volume=volume,
+            pages=pages,
+            doi=doi,
+            raw_text=raw_text.strip(),
+        )
+
+    def _parse_loose_unquoted(
+        self, text: str, raw_text: str, ref_id: str
+    ) -> Reference | None:
+        """Parse numbered reference with unquoted title (arXiv/NeurIPS/ICML style).
+
+        Format: Authors. Title. Venue, Year.
+        """
+        # Need at least a year
+        year_match = re.search(r"(\d{4})", text)
+        if not year_match:
+            return None
+
+        # Split on ". " to find Authors. Title. Venue/Year.
+        # Use the first period-space as authors/title boundary
+        period_parts = re.split(r"\.\s+", text, maxsplit=2)
+        if len(period_parts) < 2:
+            return None
+
+        authors_str = period_parts[0].strip()
+        # If authors_str is very short or has no comma/and, probably not valid
+        if len(authors_str) < 5:
+            return None
+
+        title = period_parts[1].strip() if len(period_parts) > 1 else ""
+        # Title should be meaningful (at least a few words)
+        if len(title) < 10:
+            return None
+
+        journal = None
+        volume = None
+        pages = None
+        doi = None
+
+        if len(period_parts) > 2:
+            rest = period_parts[2]
+
+            doi_match = re.search(r"doi:\s*(\S+?)\.?\s*$", rest, re.IGNORECASE)
+            if doi_match:
+                doi = doi_match.group(1).rstrip(".")
+
+            vol_match = re.search(r"vol\.\s*(\S+?),", rest)
+            volume = vol_match.group(1) if vol_match else None
+
+            pages_match = re.search(r"pp?\.\s*([\d]+(?:\s*[–—-]\s*[\d]+)*)", rest)
+            pages = pages_match.group(1) if pages_match else None
+
+            # Journal/venue: text before the year
+            venue_match = re.match(r"(.+?)[\.,]?\s*\d{4}", rest)
+            if venue_match:
+                journal = venue_match.group(1).strip().rstrip(",.")
+        else:
+            # Title might contain the venue after the last period
+            # Try splitting title further if it has a period
+            title_parts = title.rsplit(". ", 1)
+            if len(title_parts) > 1:
+                title = title_parts[0]
+                rest = title_parts[1]
+                venue_match = re.match(r"(.+?)[\.,]?\s*\d{4}", rest)
+                if venue_match:
+                    journal = venue_match.group(1).strip().rstrip(",.")
+
+        return Reference(
+            id=ref_id,
+            authors=_parse_ieee_authors(authors_str),
+            title=title.rstrip("."),
+            year=int(year_match.group(1)),
             journal=journal if journal else None,
             volume=volume,
             pages=pages,

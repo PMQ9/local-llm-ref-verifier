@@ -13,7 +13,7 @@ from pathlib import Path
 logger = logging.getLogger(__name__)
 
 REFERENCE_HEADINGS = re.compile(
-    r"^\s*(references|bibliography|works\s+cited|literature\s+cited|citations)\s*$",
+    r"^\s*\.?\s*(references|bibliography|works\s+cited|literature\s+cited|citations)\s*$",
     re.IGNORECASE | re.MULTILINE,
 )
 
@@ -199,8 +199,13 @@ def _normalize_unicode(text: str) -> str:
         "\u2018": "'",  # left single quotation mark
         "\u2019": "'",  # right single quotation mark
         "\u2013": "-",  # en dash
+        "\u2014": "-",  # em dash
+        "\u00a0": " ",  # non-breaking space
         "\ufb01": "fi",  # fi ligature
         "\ufb02": "fl",  # fl ligature
+        "\ufb00": "ff",  # ff ligature
+        "\ufb03": "ffi",  # ffi ligature
+        "\ufb04": "ffl",  # ffl ligature
     }
     for old, new in replacements.items():
         text = text.replace(old, new)
