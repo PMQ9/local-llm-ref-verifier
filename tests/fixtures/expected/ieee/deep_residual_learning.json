@@ -1,0 +1,528 @@
+{
+  "source_pdf": "/media/connor/New Volume/open_source_projects/local-llm-ref-verifier/tests/fixtures/papers/ieee/deep_residual_learning.pdf",
+  "references": [
+    {
+      "id": "ref_01",
+      "authors": [
+        "Y.Bengio",
+        "P.Simard",
+        "andP.Frasconi.Learninglong-termdepe cieswithgradientdescentisdifficult"
+      ],
+      "title": "IEEETransactionsonN Networks,5(2):157-166,1994",
+      "year": 1994,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[1] Y.Bengio,P.Simard,andP.Frasconi.Learninglong-termdepe cieswithgradientdescentisdifficult. IEEETransactionsonN Networks,5(2):157-166,1994."
+    },
+    {
+      "id": "ref_03",
+      "authors": [
+        "W.L.Briggs",
+        "S.F.McCormick",
+        "etal"
+      ],
+      "title": "AMultigridTutorial",
+      "year": 2000,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[3] W.L.Briggs,S.F.McCormick,etal. AMultigridTutorial. 2000."
+    },
+    {
+      "id": "ref_05",
+      "authors": [
+        "M.Everingham",
+        "L.VanGool",
+        "C.K.Williams",
+        "J.Winn",
+        "andA serman"
+      ],
+      "title": "ThePascalVisualObjectClasses(VOC)Challenge",
+      "year": 2010,
+      "journal": "pages303-338",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[5] M.Everingham,L.VanGool,C.K.Williams,J.Winn,andA serman. ThePascalVisualObjectClasses(VOC)Challenge. pages303-338,2010."
+    },
+    {
+      "id": "ref_08",
+      "authors": [
+        "R.Girshick",
+        "J.Donahue",
+        "T.Darrell",
+        "andJ.Malik"
+      ],
+      "title": "Richfeatur archiesforaccurateobjectdetectionandsemanticsegmentati CVPR,2014",
+      "year": 2014,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[8] R.Girshick,J.Donahue,T.Darrell,andJ.Malik. Richfeatur archiesforaccurateobjectdetectionandsemanticsegmentati CVPR,2014."
+    },
+    {
+      "id": "ref_09",
+      "authors": [
+        "X.GlorotandY.Bengio"
+      ],
+      "title": "Understandingthedifficultyoftr deepfeedforwardneuralnetworks.InAISTATS,2010",
+      "year": 2010,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[9] X.GlorotandY.Bengio. Understandingthedifficultyoftr deepfeedforwardneuralnetworks.InAISTATS,2010."
+    },
+    {
+      "id": "ref_13",
+      "authors": [
+        "K.He",
+        "X.Zhang",
+        "S.Ren",
+        "andJ.Sun"
+      ],
+      "title": "Delvingdeepintorec Surpassinghuman-levelperformanceonimagenetclassificati ICCV,2015",
+      "year": 2015,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[13] K.He,X.Zhang,S.Ren,andJ.Sun. Delvingdeepintorec Surpassinghuman-levelperformanceonimagenetclassificati ICCV,2015."
+    },
+    {
+      "id": "ref_20",
+      "authors": [
+        "A.Krizhevsky"
+      ],
+      "title": "Learningmultiplelayersoffeaturesfromtin ages.TechReport,2009",
+      "year": 2009,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[20] A.Krizhevsky. Learningmultiplelayersoffeaturesfromtin ages.TechReport,2009."
+    },
+    {
+      "id": "ref_21",
+      "authors": [
+        "A.Krizhevsky",
+        "I.Sutskever",
+        "andG.Hinton"
+      ],
+      "title": "Imagenetclassifi withdeepconvolutionalneuralnetworks.InNIPS,2012",
+      "year": 2012,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[21] A.Krizhevsky,I.Sutskever,andG.Hinton. Imagenetclassifi withdeepconvolutionalneuralnetworks.InNIPS,2012."
+    },
+    {
+      "id": "ref_26",
+      "authors": [
+        "T.-Y.Lin",
+        "M.Maire",
+        "S.Belongie",
+        "J.Hays",
+        "P.Perona",
+        "D.Ram P.Dolla´r",
+        "andC.L.Zitnick"
+      ],
+      "title": "MicrosoftCOCO:Commonobj context.InECCV.2014",
+      "year": 2014,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[26] T.-Y.Lin,M.Maire,S.Belongie,J.Hays,P.Perona,D.Ram P.Dolla´r,andC.L.Zitnick. MicrosoftCOCO:Commonobj context.InECCV.2014."
+    },
+    {
+      "id": "ref_27",
+      "authors": [
+        "J.Long",
+        "E.Shelhamer",
+        "andT.Darrell"
+      ],
+      "title": "Fullyconvolutionalnet forsemanticsegmentation.InCVPR,2015",
+      "year": 2015,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[27] J.Long,E.Shelhamer,andT.Darrell. Fullyconvolutionalnet forsemanticsegmentation.InCVPR,2015."
+    },
+    {
+      "id": "ref_28",
+      "authors": [
+        "G.Montu´far",
+        "R.Pascanu",
+        "K.Cho",
+        "andY.Bengio"
+      ],
+      "title": "Onthenumberof linearregionsofdeepneuralnetworks.InNIPS,2014",
+      "year": 2014,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[28] G.Montu´far,R.Pascanu,K.Cho,andY.Bengio. Onthenumberof linearregionsofdeepneuralnetworks.InNIPS,2014. enden-"
+    },
+    {
+      "id": "ref_29",
+      "authors": [
+        "V.NairandG.E.Hinton"
+      ],
+      "title": "Rectifiedlinearunitsimproverestricted Neural boltzmannmachines.InICML,2010",
+      "year": 2010,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[29] V.NairandG.E.Hinton. Rectifiedlinearunitsimproverestricted Neural boltzmannmachines.InICML,2010."
+    },
+    {
+      "id": "ref_31",
+      "authors": [
+        "T.Raiko",
+        "H.Valpola",
+        "andY.LeCun"
+      ],
+      "title": "Deeplearningmadeeasierby Siam, lineartransformationsinperceptrons.InAISTATS,2012",
+      "year": 2012,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[31] T.Raiko,H.Valpola,andY.LeCun. Deeplearningmadeeasierby Siam, lineartransformationsinperceptrons.InAISTATS,2012."
+    },
+    {
+      "id": "ref_32",
+      "authors": [
+        "S.Ren",
+        "K.He",
+        "R.Girshick",
+        "andJ.Sun"
+      ],
+      "title": "FasterR-CNN:Towards hedevil real-timeobjectdetectionwithregionproposalnetworks",
+      "year": 2015,
+      "journal": "InNIPS, ethods",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[32] S.Ren, K.He, R.Girshick, andJ.Sun. FasterR-CNN:Towards hedevil real-timeobjectdetectionwithregionproposalnetworks. InNIPS, ethods. 2015."
+    },
+    {
+      "id": "ref_33",
+      "authors": [
+        "S.Ren",
+        "K.He",
+        "R.Girshick",
+        "X.Zhang",
+        "andJ.Sun"
+      ],
+      "title": "Objectdetection A.Zis- networksonconvolutionalfeaturemaps.arXiv:1504.06066,2015",
+      "year": 1504,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[33] S.Ren,K.He,R.Girshick,X.Zhang,andJ.Sun. Objectdetection A.Zis- networksonconvolutionalfeaturemaps.arXiv:1504.06066,2015. IJCV,"
+    },
+    {
+      "id": "ref_34",
+      "authors": [
+        "B.D.Ripley"
+      ],
+      "title": "Patternrecognitionandneuralnetworks",
+      "year": 1996,
+      "journal": "Cambridge universitypress",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[34] B.D.Ripley. Patternrecognitionandneuralnetworks. Cambridge universitypress,1996. gion&"
+    },
+    {
+      "id": "ref_37",
+      "authors": [
+        "A.M.Saxe",
+        "J.L.McClelland",
+        "andS.Ganguli"
+      ],
+      "title": "Exactsolutionsto raining thenonlineardynamicsoflearningindeeplinearneuralnetworks",
+      "year": 1312,
+      "journal": "arXiv:",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[37] A.M.Saxe,J.L.McClelland,andS.Ganguli. Exactsolutionsto raining thenonlineardynamicsoflearningindeeplinearneuralnetworks. arXiv:1312.6120,2013. le, and"
+    },
+    {
+      "id": "ref_39",
+      "authors": [
+        "N.N.Schraudolph"
+      ],
+      "title": "Centeringneuralnetworkgradientfactors",
+      "year": 1998,
+      "journal": "In Neural Networks: Tricks of the Trade, pages 207-226. Springer, indeep",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[39] N.N.Schraudolph. Centeringneuralnetworkgradientfactors. In Neural Networks: Tricks of the Trade, pages 207-226. Springer, indeep 1998. 4."
+    },
+    {
+      "id": "ref_40",
+      "authors": [
+        "P.Sermanet",
+        "D.Eigen",
+        "X.Zhang",
+        "M.Mathieu",
+        "R.Fergus",
+        "andY.Le- ctifiers: Cun"
+      ],
+      "title": "Overfeat: Integrated recognition, localization and detection ion",
+      "year": 2014,
+      "journal": "In usingconvolutionalnetworks.InICLR",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[40] P.Sermanet,D.Eigen,X.Zhang,M.Mathieu,R.Fergus,andY.Le- ctifiers: Cun. Overfeat: Integrated recognition, localization and detection ion. In usingconvolutionalnetworks.InICLR,2014."
+    },
+    {
+      "id": "ref_41",
+      "authors": [
+        "K.SimonyanandA.Zisserman"
+      ],
+      "title": "Verydeepconvolutionalnetworks er, and forlarge-scaleimagerecognition.InICLR,2015",
+      "year": 2015,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[41] K.SimonyanandA.Zisserman. Verydeepconvolutionalnetworks er, and forlarge-scaleimagerecognition.InICLR,2015. ingco-"
+    },
+    {
+      "id": "ref_42",
+      "authors": [
+        "R.K.Srivastava",
+        "K.Greff",
+        "andJ.Schmidhuber"
+      ],
+      "title": "Highwaynetworks",
+      "year": 1505,
+      "journal": "arXiv:",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[42] R.K.Srivastava,K.Greff,andJ.Schmidhuber. Highwaynetworks. arXiv:1505.00387,2015. Neural"
+    },
+    {
+      "id": "ref_43",
+      "authors": [
+        "R.K.Srivastava",
+        "K.Greff",
+        "andJ.Schmidhuber"
+      ],
+      "title": "Trainingverydeep networks.1507.06228,2015",
+      "year": 1507,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[43] R.K.Srivastava,K.Greff,andJ.Schmidhuber. Trainingverydeep networks.1507.06228,2015. gdeep"
+    },
+    {
+      "id": "ref_44",
+      "authors": [
+        "C.Szegedy",
+        "W.Liu",
+        "Y.Jia",
+        "P.Sermanet",
+        "S.Reed",
+        "D.Anguelov",
+        "D.Er-",
+        "2015"
+      ],
+      "title": "han,V.Vanhoucke,andA.Rabinovich",
+      "year": 2015,
+      "journal": "Goingdeeperwithconvolu- nearest tions.InCVPR",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[44] C.Szegedy,W.Liu,Y.Jia,P.Sermanet,S.Reed,D.Anguelov,D.Er- ,2015. han,V.Vanhoucke,andA.Rabinovich. Goingdeeperwithconvolu- nearest tions.InCVPR,2015."
+    },
+    {
+      "id": "ref_45",
+      "authors": [
+        "R.Szeliski"
+      ],
+      "title": "Fastsurfaceinterpolationusinghierarchicalbasisfunc- z, and tions.TPAMI,1990",
+      "year": 1990,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[45] R.Szeliski. Fastsurfaceinterpolationusinghierarchicalbasisfunc- z, and tions.TPAMI,1990. codes."
+    },
+    {
+      "id": "ref_46",
+      "authors": [
+        "R.Szeliski"
+      ],
+      "title": "Locallyadaptedhierarchicalbasispreconditioning",
+      "year": 2006,
+      "journal": "In SIGGRAPH",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[46] R.Szeliski. Locallyadaptedhierarchicalbasispreconditioning. In SIGGRAPH,2006. rshick,"
+    },
+    {
+      "id": "ref_47",
+      "authors": [
+        "T.Vatanen",
+        "T.Raiko",
+        "H.Valpola",
+        "andY.LeCun"
+      ],
+      "title": "Pushingstochas- turefor ticgradienttowardssecond-ordermethods-backpropagationlearn- ing with transformations in nonlinearities",
+      "year": 2013,
+      "journal": "In Neural Information nyim- Processing",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[47] T.Vatanen,T.Raiko,H.Valpola,andY.LeCun. Pushingstochas- turefor ticgradienttowardssecond-ordermethods-backpropagationlearn- ing with transformations in nonlinearities. In Neural Information nyim- Processing,2013."
+    },
+    {
+      "id": "ref_48",
+      "authors": [
+        "A.VedaldiandB.Fulkerson"
+      ],
+      "title": "VLFeat:Anopenandportablelibrary fication ofcomputervisionalgorithms,2008",
+      "year": 2008,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[48] A.VedaldiandB.Fulkerson. VLFeat:Anopenandportablelibrary fication ofcomputervisionalgorithms,2008."
+    },
+    {
+      "id": "ref_49",
+      "authors": [
+        "W.VenablesandB.Ripley"
+      ],
+      "title": "Modernappliedstatisticswiths-plus",
+      "year": 1999,
+      "journal": "oward",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[49] W.VenablesandB.Ripley. Modernappliedstatisticswiths-plus. oward, 1999. ohand-"
+    },
+    {
+      "id": "ref_50",
+      "authors": [
+        "M.D.ZeilerandR.Fergus.Visualizingandunderstandingconvolu- tionalneuralnetworks.InECCV",
+        "2014. ckprop. r",
+        "1998. Deeply- 2.4400",
+        "manan",
+        "jectsin tworks 9 A.ObjectDetectionBaselines Inthissectionweintroduceourdetectionmethodbased onthebaselineFasterR-CNN[32]system. Themodelsare initializedbytheImageNetclassificationmodels",
+        "andthen fine-tuned on the object detection data. We have experi- mented with ResNet-50/101 at the time of the ILSVRC & COCO2015detectioncompetitions. UnlikeVGG-16usedin[32]",
+        "ourResNethasnohidden fc layers. We adopt the idea of"
+      ],
+      "title": "Networks on Conv fea- ture maps",
+      "year": null,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[50] M.D.ZeilerandR.Fergus.Visualizingandunderstandingconvolu- tionalneuralnetworks.InECCV,2014. ckprop. r,1998. Deeply- 2.4400, manan, jectsin tworks 9 A.ObjectDetectionBaselines Inthissectionweintroduceourdetectionmethodbased onthebaselineFasterR-CNN[32]system. Themodelsare initializedbytheImageNetclassificationmodels,andthen fine-tuned on the object detection data. We have experi- mented with ResNet-50/101 at the time of the ILSVRC & COCO2015detectioncompetitions. UnlikeVGG-16usedin[32],ourResNethasnohidden fc layers. We adopt the idea of \"Networks on Conv fea- ture maps\" (NoC) [33] to address this issue. We compute the full-image shared conv feature maps using those lay- erswhosestridesontheimagearenogreaterthan16pixels (i.e.,conv1,conv2 x,conv3 x,andconv4 x,totally91conv layersinResNet-101;Table1). Weconsidertheselayersas analogous to the 13 conv layers in VGG-16, and by doing so,bothResNetandVGG-16haveconvfeaturemapsofthe same total stride (16 pixels). These layers are shared by a region proposal network (RPN, generating 300 proposals)"
+    },
+    {
+      "id": "ref_51",
+      "authors": [
+        "and a Fast R-CNN detection network [7]. RoI pool- ing [7] is performed before conv5 1. On this RoI-pooled feature",
+        "all layers of conv5 x",
+        "up are adopted for each region",
+        "playing the roles of VGG-16's fc layers. The final classificationlayerisreplacedbytwosiblinglayers(classi- ficationandboxregression[7]). For the usage of BN layers",
+        "after pre-training",
+        "we com- putetheBNstatistics(meansandvariances)foreachlayer ontheImageNettrainingset. ThentheBNlayersarefixed during fine-tuning for object detection. As such",
+        "the BN layers become linear activations with constant offsets",
+        "scales",
+        "andBNstatisticsarenotupdatedbyfine-tuning. We fixtheBNlayersmainlyforreducingmemoryconsumption inFasterR-CNNtraining. PASCALVOC Following [7",
+        "32]",
+        "for the PASCAL VOC 2007 test set",
+        "weusethe5ktrainvalimagesinVOC2007and16ktrain- val images in VOC 2012 for training ("
+      ],
+      "title": "07+12",
+      "year": 2012,
+      "journal": "). For the PASCAL VOC",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[32] and a Fast R-CNN detection network [7]. RoI pool- ing [7] is performed before conv5 1. On this RoI-pooled feature, all layers of conv5 x and up are adopted for each region, playing the roles of VGG-16's fc layers. The final classificationlayerisreplacedbytwosiblinglayers(classi- ficationandboxregression[7]). For the usage of BN layers, after pre-training, we com- putetheBNstatistics(meansandvariances)foreachlayer ontheImageNettrainingset. ThentheBNlayersarefixed during fine-tuning for object detection. As such, the BN layers become linear activations with constant offsets and scales,andBNstatisticsarenotupdatedbyfine-tuning. We fixtheBNlayersmainlyforreducingmemoryconsumption inFasterR-CNNtraining. PASCALVOC Following [7, 32], for the PASCAL VOC 2007 test set, weusethe5ktrainvalimagesinVOC2007and16ktrain- val images in VOC 2012 for training (\"07+12\"). For the PASCAL VOC 2012 test set, we use the 10k trainval+test imagesinVOC2007and16ktrainvalimagesinVOC2012 for training (\"07++12\"). The hyper-parameters for train- ing Faster R-CNN are the same as in [32]. Table 7 shows the results. ResNet-101 improves the mAP by >3% over VGG-16. Thisgainissolelybecauseoftheimprovedfea- tureslearnedbyResNet. MSCOCO The MS COCO dataset [26] involves 80 object cate- gories. We evaluate the PASCAL VOC metric (mAP @ IoU=0.5)andthestandardCOCOmetric(mAP@IoU= .5:.05:.95). Weusethe80kimagesonthetrainsetfortrain- ing and the 40k images on the val set for evaluation. Our detectionsystemforCOCOissimilartothatforPASCAL VOC. We train the COCO models with an 8-GPU imple- mentation, and thus the RPN step has a mini-batch size of 10 8 images (i.e., 1 per GPU) and the Fast R-CNN step has a mini-batch size of 16 images. The RPN step and Fast R- CNNsteparebothtrainedfor240kiterationswithalearn- ingrateof0.001andthenfor80kiterationswith0.0001. Table 8 shows the results on the MS COCO validation set. ResNet-101hasa6%increaseofmAP@[.5,.95]over VGG-16,whichisa28%relativeimprovement,solelycon- tributedbythefeatureslearnedbythebetternetwork. Re- markably,themAP@[.5,.95]'sabsoluteincrease(6.0%)is nearly as big as mAP@.5's (6.9%). This suggests that a deepernetworkcanimprovebothrecognitionandlocaliza- tion. B.ObjectDetectionImprovements Forcompleteness,wereporttheimprovementsmadefor the competitions. These improvements are based on deep featuresandthusshouldbenefitfromresiduallearning. MSCOCO Boxrefinement. Ourboxrefinementpartiallyfollowstheit- erativelocalizationin[6].InFasterR-CNN,thefinaloutput isaregressedboxthatisdifferentfromitsproposalbox. So forinference,wepoolanewfeaturefromtheregressedbox and obtain a new classification score and a new regressed box. Wecombinethese300newpredictionswiththeorig- inal300predictions. Non-maximumsuppression(NMS)is applied on the union set of predicted boxes using an IoU threshold of 0.3 [8], followed by box voting [6]. Box re- finementimprovesmAPbyabout2points(Table9). Global context. We combine global context in the Fast R-CNN step. Given the full-image conv feature map, we poolafeaturebyglobalSpatialPyramidPooling[12](with a \"single-level\" pyramid) which can be implemented as \"RoI\"poolingusingtheentireimage'sboundingboxasthe RoI. This pooled feature is fed into the post-RoI layers to obtainaglobalcontextfeature. Thisglobalfeatureiscon- catenated with the original per-region feature, followed by the sibling classification and box regression layers. This new structure is trained end-to-end. Global context im- provesmAP@.5byabout1point(Table9). Multi-scaletesting. Intheabove,allresultsareobtainedby single-scale training/testing as in [32], where the image's shortersideiss = 600pixels. Multi-scaletraining/testing has been developed in [12, 7] by selecting a scale from a feature pyramid, and in [33] by using maxout layers. In ourcurrentimplementation,wehaveperformedmulti-scale testing following [33]; we have not performed multi-scale trainingbecauseoflimitedtime. Inaddition,wehaveper- formed multi-scale testing only for the Fast R-CNN step (but not yet for the RPN step). With a trained model, we computeconvfeaturemapsonanimagepyramid,wherethe image's shorter sides are s 200,400,600,800,1000 . ∈ { } trainingdata COCOtrain testdata COCOval mAP @.5 @[.5,.95] baselineFasterR-CNN(VGG-16) 41.5 21.2 baselineFasterR-CNN(ResNet-101) 48.4 27.2 +boxrefinement 49.9 29.9 +context 51.1 30.0 +multi-scaletesting 53.8 32.5 ensemble Table9.ObjectdetectionimprovementsonMSCOCOusingFasterR system net data mAP areo bike bird boat bottle bus car cat chair cow baseline VGG-16 07+12 73.2 76.5 79.0 70.9 65.5 52.1 83.1 84.7 86.4 52.0 81.9 baseline ResNet-101 07+12 76.4 79.8 80.7 76.2 68.3 55.9 85.1 85.3 89.8 56.7 87.8 baseline+++ ResNet-101 COCO+07+12 85.6 90.0 89.6 87.8 80.8 76.1 89.9 89.9 89.6 75.5 90.0 Table10.DetectionresultsonthePASCALVOC2007testset. ThebaselineistheFast includeboxrefinement,context,andmulti-scaletestinginTable9. system net data mAP areo bike bird boat bottle bus car cat chair cow baseline VGG-16 07++12 70.4 84.9 79.8 74.3 53.9 49.8 77.5 75.9 88.5 45.6 77.1 baseline ResNet-101 07++12 73.8 86.5 81.6 77.2 58.0 51.0 78.6 76.6 93.2 48.6 80.4 baseline+++ ResNet-101 COCO+07++12 83.8 92.1 88.4 84.8 75.9 71.4 86.3 87.8 94.2 66.8 89.4 Table 11. Detection results on the PASCAL VOC 2012 test set (http://host.ro displaylb.php?challengeid=11&compid=4). ThebaselineistheFasterR-CN boxrefinement,context,andmulti-scaletestinginTable9. We select two adjacent scales from the pyramid following"
+    },
+    {
+      "id": "ref_52",
+      "authors": [
+        ". RoI pooling",
+        "subsequent layers are performed on GoogLeNet thefeaturemapsofthesetwoscales[33]",
+        "whicharemerged oursinglem bymaxoutasin[33].Multi-scaletestingimprovesthemAP ourensemb byover2points(Table9). Table12.Ourresul Usingvalidationdata.Nextweusethe80k+40ktrainvalset Ourdetectionsyste fortrainingandthe20ktest-devsetforevaluation.Thetest- inTable9",
+        "usingR devsethasnopubliclyavailablegroundtruthandtheresult isreportedbytheevaluationserver. Underthissetting",
+        "the weachieve85.6% resultsareanmAP@.5of55.7%andanmAP@[.5",
+        ".95]of and83.8%onPA 34.9%(Table9). Thisisoursingle-modelresult. onPASCALVO Ensemble.InFasterR-CNN",
+        "thesystemisdesignedtolearn ousstate-of-the-a regionproposalsandalsoobjectclassifiers",
+        "soanensemble ImageNetDetec can be used to boost both tasks. We use an ensemble for TheImageNe proposing regions",
+        "the union set of proposals are pro- categories. The cessed by an ensemble of per-region classifiers. Table 9 object detection showsourresultbasedonanensembleof3networks. The as that for MS C mAP is 59.0%",
+        "37.4% on the test-dev set. This result trained on the 10 wonthe1stplaceinthedetectiontaskinCOCO2015. arefine-tunedon PASCALVOC into two parts (v WerevisitthePASCALVOCdatasetbasedontheabove detection models model. WiththesinglemodelontheCOCOdataset(55.7% set. Theval2set mAP@.5inTable9)",
+        "wefine-tunethismodelonthePAS- ILSVRC2015da CALVOCsets. Theimprovementsofboxrefinement",
+        "con- 6http://host.ro text",
+        "andmulti-scaletestingarealsoadopted. Bydoingso submittedon2015-11-26. 11 COCOtrainval COCOtest-dev @.5 @[.5",
+        ".95] 53.3 32.2 55.7 34.9 59.0 37.4 R-CNNandResNet-101. table dog horse mbike person plant sheep sofa train tv 65.7 84.8 84.6 77.5 76.7 38.8 73.6 73.9 83.0 72.6 69.4 88.3 88.9 80.9 78.4 41.7 78.6 79.8 85.3 72.0 80.7 89.6 90.3 89.1 88.7 65.4 88.1 85.6 89.0 86.8 terR-CNNsystem. Thesystem"
+      ],
+      "title": "baseline+++",
+      "year": 8080,
+      "journal": "table dog horse mbike person plant sheep sofa train tv 55.3 86.9 81.7 80.9 79.6 40.1 72.6 60.9 81.2 61.5 59.0 92.1 85.3 84.8 80.7 48.1 77.3 66.5 84.7 65.6 69.2 93.9 91.9 90.9 89.6 67.9 88.2 76.8 90.3 80.0 obots.ox.ac.uk:",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[33]. RoI pooling and subsequent layers are performed on GoogLeNet thefeaturemapsofthesetwoscales[33],whicharemerged oursinglem bymaxoutasin[33].Multi-scaletestingimprovesthemAP ourensemb byover2points(Table9). Table12.Ourresul Usingvalidationdata.Nextweusethe80k+40ktrainvalset Ourdetectionsyste fortrainingandthe20ktest-devsetforevaluation.Thetest- inTable9,usingR devsethasnopubliclyavailablegroundtruthandtheresult isreportedbytheevaluationserver. Underthissetting,the weachieve85.6% resultsareanmAP@.5of55.7%andanmAP@[.5,.95]of and83.8%onPA 34.9%(Table9). Thisisoursingle-modelresult. onPASCALVO Ensemble.InFasterR-CNN,thesystemisdesignedtolearn ousstate-of-the-a regionproposalsandalsoobjectclassifiers,soanensemble ImageNetDetec can be used to boost both tasks. We use an ensemble for TheImageNe proposing regions, and the union set of proposals are pro- categories. The cessed by an ensemble of per-region classifiers. Table 9 object detection showsourresultbasedonanensembleof3networks. The as that for MS C mAP is 59.0% and 37.4% on the test-dev set. This result trained on the 10 wonthe1stplaceinthedetectiontaskinCOCO2015. arefine-tunedon PASCALVOC into two parts (v WerevisitthePASCALVOCdatasetbasedontheabove detection models model. WiththesinglemodelontheCOCOdataset(55.7% set. Theval2set mAP@.5inTable9), wefine-tunethismodelonthePAS- ILSVRC2015da CALVOCsets. Theimprovementsofboxrefinement,con- 6http://host.ro text, andmulti-scaletestingarealsoadopted. Bydoingso submittedon2015-11-26. 11 COCOtrainval COCOtest-dev @.5 @[.5,.95] 53.3 32.2 55.7 34.9 59.0 37.4 R-CNNandResNet-101. table dog horse mbike person plant sheep sofa train tv 65.7 84.8 84.6 77.5 76.7 38.8 73.6 73.9 83.0 72.6 69.4 88.3 88.9 80.9 78.4 41.7 78.6 79.8 85.3 72.0 80.7 89.6 90.3 89.1 88.7 65.4 88.1 85.6 89.0 86.8 terR-CNNsystem. Thesystem\"baseline+++\" table dog horse mbike person plant sheep sofa train tv 55.3 86.9 81.7 80.9 79.6 40.1 72.6 60.9 81.2 61.5 59.0 92.1 85.3 84.8 80.7 48.1 77.3 66.5 84.7 65.6 69.2 93.9 91.9 90.9 89.6 67.9 88.2 76.8 90.3 80.0 obots.ox.ac.uk:8080/leaderboard/ NNsystem. Thesystem\"baseline+++\"include val2 test t[44](ILSVRC'14) - 43.9 model(ILSVRC'15) 60.5 58.8 ble(ILSVRC'15) 63.6 62.1 lts(mAP,%)ontheImageNetdetectiondataset. emisFasterR-CNN[32]withtheimprovements ResNet-101. %mAPonPASCALVOC2007(Table10) ASCALVOC2012(Table11)6. Theresult OC2012is10pointshigherthantheprevi- artresult[6]. ction etDetection(DET)taskinvolves200object accuracy is evaluated by mAP@.5. Our algorithm for ImageNet DET is the same COCO in Table 9. The networks are pre- 000-class ImageNet classification set, and ntheDETdata. Wesplitthevalidationset val1/val2) following [8]. We fine-tune the s using the DET training set and the val1 isusedforvalidation. Wedonotuseother ata. OursinglemodelwithResNet-101has obots.ox.ac.uk:8080/anonymous/3OJ4OJ.html, . LOC LOC LOCerror classification top-5LOCerror testing method network onGTCLS network onpredictedCLS VGG's[41] VGG-16 1-crop 33.1[41] RPN ResNet-101 1-crop 13.3 RPN ResNet-101 dense 11.7 RPN ResNet-101 dense ResNet-101 14.4 RPN+RCNN ResNet-101 dense ResNet-101 10.6 RPN+RCNN ensemble dense ensemble 8.9 Table13. Localizationerror(%) ontheImageNetvalidation. In thecolumnof\"LOCerroronGTclass\"([41]), thegroundtruth class is used. In the \"testing\" column, \"1-crop\" denotes testing onacentercropof224×224pixels,\"dense\"denotesdense(fully convolutional)andmulti-scaletesting. 58.8%mAPandourensembleof3modelshas62.1%mAP ontheDETtestset(Table12).Thisresultwonthe1stplace intheImageNetdetectiontaskinILSVRC2015,surpassing thesecondplaceby8.5points(absolute). C.ImageNetLocalization TheImageNetLocalization(LOC)task[36]requiresto classify and localize the objects. Following [40, 41], we assumethattheimage-levelclassifiersarefirstadoptedfor predicting the class labels of an image, and the localiza- tionalgorithmonlyaccountsforpredictingboundingboxes basedonthepredictedclasses. Weadoptthe\"per-classre- gression\"(PCR)strategy[40,41],learningaboundingbox regressorforeachclass. Wepre-trainthenetworksforIm- ageNet classification and then fine-tune them for localiza- tion. We train networks on the provided 1000-class Ima- geNettrainingset. Our localization algorithm is based on the RPN frame- work of [32] with a few modifications. Unlike the way in"
+    },
+    {
+      "id": "ref_53",
+      "authors": [
+        "that is category-agnostic",
+        "our RPN for localization is designedinaper-classform. ThisRPNendswithtwosib- ling1 1convolutionallayersforbinaryclassification(cls) × andboxregression(reg)",
+        "asin[32]. Theclsandreglayers are both in a per-class from",
+        "in contrast to [32]. Specifi- cally",
+        "theclslayerhasa1000-doutput",
+        "andeachdimension isbinarylogisticregressionforpredictingbeingornotbe- ing an object class; the reg layer has a 1000 4-d output × consisting of box regressors for 1000 classes. As in [32]",
+        "our bounding box regression is with reference to multiple translation-invariant"
+      ],
+      "title": "anchor",
+      "year": null,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[32] that is category-agnostic, our RPN for localization is designedinaper-classform. ThisRPNendswithtwosib- ling1 1convolutionallayersforbinaryclassification(cls) × andboxregression(reg),asin[32]. Theclsandreglayers are both in a per-class from, in contrast to [32]. Specifi- cally,theclslayerhasa1000-doutput,andeachdimension isbinarylogisticregressionforpredictingbeingornotbe- ing an object class; the reg layer has a 1000 4-d output × consisting of box regressors for 1000 classes. As in [32], our bounding box regression is with reference to multiple translation-invariant\"anchor\"boxesateachposition. AsinourImageNetclassificationtraining(Sec.3.4),we randomly sample 224 224 crops for data augmentation. × Weuseamini-batchsizeof256imagesforfine-tuning. To avoidnegativesamplesbeingdominate, 8anchorsareran- domlysampledforeachimage,wherethesampledpositive and negative anchors have a ratio of 1:1 [32]. For testing, thenetworkisappliedontheimagefully-convolutionally. Table 13 compares the localization results. Following"
+    },
+    {
+      "id": "ref_54",
+      "authors": [
+        "wefirstperform"
+      ],
+      "title": "oracle",
+      "year": 2015,
+      "journal": "testingusingthegroundtruth classastheclassificationprediction. VGG'spaper[41]re- 12 top-5localizationerr method val test OverFeat[40](ILSVRC'13) 30.0 29.9 GoogLeNet[44](ILSVRC'14) - 26.7 VGG[41](ILSVRC'14) 26.9 25.3 ours(ILSVRC'15) 8.9 9.0 Table14.Comparisonsoflocalizationerror(%)ontheImageNet datasetwithstate-of-the-artmethods. portsacenter-croperrorof33.1%(Table13)usingground truthclasses. Underthesamesetting,ourRPNmethodus- ingResNet-101netsignificantlyreducesthecenter-croper- ror to 13.3%. This comparison demonstrates the excellent performanceofourframework. Withdense(fullyconvolu- tional)andmulti-scaletesting,ourResNet-101hasanerror of11.7%usinggroundtruthclasses. UsingResNet-101for predictingclasses(4.6%top-5classificationerror,Table4), thetop-5localizationerroris14.4%. Theaboveresultsareonlybasedontheproposalnetwork (RPN) in Faster R-CNN [32]. One may use the detection network(FastR-CNN[7])inFasterR-CNNtoimprovethe results.Butwenoticethatonthisdataset,oneimageusually containsasingledominateobject,andtheproposalregions highly overlap with each other and thus have very similar RoI-pooledfeatures. Asaresult,theimage-centrictraining of Fast R-CNN [7] generates samples of small variations, whichmaynotbedesiredforstochastictraining. Motivated by this, in our current experiment we use the original R- CNN[8]thatisRoI-centric,inplaceofFastR-CNN. OurR-CNNimplementationisasfollows. Weapplythe per-class RPN trained as above on the training images to predict bounding boxes for the ground truth class. These predicted boxes play a role of class-dependent proposals. For each training image, the highest scored 200 proposals areextractedastrainingsamplestotrainanR-CNNclassi- fier. Theimageregioniscroppedfromaproposal,warped to 224 224 pixels, and fed into the classification network × asinR-CNN[8].Theoutputsofthisnetworkconsistoftwo sibling fc layers for cls and reg, also in a per-class form. This R-CNN network is fine-tuned on the training set us- ingamini-batchsizeof256intheRoI-centricfashion. For testing,theRPNgeneratesthehighestscored200proposals foreachpredictedclass,andtheR-CNNnetworkisusedto updatetheseproposals'scoresandboxpositions. This method reduces the top-5 localization error to 10.6% (Table 13). This is our single-model result on the validationset.Usinganensembleofnetworksforbothclas- sification and localization, we achieve a top-5 localization errorof9.0%onthetestset. Thisnumbersignificantlyout- performstheILSVRC14results(Table14),showinga64% relativereductionoferror. Thisresultwonthe1stplacein theImageNetlocalizationtaskinILSVRC",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[41],wefirstperform\"oracle\"testingusingthegroundtruth classastheclassificationprediction. VGG'spaper[41]re- 12 top-5localizationerr method val test OverFeat[40](ILSVRC'13) 30.0 29.9 GoogLeNet[44](ILSVRC'14) - 26.7 VGG[41](ILSVRC'14) 26.9 25.3 ours(ILSVRC'15) 8.9 9.0 Table14.Comparisonsoflocalizationerror(%)ontheImageNet datasetwithstate-of-the-artmethods. portsacenter-croperrorof33.1%(Table13)usingground truthclasses. Underthesamesetting,ourRPNmethodus- ingResNet-101netsignificantlyreducesthecenter-croper- ror to 13.3%. This comparison demonstrates the excellent performanceofourframework. Withdense(fullyconvolu- tional)andmulti-scaletesting,ourResNet-101hasanerror of11.7%usinggroundtruthclasses. UsingResNet-101for predictingclasses(4.6%top-5classificationerror,Table4), thetop-5localizationerroris14.4%. Theaboveresultsareonlybasedontheproposalnetwork (RPN) in Faster R-CNN [32]. One may use the detection network(FastR-CNN[7])inFasterR-CNNtoimprovethe results.Butwenoticethatonthisdataset,oneimageusually containsasingledominateobject,andtheproposalregions highly overlap with each other and thus have very similar RoI-pooledfeatures. Asaresult,theimage-centrictraining of Fast R-CNN [7] generates samples of small variations, whichmaynotbedesiredforstochastictraining. Motivated by this, in our current experiment we use the original R- CNN[8]thatisRoI-centric,inplaceofFastR-CNN. OurR-CNNimplementationisasfollows. Weapplythe per-class RPN trained as above on the training images to predict bounding boxes for the ground truth class. These predicted boxes play a role of class-dependent proposals. For each training image, the highest scored 200 proposals areextractedastrainingsamplestotrainanR-CNNclassi- fier. Theimageregioniscroppedfromaproposal,warped to 224 224 pixels, and fed into the classification network × asinR-CNN[8].Theoutputsofthisnetworkconsistoftwo sibling fc layers for cls and reg, also in a per-class form. This R-CNN network is fine-tuned on the training set us- ingamini-batchsizeof256intheRoI-centricfashion. For testing,theRPNgeneratesthehighestscored200proposals foreachpredictedclass,andtheR-CNNnetworkisusedto updatetheseproposals'scoresandboxpositions. This method reduces the top-5 localization error to 10.6% (Table 13). This is our single-model result on the validationset.Usinganensembleofnetworksforbothclas- sification and localization, we achieve a top-5 localization errorof9.0%onthetestset. Thisnumbersignificantlyout- performstheILSVRC14results(Table14),showinga64% relativereductionoferror. Thisresultwonthe1stplacein theImageNetlocalizationtaskinILSVRC2015."
+    }
+  ],
+  "model_used": "regex:ieee"
+}

@@ -1,0 +1,418 @@
+{
+  "source_pdf": "/media/connor/New Volume/open_source_projects/local-llm-ref-verifier/tests/fixtures/papers/vancouver/covid_bibliometric.pdf",
+  "references": [
+    {
+      "id": "ref_01",
+      "authors": [
+        "Guan WJ",
+        "Ni ZY",
+        "Hu Y",
+        "Liang WH",
+        "Ou CQ",
+        "He JX"
+      ],
+      "title": "Clinical characteristics of coronavirus disease 2019 in China",
+      "year": 2020,
+      "journal": "N Engl J Med",
+      "volume": "382",
+      "pages": "1708-1720",
+      "doi": null,
+      "raw_text": "1. Guan WJ, Ni ZY, Hu Y, Liang WH, Ou CQ, He JX, et al. Clinical characteristics of coronavirus disease 2019 in China. N Engl J Med. 2020;382:1708-1720."
+    },
+    {
+      "id": "ref_02",
+      "authors": [
+        "Huang C",
+        "Wang Y",
+        "Li X",
+        "Ren L",
+        "Zhao J",
+        "Hu Y"
+      ],
+      "title": "Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China",
+      "year": 2020,
+      "journal": "Lancet",
+      "volume": "395",
+      "pages": "497-506",
+      "doi": null,
+      "raw_text": "2. Huang C, Wang Y, Li X, Ren L, Zhao J, Hu Y, et al. Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China. Lancet. 2020;395(10223):497-506."
+    },
+    {
+      "id": "ref_03",
+      "authors": [
+        "Zhou P",
+        "Yang XL",
+        "Wang XG",
+        "Hu B",
+        "Zhang L",
+        "Zhang W"
+      ],
+      "title": "A pneumonia outbreak associated with a new coronavirus of probable bat origin",
+      "year": 2020,
+      "journal": "Nature",
+      "volume": "579",
+      "pages": "270-273",
+      "doi": null,
+      "raw_text": "3. Zhou P, Yang XL, Wang XG, Hu B, Zhang L, Zhang W, et al. A pneumonia outbreak associated with a new coronavirus of probable bat origin. Nature. 2020;579(7798):270-273."
+    },
+    {
+      "id": "ref_04",
+      "authors": [
+        "Wang W",
+        "Tang J",
+        "Wei F"
+      ],
+      "title": "Updated understanding of the outbreak of 2019 novel coronavirus (2019‐nCoV) in Wuhan, China",
+      "year": 2020,
+      "journal": "J Med Virol",
+      "volume": "92",
+      "pages": "441-7",
+      "doi": null,
+      "raw_text": "4. Wang W, Tang J, Wei F. Updated understanding of the outbreak of 2019 novel coronavirus (2019‐nCoV) in Wuhan, China. J Med Virol. 2020;92(4):441-7."
+    },
+    {
+      "id": "ref_07",
+      "authors": [
+        "Small H"
+      ],
+      "title": "Co‐citation in the scientific literature: A new measure of the relationship between two documents",
+      "year": 1973,
+      "journal": "J Am Soc Inform Sci",
+      "volume": "24",
+      "pages": "265-9",
+      "doi": null,
+      "raw_text": "6. Small H. Co‐citation in the scientific literature: A new measure of the relationship between two documents. J Am Soc Inform Sci. 1973;24(4):265-9."
+    },
+    {
+      "id": "ref_08",
+      "authors": [
+        "Zhu N",
+        "Zhang D",
+        "Wang W",
+        "Li X",
+        "Yang B",
+        "Song J"
+      ],
+      "title": "A novel coronavirus from patients with pneumonia in China, 2019",
+      "year": 2020,
+      "journal": "N Engl J Med",
+      "volume": "382",
+      "pages": "727-733",
+      "doi": null,
+      "raw_text": "7. Zhu N, Zhang D, Wang W, Li X, Yang B, Song J, et al. A novel coronavirus from patients with pneumonia in China, 2019. N Engl J Med. 2020;382(8):727-733."
+    },
+    {
+      "id": "ref_09",
+      "authors": [
+        "Li Q",
+        "Guan X",
+        "Wu P",
+        "Wang X",
+        "Zhou L",
+        "Tong Y"
+      ],
+      "title": "Early transmission dynamics in Wuhan, China, of novel coronavirus- infected pneumonia",
+      "year": 2020,
+      "journal": "N Engl J Med",
+      "volume": "382",
+      "pages": "1199-1207",
+      "doi": null,
+      "raw_text": "8. Li Q, Guan X, Wu P, Wang X, Zhou L, Tong Y, et al. Early transmission dynamics in Wuhan, China, of novel coronavirus- infected pneumonia. N Engl J Med. 2020;382(13):1199-1207."
+    },
+    {
+      "id": "ref_10",
+      "authors": [
+        "Rothan HA",
+        "Byrareddy SN"
+      ],
+      "title": "The epidemiology and pathogenesis of coronavirus disease (COVID-19) outbreak",
+      "year": 2020,
+      "journal": "J Autoimmun",
+      "volume": "109",
+      "pages": null,
+      "doi": null,
+      "raw_text": "9. Rothan HA, Byrareddy SN. The epidemiology and pathogenesis of coronavirus disease (COVID-19) outbreak. J Autoimmun. 2020;109:102433."
+    },
+    {
+      "id": "ref_11",
+      "authors": [
+        "Cucinotta D",
+        "Vanelli M"
+      ],
+      "title": "WHO Declares COVID-19 a Pandemic",
+      "year": 2020,
+      "journal": "Acta Biomed",
+      "volume": "91",
+      "pages": "157-160",
+      "doi": null,
+      "raw_text": "10. Cucinotta D, Vanelli M. WHO Declares COVID-19 a Pandemic. Acta Biomed. 2020;91(1):157-160."
+    },
+    {
+      "id": "ref_12",
+      "authors": [
+        "Donoghue M",
+        "Hsieh F",
+        "Baronas E",
+        "Godbout K",
+        "Gosselin M",
+        "Stagliano N"
+      ],
+      "title": "A novel angiotensin-converting enzyme-related carboxypeptidase (ACE2) converts angiotensin I to angiotensin 1-9",
+      "year": 2000,
+      "journal": "Circ Res",
+      "volume": "87",
+      "pages": "E1-9",
+      "doi": null,
+      "raw_text": "11. Donoghue M, Hsieh F, Baronas E, Godbout K, Gosselin M, Stagliano N, et al. A novel angiotensin-converting enzyme-related carboxypeptidase (ACE2) converts angiotensin I to angiotensin 1-9. Circ Res. 2000;87(5):E1-9."
+    },
+    {
+      "id": "ref_13",
+      "authors": [
+        "Tipnis SR",
+        "Hooper NM",
+        "Hyde R",
+        "Karran E",
+        "Christie G",
+        "Turner AJ"
+      ],
+      "title": "A human homolog of angiotensin-converting enzyme cloning and functional expression as a captopril-insensitive carboxypeptidase",
+      "year": 2000,
+      "journal": "J Biol Chem",
+      "volume": "275",
+      "pages": "33238-43",
+      "doi": null,
+      "raw_text": "12. Tipnis SR, Hooper NM, Hyde R, Karran E, Christie G, Turner AJ. A human homolog of angiotensin-converting enzyme cloning and functional expression as a captopril-insensitive carboxypeptidase. J Biol Chem. 2000;275(43):33238-43."
+    },
+    {
+      "id": "ref_14",
+      "authors": [
+        "Wu CH",
+        "Mohammadmoradi S",
+        "Chen JZ",
+        "Sawada H",
+        "Daugherty A",
+        "Lu HS"
+      ],
+      "title": "Renin-angiotensin system and cardiovascular functions",
+      "year": 2018,
+      "journal": "Arterioscler Thromb Vasc Biol",
+      "volume": "38",
+      "pages": "e108-e116",
+      "doi": null,
+      "raw_text": "13. Wu CH, Mohammadmoradi S, Chen JZ, Sawada H, Daugherty A, Lu HS. Renin-angiotensin system and cardiovascular functions. Arterioscler Thromb Vasc Biol. 2018;38(7):e108-e116."
+    },
+    {
+      "id": "ref_15",
+      "authors": [
+        "Yang P",
+        "Gu H",
+        "Zhao Z",
+        "Wang W",
+        "Cao B",
+        "Lai C"
+      ],
+      "title": "Angiotensin- converting enzyme 2 (ACE2) mediates influenza H7N9 virus-induced acute lung injury",
+      "year": 2014,
+      "journal": "Sci Rep",
+      "volume": "4",
+      "pages": null,
+      "doi": null,
+      "raw_text": "14. Yang P, Gu H, Zhao Z, Wang W, Cao B, Lai C, et al. Angiotensin- converting enzyme 2 (ACE2) mediates influenza H7N9 virus-induced acute lung injury. Sci Rep. 2014;4:7027."
+    },
+    {
+      "id": "ref_16",
+      "authors": [
+        "Zou Z",
+        "Yan Y",
+        "Shu Y",
+        "Gao R",
+        "Sun Y",
+        "Li X"
+      ],
+      "title": "Angiotensin- converting enzyme 2 protects from lethal avian influenza A H5N1 infections",
+      "year": 2014,
+      "journal": "Nat Commun",
+      "volume": "5",
+      "pages": null,
+      "doi": null,
+      "raw_text": "15. Zou Z, Yan Y, Shu Y, Gao R, Sun Y, Li X, et al. Angiotensin- converting enzyme 2 protects from lethal avian influenza A H5N1 infections. Nat Commun. 2014;5:3594."
+    },
+    {
+      "id": "ref_17",
+      "authors": [
+        "Liu X",
+        "Yang N",
+        "Tang J",
+        "Liu S",
+        "Luo D",
+        "Duan Q"
+      ],
+      "title": "Downregulation of angiotensin-converting enzyme 2 by the neuraminidase protein of influenza A (H1N1) virus",
+      "year": 2014,
+      "journal": "Virus Res",
+      "volume": "185",
+      "pages": "64-71",
+      "doi": null,
+      "raw_text": "16. Liu X, Yang N, Tang J, Liu S, Luo D, Duan Q, et al. Downregulation of angiotensin-converting enzyme 2 by the neuraminidase protein of influenza A (H1N1) virus. Virus Res. 2014;185:64-71."
+    },
+    {
+      "id": "ref_18",
+      "authors": [
+        "Li W",
+        "Moore MJ",
+        "Vasilieva N",
+        "Sui J",
+        "Wong SK",
+        "Berne MA"
+      ],
+      "title": "Angiotensin-converting enzyme 2 is a functional receptor for the SARS coronavirus",
+      "year": 2003,
+      "journal": "Nature",
+      "volume": "426",
+      "pages": "450-4",
+      "doi": null,
+      "raw_text": "17. Li W, Moore MJ, Vasilieva N, Sui J, Wong SK, Berne MA, et al. Angiotensin-converting enzyme 2 is a functional receptor for the SARS coronavirus. Nature. 2003;426(6965):450-4."
+    },
+    {
+      "id": "ref_19",
+      "authors": [
+        "Letko MC",
+        "Munster V"
+      ],
+      "title": "Functional assessment of cell entry and receptor usage for SARS-CoV-2 and other lineage B betacoronaviruses",
+      "year": 2020,
+      "journal": "Nat Microbiol",
+      "volume": "5",
+      "pages": "562-569",
+      "doi": null,
+      "raw_text": "18. Letko MC, Munster V. Functional assessment of cell entry and receptor usage for SARS-CoV-2 and other lineage B betacoronaviruses. Nat Microbiol. 2020;5(4):562-569."
+    },
+    {
+      "id": "ref_20",
+      "authors": [
+        "Kuba K",
+        "Imai Y",
+        "Rao S",
+        "Gao H",
+        "Guo F",
+        "Guan B"
+      ],
+      "title": "A crucial role of angiotensin converting enzyme 2 (ACE2) in SARS coronavirus- induced lung injury",
+      "year": 2005,
+      "journal": "Nat Med",
+      "volume": "11",
+      "pages": "875-9",
+      "doi": null,
+      "raw_text": "19. Kuba K, Imai Y, Rao S, Gao H, Guo F, Guan B, et al. A crucial role of angiotensin converting enzyme 2 (ACE2) in SARS coronavirus- induced lung injury. Nat Med. 2005;11(8):875-9."
+    },
+    {
+      "id": "ref_21",
+      "authors": [
+        "Wang C",
+        "Horby PW",
+        "Hayden FG",
+        "Gao GF"
+      ],
+      "title": "A novel coronavirus outbreak of global health concern",
+      "year": 2020,
+      "journal": "Lancet",
+      "volume": "395",
+      "pages": "470-3",
+      "doi": null,
+      "raw_text": "20. Wang C, Horby PW, Hayden FG, Gao GF. A novel coronavirus outbreak of global health concern. Lancet. 2020;395(10223):470-3."
+    },
+    {
+      "id": "ref_22",
+      "authors": [
+        "Chahrour M",
+        "Assi S",
+        "Bejjani M",
+        "Nasrallah AA",
+        "Salhab H",
+        "Fares M",
+        "et al. A bibliometric analysis of Covid-19 research activity"
+      ],
+      "title": "A call for increased output",
+      "year": 2020,
+      "journal": "Cureus",
+      "volume": "12",
+      "pages": null,
+      "doi": null,
+      "raw_text": "21. Chahrour M, Assi S, Bejjani M, Nasrallah AA, Salhab H, Fares M, et al. A bibliometric analysis of Covid-19 research activity: A call for increased output. Cureus. 2020;12(3): E7357."
+    },
+    {
+      "id": "ref_23",
+      "authors": [
+        "Hossain MM. Current status of global research on novel coronavirus disease (Covid-19)"
+      ],
+      "title": "A bibliometric analysis and knowledge mapping",
+      "year": 3547,
+      "journal": "Available at SSRN",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "22. Hossain MM. Current status of global research on novel coronavirus disease (Covid-19): A bibliometric analysis and knowledge mapping. Available at SSRN 3547824. 2020."
+    },
+    {
+      "id": "ref_24",
+      "authors": [
+        "Lou J",
+        "Tian SJ",
+        "Niu SM",
+        "Kang XQ",
+        "Lian HX",
+        "Zhang LX",
+        "et al. Coronavirus disease 2019"
+      ],
+      "title": "a bibliometric analysis and review",
+      "year": 2019,
+      "journal": "Eur Rev Med Pharmacol Sci",
+      "volume": "24",
+      "pages": "3411-21",
+      "doi": null,
+      "raw_text": "23. Lou J, Tian SJ, Niu SM, Kang XQ, Lian HX, Zhang LX, et al. Coronavirus disease 2019: a bibliometric analysis and review. Eur Rev Med Pharmacol Sci. 2020;24(6):3411-21. http://mjiri.iums.ac.ir 9 Med J Islam Repub Iran. 2020 (23 May); 34.51."
+    },
+    {
+      "id": "ref_23",
+      "authors": [
+        "Thornberry, R. J.",
+        "Nakamura, S."
+      ],
+      "title": "Hierarchical Attention Networks for Multimodal Sentiment Fusion",
+      "year": 2023,
+      "journal": "Journal of Advanced Computational Intelligence",
+      "volume": "17",
+      "pages": "234-251",
+      "doi": null,
+      "raw_text": "Thornberry, R. J., & Nakamura, S. (2023). Hierarchical Attention Networks for Multimodal Sentiment Fusion. Journal of Advanced Computational Intelligence, 17, 234-251."
+    },
+    {
+      "id": "ref_24",
+      "authors": [
+        "Okonkwo, C. M."
+      ],
+      "title": "Bayesian Optimization of Sparse Transformer Architectures",
+      "year": 2024,
+      "journal": "Neural Computing and Applications",
+      "volume": "42",
+      "pages": "1102-1119",
+      "doi": "10.9999/fake-doi-12345",
+      "raw_text": "Okonkwo, C. M. (2024). Bayesian Optimization of Sparse Transformer Architectures. Neural Computing and Applications, 42, 1102-1119. doi:10.9999/fake-doi-12345"
+    },
+    {
+      "id": "ref_25",
+      "authors": [
+        "Petrov, I. V.",
+        "Chen, L."
+      ],
+      "title": "This Paper Does Not Exist In Any Database Anywhere",
+      "year": 2099,
+      "journal": "Fictitious Review of Imaginary Science",
+      "volume": "1",
+      "pages": "1-5",
+      "doi": null,
+      "raw_text": "Petrov, I. V., & Chen, L. (2099). This Paper Does Not Exist In Any Database Anywhere. Fictitious Review of Imaginary Science, 1, 1-5."
+    }
+  ],
+  "model_used": "regex:vancouver"
+}

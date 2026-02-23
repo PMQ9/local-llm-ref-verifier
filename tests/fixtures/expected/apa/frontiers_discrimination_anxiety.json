@@ -1,0 +1,194 @@
+{
+  "source_pdf": "/media/connor/New Volume/open_source_projects/local-llm-ref-verifier/tests/fixtures/papers/apa/frontiers_discrimination_anxiety.pdf",
+  "references": [
+    {
+      "id": "ref_01",
+      "authors": [
+        "Ahulu, L. D.",
+        "Gyasi-Gyamerah, A. A., and Anum, A"
+      ],
+      "title": "Predicting risk andprotectivefactorsofgeneralizedanxietydisorder:Acomparativestudyamong adolescentsinGhana.Int.J.Adolesc.Youth25,574-584.doi:10.1080/02673843.2019. 1698440 Amu,H.,Osei,E.,Kofie,P.,Owusu,R.,Bosoka,S.A.,Konlan,K.D.,etal.(2021)",
+      "year": 2020,
+      "journal": "Prevalenceandpredictorsofdepression,anxiety,andstressamongadultsinGhana:A community-basedcross-sectionalstudy.PLoSOne16:e0258105.doi:10.1371/journal. pone.0258105",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Ahulu, L. D., Gyasi-Gyamerah, A. A., and Anum, A. (2020). Predicting risk andprotectivefactorsofgeneralizedanxietydisorder:Acomparativestudyamong adolescentsinGhana.Int.J.Adolesc.Youth25,574-584.doi:10.1080/02673843.2019. 1698440 Amu,H.,Osei,E.,Kofie,P.,Owusu,R.,Bosoka,S.A.,Konlan,K.D.,etal.(2021). Prevalenceandpredictorsofdepression,anxiety,andstressamongadultsinGhana:A community-basedcross-sectionalstudy.PLoSOne16:e0258105.doi:10.1371/journal. pone.0258105"
+    },
+    {
+      "id": "ref_02",
+      "authors": [
+        "Baartmans, J. M., van Steensel, F. J.",
+        "Klein, A. M., and Bögels, S. M"
+      ],
+      "title": "Theroleofcomorbidmooddisordersincognitivebehavioraltherapyfor childhoodsocialanxiety.Cogn.Ther.Res.46,983-991.doi:10.1007/s10608-022-10 312-1",
+      "year": 2022,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Baartmans, J. M., van Steensel, F. J., Klein, A. M., and Bögels, S. M. (2022).Theroleofcomorbidmooddisordersincognitivebehavioraltherapyfor childhoodsocialanxiety.Cogn.Ther.Res.46,983-991.doi:10.1007/s10608-022-10 312-1"
+    },
+    {
+      "id": "ref_03",
+      "authors": [
+        "Bettmann, J. E.",
+        "Prince, K. C.",
+        "Hardy, C. J., and Dwumah, P"
+      ],
+      "title": "Measuring anxiety and depression in Ghanaian and US college students",
+      "year": 2019,
+      "journal": "J. Multicult. Couns. Dev. 47",
+      "volume": "119",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Bettmann, J. E., Prince, K. C., Hardy, C. J., and Dwumah, P. (2019). Measuring anxiety and depression in Ghanaian and US college students. J. Multicult. Couns. Dev. 47, 119-130. doi: 10.1002/jmcd. 12126 Brandt,L.,Liu,S.,Heim,C.,andHeinz,A.(2022).Theeffectsofsocialisolation stressanddiscriminationonmentalhealth.Transl.Psychiatry12:398.doi:10.1038/ s41398-022-02178-4"
+    },
+    {
+      "id": "ref_04",
+      "authors": [
+        "Bronfenbrenner, U., and Ceci, S. J"
+      ],
+      "title": "Nature-nuture reconceptualized in developmentalperspective:Abioecologicalmodel.Psychol.Rev.101,568.doi:10.1037/ 0033-295X.101.4.568",
+      "year": 1994,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Bronfenbrenner, U., and Ceci, S. J. (1994). Nature-nuture reconceptualized in developmentalperspective:Abioecologicalmodel.Psychol.Rev.101,568.doi:10.1037/ 0033-295X.101.4.568"
+    },
+    {
+      "id": "ref_05",
+      "authors": [
+        "Bunting, L.",
+        "Nolan, E.",
+        "McCartan, C.",
+        "Davidson, G.",
+        "Grant, A.",
+        "Mulholland, C., et al"
+      ],
+      "title": "Prevalence and risk factors of mood and anxiety disorders in childrenandyoungpeople:FindingsfromtheNorthernIrelandYouthWellbeing Survey",
+      "year": 2022,
+      "journal": "Clin. Child Psychol. Psychiatry 27",
+      "volume": "686",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Bunting, L., Nolan, E., McCartan, C., Davidson, G., Grant, A., Mulholland, C., et al. (2022). Prevalence and risk factors of mood and anxiety disorders in childrenandyoungpeople:FindingsfromtheNorthernIrelandYouthWellbeing Survey. Clin. Child Psychol. Psychiatry 27, 686-700. doi: 10.1177/135910452210 89841"
+    },
+    {
+      "id": "ref_06",
+      "authors": [
+        "Cao, X"
+      ],
+      "title": "Sleep time and depression symptoms as predictors of cognitive development among adolescents: A cross-lagged study from China",
+      "year": 2023,
+      "journal": "Psychol. Rep. [Epub ahead of print]. doi: 10.1177/0033294123117 5833",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Cao, X. (2023). Sleep time and depression symptoms as predictors of cognitive development among adolescents: A cross-lagged study from China. Psychol. Rep. [Epub ahead of print]. doi: 10.1177/0033294123117 5833"
+    },
+    {
+      "id": "ref_07",
+      "authors": [
+        "Cao, X. J., and Liu, X. Q"
+      ],
+      "title": "Artificial intelligence-assisted psychosis risk screeninginadolescents:Practicesandchallenges.WorldJ.Psychiatry12:1287.doi: 10.5498/wjp.v12.i10.1287 Charles,N.,Strong,S.,Burns,L.,Bullerjahn,M.,andSerafine,K.(2021).Increased mooddisordersymptoms,perceivedstress,andalcoholuseamongcollegestudents duringtheCOVID-19pandemic.PsychiatryRes.296:113706.doi:10.1016/j.psychres. 2021.113706",
+      "year": 2022,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Cao, X. J., and Liu, X. Q. (2022). Artificial intelligence-assisted psychosis risk screeninginadolescents:Practicesandchallenges.WorldJ.Psychiatry12:1287.doi: 10.5498/wjp.v12.i10.1287 Charles,N.,Strong,S.,Burns,L.,Bullerjahn,M.,andSerafine,K.(2021).Increased mooddisordersymptoms,perceivedstress,andalcoholuseamongcollegestudents duringtheCOVID-19pandemic.PsychiatryRes.296:113706.doi:10.1016/j.psychres. 2021.113706"
+    },
+    {
+      "id": "ref_08",
+      "authors": [
+        "Cuevas, A. G.",
+        "Mann, F. D.",
+        "Williams, D. R., and Krueger, R. F"
+      ],
+      "title": "Discriminationandanxiety:Usingmultiplepolygenicscorestocontrolforgenetic liability",
+      "year": 2021,
+      "journal": "Proc. Natl. Acad. Sci. U.S.A. 118:e2017224118. doi: 10.1073/pnas.201722 4118 Faisal,R.A.,Jobe,M.C.,Ahmed,O.,andSharker,T.(2022).Mentalhealthstatus, anxiety,anddepressionlevelsofBangladeshiuniversitystudentsduringtheCOVID- 19pandemic.Int.J.Ment.HealthAddict.20",
+      "volume": "1500",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Cuevas, A. G., Mann, F. D., Williams, D. R., and Krueger, R. F. (2021). Discriminationandanxiety:Usingmultiplepolygenicscorestocontrolforgenetic liability. Proc. Natl. Acad. Sci. U.S.A. 118:e2017224118. doi: 10.1073/pnas.201722 4118 Faisal,R.A.,Jobe,M.C.,Ahmed,O.,andSharker,T.(2022).Mentalhealthstatus, anxiety,anddepressionlevelsofBangladeshiuniversitystudentsduringtheCOVID- 19pandemic.Int.J.Ment.HealthAddict.20,1500-1515.doi:10.1007/s11469-020- 00458-y"
+    },
+    {
+      "id": "ref_09",
+      "authors": [
+        "Hofmann, S. G"
+      ],
+      "title": "Toward a cognitive-behavioral classification system for mental disorders",
+      "year": 2014,
+      "journal": "Behav. Ther. 45",
+      "volume": "576",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Hofmann, S. G. (2014). Toward a cognitive-behavioral classification system for mental disorders. Behav. Ther. 45, 576-587. doi: 10.1016/j.beth.2014. 03.001 FrontiersinPsychology 0 10.3389/fpsyg.2023.1274585 Conflict of interest The authors declare that the research was conducted in the absenceofanycommercialorfinancialrelationshipsthatcouldbe construedasapotentialconflictofinterest. Publisher's note All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claimthatmaybemadebyitsmanufacturer,isnotguaranteedor endorsedbythepublisher."
+    },
+    {
+      "id": "ref_10",
+      "authors": [
+        "Irby-Shasanmi, A., and Erving, C. L"
+      ],
+      "title": "Do discrimination and negative interactionswithfamilyexplaintherelationshipbetweeninterracialrelationshipstatus andmentaldisorder?Socius8:23780231221124852.doi:10.1177/23780231221124852",
+      "year": 2022,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Irby-Shasanmi, A., and Erving, C. L. (2022). Do discrimination and negative interactionswithfamilyexplaintherelationshipbetweeninterracialrelationshipstatus andmentaldisorder?Socius8:23780231221124852.doi:10.1177/23780231221124852"
+    },
+    {
+      "id": "ref_11",
+      "authors": [
+        "Jessop, D. C.",
+        "Reid, M., and Solomon, L"
+      ],
+      "title": "Financial concern predicts deteriorations in mental and physical health among university students",
+      "year": 2020,
+      "journal": "Psychol. Health35",
+      "volume": "196",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Jessop, D. C., Reid, M., and Solomon, L. (2020). Financial concern predicts deteriorations in mental and physical health among university students. Psychol. Health35,196-209.doi:10.1080/08870446.2019.1626393 Kogan,C.S.,Noorishad,P.G.,Ndengeyingoma,A.,Guerrier,M.,andCénat,J.M. (2022).PrevalenceandcorrelatesofanxietysymptomsamongBlackpeopleinCanada: A significant role for everyday racial discrimination and racial microaggressions. J.Affect.Disord.308,545-553.doi:10.1016/j.jad.2022.04.110 Kuringe,E.,Materu,J.,Nyato,D.,Majani,E.,Ngeni,F.,Shao,A.,etal.(2019). Prevalenceandcorrelatesofdepressionandanxietysymptomsamongout-of-school adolescentgirlsandyoungwomeninTanzania:Across-sectionalstudy.PLoSOne 14:e0221053.doi:10.1371/journal.pone.0221053 Liu,X.,Zhang,Y.,Cao,X.,andGao,W.(2023).Doesanxietyconsistentlyaffectthe achievementgoalsofcollegestudents?Afour-wavelongitudinalinvestigationfrom China.Curr.Psychol.[Epubaheadofprint].doi:10.1007/s12144-023-05184-x"
+    },
+    {
+      "id": "ref_12",
+      "authors": [
+        "Majumdar, S.",
+        "Acholia, P.",
+        "Saraf, S., and Khurana, S"
+      ],
+      "title": "Worry, perceived discrimination,lifestylechanges,andprotectivefactorsduringCOVID-19:Astudy withrecoveringpatientsinDelhi,India.SageOpen.12:21582440221079878.doi:10. 1177/21582440221079878 Mofatteh,M.(2021).Riskfactorsassociatedwithstress,anxiety,anddepression amonguniversityundergraduatestudents.AIMSPublicHealth8:36.doi:10.3934/ publichealth.2021004 Moody,M.D.,Browning,W.R.,Hossain,M.,andClay,O.J.(2023).Vicarious experiences of major discrimination, anxiety symptoms, and mental health care utilizationamongblackadults.Soc.Sci.Med.316:114997.doi:10.1016/j.socscimed. 2022.114997 O'NeilRodriguez,K.A.,andKendall,P.C.(2014).Suicidalideationinanxiety- disorderedyouth:Identifyingpredictorsofrisk.J.Clin.ChildAdolesc.Psychol.43, 51-62.doi:10.1080/15374416.2013.843463 Pan,K.Y.,Kok,A.A.,Eikelenboom,M.,Horsfall,M.,Jörg,F.,Luteijn,R.A.,etal. (2021).ThementalhealthimpactoftheCOVID-19pandemiconpeoplewithand withoutdepressive,anxiety,orobsessive-compulsivedisorders:Alongitudinalstudy ofthreeDutchcase-controlcohorts.LancetPsychiatry8,121-129.doi:10.1016/S2215- 0366(20)30491-0 Quansah,F.,Hagan,J.E.Jr.,Ankomah,F.,Srem-Sai,M.,Frimpong,J.B.,Sambah,F., etal.(2022).RelationshipbetweenCOVID-19relatedknowledgeandanxietyamong universitystudents:Exploringthemoderatingrolesofschoolclimateandcoping strategies.Front.Psychol.13:820288.doi:10.3389/fpsyg.2022.820288 Radeef,A.S.,Faisal,G.G.,Ali,S.M.,andIsmail,M.K.(2014).Sourceofstressors andemotionaldisturbancesamongundergraduatesciencestudentsinMalaysia.Int.J",
+      "year": 2022,
+      "journal": "Med.Res.HealthSci.3",
+      "volume": "401",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Majumdar, S., Acholia, P., Saraf, S., and Khurana, S. (2022). Worry, perceived discrimination,lifestylechanges,andprotectivefactorsduringCOVID-19:Astudy withrecoveringpatientsinDelhi,India.SageOpen.12:21582440221079878.doi:10. 1177/21582440221079878 Mofatteh,M.(2021).Riskfactorsassociatedwithstress,anxiety,anddepression amonguniversityundergraduatestudents.AIMSPublicHealth8:36.doi:10.3934/ publichealth.2021004 Moody,M.D.,Browning,W.R.,Hossain,M.,andClay,O.J.(2023).Vicarious experiences of major discrimination, anxiety symptoms, and mental health care utilizationamongblackadults.Soc.Sci.Med.316:114997.doi:10.1016/j.socscimed. 2022.114997 O'NeilRodriguez,K.A.,andKendall,P.C.(2014).Suicidalideationinanxiety- disorderedyouth:Identifyingpredictorsofrisk.J.Clin.ChildAdolesc.Psychol.43, 51-62.doi:10.1080/15374416.2013.843463 Pan,K.Y.,Kok,A.A.,Eikelenboom,M.,Horsfall,M.,Jörg,F.,Luteijn,R.A.,etal. (2021).ThementalhealthimpactoftheCOVID-19pandemiconpeoplewithand withoutdepressive,anxiety,orobsessive-compulsivedisorders:Alongitudinalstudy ofthreeDutchcase-controlcohorts.LancetPsychiatry8,121-129.doi:10.1016/S2215- 0366(20)30491-0 Quansah,F.,Hagan,J.E.Jr.,Ankomah,F.,Srem-Sai,M.,Frimpong,J.B.,Sambah,F., etal.(2022).RelationshipbetweenCOVID-19relatedknowledgeandanxietyamong universitystudents:Exploringthemoderatingrolesofschoolclimateandcoping strategies.Front.Psychol.13:820288.doi:10.3389/fpsyg.2022.820288 Radeef,A.S.,Faisal,G.G.,Ali,S.M.,andIsmail,M.K.(2014).Sourceofstressors andemotionaldisturbancesamongundergraduatesciencestudentsinMalaysia.Int.J. Med.Res.HealthSci.3,401-410.doi:10.5958/j.2319-5886.3.2.082 Rominski,S.,Darteh,E.,Dickson,K.,andMunro-Kramer,M.(2017).Attitudes towardabortionamongstudentsattheUniversityofCapeCoast,Ghana.Sex.Reprod. Healthc.11,53-59.doi:10.1016/j.srhc.2016.10.002 Rutter,L.A.,andBrown,T.A.(2017).Psychometricpropertiesofthegeneralized anxietydisorderscale-7(GAD-7)inoutpatientswithanxietyandmooddisorders. J.psychopathol.Behav.Assess.39,140-146.doi:10.1007/s10862-016-9571-9 07 frontiersin.org Dartehetal. Santomauro,D.F.,Herrera,A.M.,Shadid,J.,Zheng,P.,Ashb etal.(2021).Globalprevalenceandburdenofdepressivean 204countriesandterritoriesin2020duetotheCOVID-19 1700-1712.doi:10.1016/S0140-6736(21)02143-7"
+    },
+    {
+      "id": "ref_13",
+      "authors": [
+        "Son, C.",
+        "Hegde, S.",
+        "Smith, A.",
+        "Wang, X., and Sasangohar COVID-19oncollegestudents'mentalhealthintheUnitedS study.J.MedInternetRes.22:e21279.doi:10.2196/21279 Sosoo, E. E.",
+        "Bernard, D. L., and Neblett, E. W. Jr. of internalized racism on the relationship between anxiety. Cult. Divers. Ethn. Minor. Psychol. 26:570. 0320 Stein,G.L.,Castro-Schilo,L.,Cavanaugh,A.M.,Mejia,Y.",
+        "Robins,R"
+      ],
+      "title": "Whendiscriminationhurts:Thelongitudin FrontiersinPsychology 10.3389/fpsyg.2023.1274585 baugh,C.,Pigott,D.M., inpeerdiscriminationonanxietyanddepressivesymptomsinMexican-originyouth. ndanxietydisordersin J.YouthAdolesc.48,864-875.doi:10.1007/s10964-019-01012-3 pandemic.Lancet398, Tee,M.L.,Tee,C.A.,Anlacan,J.P.,Aligam,K.J.,Reyes,P.W.,Kuruchittham,V., etal.(2020).PsychologicalimpactofCOVID-19pandemicinthePhilippines.J.Affect. r, F. (2020)",
+      "year": 2019,
+      "journal": "Effects of Disord.277",
+      "volume": "379",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Son, C., Hegde, S., Smith, A., Wang, X., and Sasangohar COVID-19oncollegestudents'mentalhealthintheUnitedS study.J.MedInternetRes.22:e21279.doi:10.2196/21279 Sosoo, E. E., Bernard, D. L., and Neblett, E. W. Jr. of internalized racism on the relationship between anxiety. Cult. Divers. Ethn. Minor. Psychol. 26:570. 0320 Stein,G.L.,Castro-Schilo,L.,Cavanaugh,A.M.,Mejia,Y., Robins,R.(2019).Whendiscriminationhurts:Thelongitudin FrontiersinPsychology 10.3389/fpsyg.2023.1274585 baugh,C.,Pigott,D.M., inpeerdiscriminationonanxietyanddepressivesymptomsinMexican-originyouth. ndanxietydisordersin J.YouthAdolesc.48,864-875.doi:10.1007/s10964-019-01012-3 pandemic.Lancet398, Tee,M.L.,Tee,C.A.,Anlacan,J.P.,Aligam,K.J.,Reyes,P.W.,Kuruchittham,V., etal.(2020).PsychologicalimpactofCOVID-19pandemicinthePhilippines.J.Affect. r, F. (2020). Effects of Disord.277,379-391.doi:10.1016/j.jad.2020.08.043 States:Interviewsurvey TrindadeJúnior,S.C.,Sousa,L.F.,andCarreira,L.B.(2021).Generalizedanxiety disorderandprevalenceofsuicideriskamongmedicalstudents.Rev.Brasil.Educ. (2020). The influence Méd.45:e061.doi:10.1590/1981-5271v45.2-20200043.ing discrimination and Usman,M.,andBanu,A.(2019).Astudyonimpactoffinancialstressonstudents' doi: 10.1037/cdp000 academics.J.Bus.Econ.Policy6,58-64.doi:10.30845/jbep.v6n1p7 World Health Organization [WHO] (2016). World health statistics 2016: Christophe,N.K.,and MonitoringhealthfortheSDGssustainabledevelopmentgoals.Geneva:WorldHealth nalimpactofincreases Organization. 08 frontiersin.org"
+    }
+  ],
+  "model_used": "regex:apa"
+}

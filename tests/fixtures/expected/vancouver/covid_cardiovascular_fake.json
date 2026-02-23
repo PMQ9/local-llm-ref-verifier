@@ -1,0 +1,362 @@
+{
+  "source_pdf": "/media/connor/New Volume/open_source_projects/local-llm-ref-verifier/tests/fixtures/papers/vancouver/covid_cardiovascular.pdf",
+  "references": [
+    {
+      "id": "ref_04",
+      "authors": [
+        "Hoffmann M",
+        "Kleine-Weber H",
+        "Schroeder S",
+        "Kruger N",
+        "Herrler T",
+        "Erichsen S"
+      ],
+      "title": "",
+      "year": 2020,
+      "journal": "SchiergensTS,HerrlerG,WuNH,NitscheA,MullerMA,DrostenC,PohlmannS. . . . SARS-CoV-2cellentrydependsonACE2andTMPRSS2andisblockedbyaclini- . . callyprovenproteaseinhibitor.Cell",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "12. Hoffmann M, Kleine-Weber H, Schroeder S, Kruger N, Herrler T, Erichsen S, . . SchiergensTS,HerrlerG,WuNH,NitscheA,MullerMA,DrostenC,PohlmannS. . . . SARS-CoV-2cellentrydependsonACE2andTMPRSS2andisblockedbyaclini- . . callyprovenproteaseinhibitor.Cell2020;doi:10.1016/j.cell.2020.02.052. . ."
+    },
+    {
+      "id": "ref_12",
+      "authors": [
+        "Zhou Y",
+        "Vedantham P",
+        "Lu K",
+        "Agudelo J",
+        "Carrion RJr",
+        "Nunneley JW",
+        "Barnard D"
+      ],
+      "title": "",
+      "year": 2015,
+      "journal": ". Pohlmann S,McKerrowJH,RensloAR,SimmonsG.Proteaseinhibitorstargeting . . coronavirusandfilovirusentry.AntiviralRes",
+      "volume": "116",
+      "pages": "76-84",
+      "doi": null,
+      "raw_text": "20. Zhou Y, Vedantham P,Lu K, Agudelo J, Carrion RJr, Nunneley JW,Barnard D, . . . Pohlmann S,McKerrowJH,RensloAR,SimmonsG.Proteaseinhibitorstargeting . . coronavirusandfilovirusentry.AntiviralRes2015;116:76-84. . ."
+    },
+    {
+      "id": "ref_26",
+      "authors": [
+        "Vaduganathan M",
+        "Vardeny O",
+        "Michel T",
+        "McMurray JJV",
+        "Pfeffer MA",
+        "Solomon SD"
+      ],
+      "title": "Renin-angiotensin-aldosteronesysteminhibitorsinpatientswithCovid-19.NEnglJ Med2020;doi:10.1056/NEJMsr2005760",
+      "year": 2020,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "34. Vaduganathan M, Vardeny O, Michel T, McMurray JJV, Pfeffer MA, Solomon SD. Renin-angiotensin-aldosteronesysteminhibitorsinpatientswithCovid-19.NEnglJ Med2020;doi:10.1056/NEJMsr2005760."
+    },
+    {
+      "id": "ref_28",
+      "authors": [
+        "Danser AHJ",
+        "Epstein M",
+        "Batlle D"
+      ],
+      "title": "Renin-angiotensin system blockers and the COVID-19oandemic:atpresentthereisnoevidencetoabandonrenin-angiotensin systemblockers.Hypertension2020:HYPERTENSIONAHA12015082",
+      "year": 2020,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "36. Danser AHJ, Epstein M, Batlle D. Renin-angiotensin system blockers and the COVID-19oandemic:atpresentthereisnoevidencetoabandonrenin-angiotensin systemblockers.Hypertension2020:HYPERTENSIONAHA12015082."
+    },
+    {
+      "id": "ref_33",
+      "authors": [
+        "Siedlinski M",
+        "Jozefczuk E",
+        "Xu X",
+        "Teumer A",
+        "Evangelou E",
+        "Schnabel RB",
+        "Welsh P",
+        "MaffiaP",
+        "ErdmannJ",
+        "TomaszewskiM",
+        "CaulfieldMJ",
+        "SattarN",
+        "HolmesMV",
+        "GuzikTJ"
+      ],
+      "title": "Whitebloodcellsandbloodpressure:aMendelianrandomizationstudy.Circulation 2020;doi:10.1161/CIRCULATIONAHA.119.045102",
+      "year": 2020,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "41. Siedlinski M, Jozefczuk E, Xu X, Teumer A, Evangelou E, Schnabel RB, Welsh P, MaffiaP,ErdmannJ,TomaszewskiM,CaulfieldMJ,SattarN,HolmesMV,GuzikTJ. Whitebloodcellsandbloodpressure:aMendelianrandomizationstudy.Circulation 2020;doi:10.1161/CIRCULATIONAHA.119.045102."
+    },
+    {
+      "id": "ref_46",
+      "authors": [
+        "Blyszczuk P"
+      ],
+      "title": "Myocarditis in humans and in experimental animal models",
+      "year": 2019,
+      "journal": "Front CardiovascMed",
+      "volume": "6",
+      "pages": null,
+      "doi": null,
+      "raw_text": "54. Blyszczuk P. Myocarditis in humans and in experimental animal models. Front CardiovascMed2019;6:64."
+    },
+    {
+      "id": "ref_47",
+      "authors": [
+        "Gangaplara A",
+        "Massilamany C",
+        "Brown DM",
+        "Delhon G",
+        "Pattnaik AK",
+        "Chapman N",
+        "RoseN",
+        "SteffenD",
+        "ReddyJ.CoxsackievirusB3infectionleadstothegenerationof COVID-19andthecardiovascularsystem:implicationsforriskassessment",
+        "d cardiac myosin heavy chain-alpha-reactive CD4 T cells in A/J mice"
+      ],
+      "title": "Clin Immunol 2012;144:237-249",
+      "year": 2012,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "55. Gangaplara A, Massilamany C, Brown DM, Delhon G, Pattnaik AK, Chapman N, RoseN,SteffenD,ReddyJ.CoxsackievirusB3infectionleadstothegenerationof COVID-19andthecardiovascularsystem:implicationsforriskassessment,d cardiac myosin heavy chain-alpha-reactive CD4 T cells in A/J mice. Clin Immunol 2012;144:237-249."
+    },
+    {
+      "id": "ref_59",
+      "authors": [
+        "Danzi GB",
+        "Loffi M",
+        "Galeazzi G",
+        "Gherbesi E. Acute pulmonary embolism and COVID-19 pneumonia"
+      ],
+      "title": "a random association? Eur Heart J 2020;doi: 10.1093/eurheartj/ehaa254",
+      "year": 2020,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "67. Danzi GB, Loffi M, Galeazzi G, Gherbesi E. Acute pulmonary embolism and COVID-19 pneumonia: a random association? Eur Heart J 2020;doi: 10.1093/eurheartj/ehaa254."
+    },
+    {
+      "id": "ref_64",
+      "authors": [
+        "Gast M",
+        "Rauch BH",
+        "Nakagawa S",
+        "HaghikiaA",
+        "JasinaA",
+        "Haas J",
+        "NathN",
+        "JensenL",
+        "StrouxA",
+        "BohmA",
+        "FriebelJ",
+        "RauchU",
+        "SkurkC",
+        "BlankenbergS",
+        "ZellerT",
+        "Prasanth KV",
+        "MederB",
+        "KussA",
+        "LandmesserU",
+        "PollerW.Immunesystem-mediatedathero- sclerosiscausedbydeficiencyoflongnon-codingRNAMALAT1inApoE-/-mice"
+      ],
+      "title": "CardiovascRes2019;115:302-314",
+      "year": 2019,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "72. Gast M,Rauch BH,Nakagawa S,HaghikiaA, JasinaA,Haas J,NathN, JensenL, StrouxA,BohmA,FriebelJ,RauchU,SkurkC,BlankenbergS,ZellerT,Prasanth KV,MederB,KussA,LandmesserU,PollerW.Immunesystem-mediatedathero- sclerosiscausedbydeficiencyoflongnon-codingRNAMALAT1inApoE-/-mice. CardiovascRes2019;115:302-314."
+    },
+    {
+      "id": "ref_67",
+      "authors": [
+        "Penson P",
+        "Long DL",
+        "HowardG",
+        "Howard VJ",
+        "Jones SR",
+        "MartinSS",
+        "MikhailidisDP",
+        "Muntner P",
+        "Rizzo M",
+        "Rader DJ",
+        "Safford MM",
+        "Sahebkar A",
+        "Toth PP",
+        "Banach M"
+      ],
+      "title": "Associationsbetweencardiovasculardisease,cancer,andverylowhigh-densitylipo- protein cholesterol in the REasons for Geographical and Racial Differences in Stroke(REGARDS)study.CardiovascRes2019;115:204-212",
+      "year": 2019,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "75. Penson P,Long DL,HowardG,Howard VJ,Jones SR,MartinSS, MikhailidisDP, Muntner P, Rizzo M, Rader DJ, Safford MM, Sahebkar A, Toth PP, Banach M. Associationsbetweencardiovasculardisease,cancer,andverylowhigh-densitylipo- protein cholesterol in the REasons for Geographical and Racial Differences in Stroke(REGARDS)study.CardiovascRes2019;115:204-212."
+    },
+    {
+      "id": "ref_73",
+      "authors": [
+        "Raj VS",
+        "Mou H",
+        "Smits SL",
+        "Dekkers DHW",
+        "Mu¨ller MA",
+        "Dijkman R",
+        "Muth D"
+      ],
+      "title": "",
+      "year": 2013,
+      "journal": ". DemmersJAA,ZakiA,FouchierRAM,ThielV,DrostenC,RottierPJM,Osterhaus . . ADME,BoschBJ,HaagmansBL.Dipeptidylpeptidase4isafunctionalreceptorfor . . theemerginghumancoronavirus-EMC.Nature",
+      "volume": "495",
+      "pages": "251-254",
+      "doi": null,
+      "raw_text": "101. Raj VS, Mou H, Smits SL, Dekkers DHW, Mu¨ller MA, Dijkman R, Muth D, . . . DemmersJAA,ZakiA,FouchierRAM,ThielV,DrostenC,RottierPJM,Osterhaus . . ADME,BoschBJ,HaagmansBL.Dipeptidylpeptidase4isafunctionalreceptorfor . . theemerginghumancoronavirus-EMC.Nature2013;495:251-254. . ."
+    },
+    {
+      "id": "ref_82",
+      "authors": [
+        "Touyz RM",
+        "Alves-Lopes R",
+        "Rios FJ",
+        "Camargo LL",
+        "Anagnostopoulou A",
+        "Arner A"
+      ],
+      "title": "",
+      "year": 2018,
+      "journal": "Montezano AC. Vascular smooth muscle contraction in hypertension. Cardiovasc . . Res",
+      "volume": "114",
+      "pages": "529-539",
+      "doi": null,
+      "raw_text": "110. Touyz RM, Alves-Lopes R, Rios FJ, Camargo LL, Anagnostopoulou A, Arner A, . . Montezano AC. Vascular smooth muscle contraction in hypertension. Cardiovasc . . Res2018;114:529-539. . . ."
+    },
+    {
+      "id": "ref_88",
+      "authors": [
+        "Geng L",
+        "Wang W",
+        "Chen Y",
+        "Cao J",
+        "Lu L",
+        "Chen Q",
+        "He R",
+        "Shen W"
+      ],
+      "title": "Elevation of ADAM10,ADAM17,MMP-2andMMP-9expressionwithmediadegenerationfea- turesCaCl2-inducedthoracicaorticaneurysminaratmodel.ExpMolPathol2010; 89:72-81",
+      "year": 2010,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "116. Geng L, Wang W, Chen Y, Cao J, Lu L, Chen Q, He R, Shen W. Elevation of ADAM10,ADAM17,MMP-2andMMP-9expressionwithmediadegenerationfea- turesCaCl2-inducedthoracicaorticaneurysminaratmodel.ExpMolPathol2010; 89:72-81."
+    },
+    {
+      "id": "ref_114",
+      "authors": [
+        "Steptoe A",
+        "Kivimaki M. Stress and cardiovascular disease"
+      ],
+      "title": "an update on current knowledge.AnnuRevPublicHealth2013;34:337-54",
+      "year": 2013,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "142. Steptoe A, Kivimaki M. Stress and cardiovascular disease: an update on current knowledge.AnnuRevPublicHealth2013;34:337-54."
+    },
+    {
+      "id": "ref_121",
+      "authors": [
+        "Vigorito C",
+        "Giallauria F. Loneliness",
+        "social isolation and risk of cardiovascular disease in the English Longitudinal Study of Ageing. Eur J Prev Cardiol 2018;25"
+      ],
+      "title": "1384-1386",
+      "year": 2018,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "149. Vigorito C, Giallauria F. Loneliness, social isolation and risk of cardiovascular disease in the English Longitudinal Study of Ageing. Eur J Prev Cardiol 2018;25: 1384-1386."
+    },
+    {
+      "id": "ref_124",
+      "authors": [
+        "Valtorta NK",
+        "Kanaan M",
+        "Gilbody S",
+        "Ronzi S",
+        "Hanratty B. Loneliness and social isolationasriskfactorsforcoronaryheartdiseaseandstroke:systematicreviewand meta-analysisoflongitudinalobservationalstudies.Heart2016;102:1009-1016. diagnosis",
+        "andtreatmentoptions 1687 . . . 153. HakulinenC",
+        "Pulkki-RabackL",
+        "VirtanenM",
+        "JokelaM",
+        "KivimakiM",
+        "ElovainioM.Social . . isolationandlonelinessasriskfactorsformyocardialinfarction",
+        "strokeandmortal- . . . ity"
+      ],
+      "title": "UK Biobank cohort study of 479 054 men and women",
+      "year": 2016,
+      "journal": "Heart",
+      "volume": "104",
+      "pages": "1-13",
+      "doi": null,
+      "raw_text": "152. Valtorta NK, Kanaan M, Gilbody S, Ronzi S, Hanratty B. Loneliness and social isolationasriskfactorsforcoronaryheartdiseaseandstroke:systematicreviewand meta-analysisoflongitudinalobservationalstudies.Heart2016;102:1009-1016. diagnosis,andtreatmentoptions 1687 . . . 153. HakulinenC,Pulkki-RabackL,VirtanenM,JokelaM,KivimakiM,ElovainioM.Social . . isolationandlonelinessasriskfactorsformyocardialinfarction,strokeandmortal- . . . ity: UK Biobank cohort study of 479 054 men and women. Heart 2018;104: . . 1536-1542. . . 154. KossKJ,HostinarCE,DonzellaB,GunnarMR.SocialdeprivationandtheHPAaxis . . . inearlydevelopment.Psychoneuroendocrinology2014;50:1-13. . . 155. CacioppoJT,CacioppoS,CapitanioJP,ColeSW.Theneuroendocrinologyofsocial . . isolation.AnnuRevPsychol2015;66:733-767. . . 156. StaffordM,GardnerM,KumariM,KuhD,Ben-ShlomoY.Socialisolationanddiur- . . . nal cortisol patterns in an ageing cohort. Psychoneuroendocrinology 2013;38: . . 2737-2745. . . 157. HawkleyLC,ColeSW,CapitanioJP,NormanGJ,CacioppoJT.Effectsofsocialiso- . . lation on glucocorticoid regulation in social mammals. Horm Behav 2012;62: . . . 314-323. . . 158. LewisR,WilkinsB,BenjaminB,CurtisJT.Cardiovascularcontrolisassociatedwith . . pair-bondsuccessinmaleprairievoles.2017;208:93-102. . . 159. Custaud MA, Belin de Chantemele E, Larina IM, Nichiporuk IA, Grigoriev A, . . . Duvareille M, Gharib C, Gauquelin-Koch G. Hormonal changes during long-term . . isolation.EurJApplPhysiol2004;91:508-515. . . 160. LyonsDM,HaCM,LevineS.Socialeffectsandcircadianrhythmsinsquirrelmonkey . . . pituitary-adrenalactivity.HormBehav1995;29:177-190. . . 161. VaernesRJ,BerganT,WarnckeM,UrsinH,AakvaagA,HockeyR.Europeanisola- . . tion and confinement study. Workload and stress: effects on psychosomatic and . . psychobiologicalreactionpatterns.AdvSpaceBiolMed1993;3:95-120. . . . 162. MurrayDR,HaseltonMG,FalesM,ColeSW.Subjectivesocialstatusandinflamma- . . torygeneexpression.HealthPsychol2019;38:182-186. . . 163. MumtazF,KhanMI,ZubairM,DehpourAR.Neurobiologyandconsequencesof . . social isolation stress in animal model-a comprehensive review. Biomed . . . Pharmacother2018;105:1205-1222. . . 164. KamalA,RamakersGM,AltinbilekB,KasMJ.Socialisolationstressreduceshippo- . . campallong-termpotentiation:effectofanimalstrainandinvolvementofglucocor- . . . ticoidreceptors.Neuroscience2014;256:262-270. . . 165. Barik J, Marti F, Morel C, Fernandez SP, Lanteri C, Godeheu G, Tassin JP, . . MombereauC,FaureP,TroncheF.Chronicstresstriggerssocialaversionviagluco- . . corticoidreceptorindopaminoceptiveneurons.Science2013;339:332-335. . . . 166. Skulstad H,Cosyns B,PopescuBA,GalderisiM,SalvoGD,DonalE, Petersen S, . . Gimelli A, Haugaa KH, Muraru D, Almeida AG, Schulz-Menger J, Dweck MR, . . PontoneG,SadeLE,GerberB,Maurovich-HorvatP,BharuchaT,CameliM,Magne . . J,WestwoodM,MaurerG,EdvardsenT.COVID-19pandemicandcardiacimaging: . . . EACVIrecommendationsonprecautions,indications,prioritization,andprotection . . for patients and healthcare personnel. Eur Heart J Cardiovasc Imaging 2020;doi: . . 10.1093/ehjci/jeaa072. . . 167. RichardsonS,HirschJS,NarasimhanM,CrawfordDM,McGinnT,DavidsonKW, . . . and the Northwell COVID-19 Research Consortium. Presenting characteristics, . . Comorbidities,andoutcomesamong5700patientshospitalizedWithCOVID-19in . . theNewYorkCityarea.JAMA2020;doi:10.1001/jama.2020.6775. . . . ."
+    },
+    {
+      "id": "ref_17",
+      "authors": [
+        "Thornberry, R. J.",
+        "Nakamura, S."
+      ],
+      "title": "Hierarchical Attention Networks for Multimodal Sentiment Fusion",
+      "year": 2023,
+      "journal": "Journal of Advanced Computational Intelligence",
+      "volume": "17",
+      "pages": "234-251",
+      "doi": null,
+      "raw_text": "Thornberry, R. J., & Nakamura, S. (2023). Hierarchical Attention Networks for Multimodal Sentiment Fusion. Journal of Advanced Computational Intelligence, 17, 234-251."
+    },
+    {
+      "id": "ref_18",
+      "authors": [
+        "Okonkwo, C. M."
+      ],
+      "title": "Bayesian Optimization of Sparse Transformer Architectures",
+      "year": 2024,
+      "journal": "Neural Computing and Applications",
+      "volume": "42",
+      "pages": "1102-1119",
+      "doi": "10.9999/fake-doi-12345",
+      "raw_text": "Okonkwo, C. M. (2024). Bayesian Optimization of Sparse Transformer Architectures. Neural Computing and Applications, 42, 1102-1119. doi:10.9999/fake-doi-12345"
+    },
+    {
+      "id": "ref_19",
+      "authors": [
+        "Petrov, I. V.",
+        "Chen, L."
+      ],
+      "title": "This Paper Does Not Exist In Any Database Anywhere",
+      "year": 2099,
+      "journal": "Fictitious Review of Imaginary Science",
+      "volume": "1",
+      "pages": "1-5",
+      "doi": null,
+      "raw_text": "Petrov, I. V., & Chen, L. (2099). This Paper Does Not Exist In Any Database Anywhere. Fictitious Review of Imaginary Science, 1, 1-5."
+    }
+  ],
+  "model_used": "regex:vancouver"
+}

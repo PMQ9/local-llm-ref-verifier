@@ -1,0 +1,263 @@
+{
+  "source_pdf": "/media/connor/New Volume/open_source_projects/local-llm-ref-verifier/tests/fixtures/papers/apa/frontiers_scholarly_reading.pdf",
+  "references": [
+    {
+      "id": "ref_01",
+      "authors": [
+        "Aziz-Zadeh, L., and Damasio, A"
+      ],
+      "title": "Embodied semantics for actions: findings from functional brain imaging",
+      "year": 2008,
+      "journal": "J. Physiol. 102",
+      "volume": "35",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Aziz-Zadeh, L., and Damasio, A. (2008). Embodied semantics for actions: findings from functional brain imaging. J. Physiol. 102, 35-39. doi:10.1016/j.jphysparis.2008.03.012"
+    },
+    {
+      "id": "ref_02",
+      "authors": [
+        "Blandford, A., and Furniss, D"
+      ],
+      "title": "\"DiCoT: A Methodology for Applying DistributedCognitiontotheDesignofTeamworkingSystems,\"inInteractiveSystems",
+      "year": 2006,
+      "journal": "Design,Specification,andVerification.DSV-IS2005.LectureNotesinComputerScience, edsGilroy,S.W.,M.D.Harrison(Berlin:Springer)",
+      "volume": "26",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Blandford, A., and Furniss, D. (2006). \"DiCoT: A Methodology for Applying DistributedCognitiontotheDesignofTeamworkingSystems,\"inInteractiveSystems. Design,Specification,andVerification.DSV-IS2005.LectureNotesinComputerScience, edsGilroy,S.W.,M.D.Harrison(Berlin:Springer),26-38. Bryman,A.(2016).SocialResearchMethods.Oxford:OxfordUniversityPress. Chartier,R.(1995).FormsandMeanings:Texts,Performances,andAudiencesfrom CodextoComputer.Philadelphia:UniversityofPennsylvaniaPress. Clark,A.,andChalmers,D.(1998).Theextendedmind.Analysis50,7-19. Clinton,V.(2019).Readingfrompapercomparedtoscreens:asystematicreview andmeta-analysis.J.Res.Reading42,288-325.doi:10.1111/1467-9817.12269 Clowes,R.(2019).Immaterialengagement:humanagencyandthecognitiveecology oftheinternet.Phenomenol.Cognit.Sci.18,259-279.doi:10.1007/s11097-018-9560-4"
+    },
+    {
+      "id": "ref_03",
+      "authors": [
+        "Coiro, J"
+      ],
+      "title": "Toward a multifaceted heuristic of digital reading to inform assessment, research, practice, and policy",
+      "year": 2020,
+      "journal": "Reading Res. Q. 56",
+      "volume": "9",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Coiro, J. (2020). Toward a multifaceted heuristic of digital reading to inform assessment, research, practice, and policy. Reading Res. Q. 56, 9-31. doi:10.1002/rrq.302 Cowley,S.J.(2011).DistributedLanguage.Amsterdam:JohnBenjaminPublishing."
+    },
+    {
+      "id": "ref_04",
+      "authors": [
+        "Delgado, P.",
+        "Vargas, C.",
+        "Ackerman, R., and Salmerón, L"
+      ],
+      "title": "Don't throw awayyourprintedbooks:ameta-analysisontheeffectsofreadingmediaonreading comprehension.Educ.Res.Rev.25,23-38.doi:10.1016/j.edurev.2018.09.003 DiPaolo,D.,Buhrmann,E.A.T.,andBarandiaran,X.E.(2017).SensorimotorLife",
+      "year": 2018,
+      "journal": "AnEnactiveProposal.Oxford:OxfordUniversityPress",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Delgado, P., Vargas, C., Ackerman, R., and Salmerón, L. (2018). Don't throw awayyourprintedbooks:ameta-analysisontheeffectsofreadingmediaonreading comprehension.Educ.Res.Rev.25,23-38.doi:10.1016/j.edurev.2018.09.003 DiPaolo,D.,Buhrmann,E.A.T.,andBarandiaran,X.E.(2017).SensorimotorLife. AnEnactiveProposal.Oxford:OxfordUniversityPress."
+    },
+    {
+      "id": "ref_05",
+      "authors": [
+        "Dix, A.",
+        "Ramduny-Ellis, D., and Wilkinson, J"
+      ],
+      "title": "\"Trigger analysis: Understandingabrokentask,\"inTheHandbookofTaskAnalysisforHuman-Computer Interaction, eds D",
+      "year": 2004,
+      "journal": "Diaper, and N. Stanton, N (Mahwah, NJ: Lawrence Erlbaum Associates)",
+      "volume": "389",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Dix, A., Ramduny-Ellis, D., and Wilkinson, J. (2004). \"Trigger analysis: Understandingabrokentask,\"inTheHandbookofTaskAnalysisforHuman-Computer Interaction, eds D. Diaper, and N. Stanton, N (Mahwah, NJ: Lawrence Erlbaum Associates),389-400."
+    },
+    {
+      "id": "ref_06",
+      "authors": [
+        "Engelen, J. A.",
+        "Bouwmeester, S.",
+        "Bruin, D., and Zwaan, A. B"
+      ],
+      "title": "Perceptual simulation in developing language comprehension",
+      "year": 2011,
+      "journal": "J. Exp. Child Psychol. 110",
+      "volume": "659",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Engelen, J. A., Bouwmeester, S., Bruin, D., and Zwaan, A. B. (2011). Perceptual simulation in developing language comprehension. J. Exp. Child Psychol. 110, 659-675. doi: 10.1016/j.jecp.2011.0 6.009 Gallagher,S.(2017).EnactivistInterventions:RethinkingtheMind.Oxford:Oxford UniversityPress. Gallagher,S.(2020).ActionandInteraction.Oxford:OxfordUniversityPress."
+    },
+    {
+      "id": "ref_07",
+      "authors": [
+        "Gallese, V., and Lakoff, G"
+      ],
+      "title": "The brain's concepts: The role of the sensory-motor system inconceptual knowledge",
+      "year": 2005,
+      "journal": "Cogn. Neuropsychol. 22",
+      "volume": "455",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Gallese, V., and Lakoff, G. (2005). The brain's concepts: The role of the sensory-motor system inconceptual knowledge. Cogn. Neuropsychol. 22,455-479. doi:10.1080/02643290442000310 Gibson,J.J.(1995).TheEcologicalApproachtoVisualPerception:ClassicEdition. NewYork:PsychologyPress. Glenberg,A.M.,Jaworski,B.,Rischal,M.,andLevin,J.(2007).\"Whatbrainsarefor: action,meaning,andreadingcomprehension,\"inReadingComprehensionStrategies: FrontiersinPsychology 1 10.3389/fpsyg.2023.1165700 Conflict of interest The author declares that the research was conducted in the absenceofanycommercialorfinancialrelationshipsthatcouldbe construedasapotentialconflictofinterest. Publisher's note All claims expressed in this article are solely those of the authors and do not necessarily represent those of their affiliated organizations, or those of the publisher, the editors and the reviewers. Any product that may be evaluated in this article, or claimthatmaybemadebyitsmanufacturer,isnotguaranteedor endorsedbythepublisher. Theories,Interventions,andTechnologies,edD.S.McNamara(LondonandNewYork: PsychologyPress),221-240. Greenfield,S.(2015).MindChange:HowDigitalTechnologiesAreLeavingTheir MarksonOurBrain.NewYork:RandomHouse. Hillesund,T.(2005).Digitaltextcycles:frommedievalmanuscriptstomodern markup.J.DigitalInf.6. Hillesund,T.(2010).Digitalreadingspaces:howexpertreadershandlebooks,the webandelectronicpaper.FirstMonday15,2762.doi:10.5210/fm.v15i4.2762 Hillesund,T.,andBélisle,C.(2014).\"Whatdigitalremediationdoestocritical editionsandreadingpractices,\"inDigitalCriticalEditions,edsD.Apollon,C.Bélisle, andP.Régnier(Urbana:UniversityofIllinoisPress),114-154. Hillesund,T.,Schilhab,T.,andMangen,A.(2022).Textmaterialities,affordances, andtheembodiedturninthestudyofreading.Front.Psychol.Cognit.Sci.13,827058. doi:10.3389/fpsyg.2022.827058 Hollan,J.,Hutchins,E.,andKirsh,D.(2000).Distributedcognition:towardanew foundationforhuman-computerinteractionresearch.ACMTrans.Comput.Hum.Int. 7,174-196.doi:10.1145/353485.353487 Hutchins,E.(1995).CognitionintheWild.CambridgeMA:TheMITPress. Hutchins,E.(2011).Enculturatingthesupersizedmind.Philos.Studies152,437-446 doi:10.1007/s11098-010-9599-8"
+    },
+    {
+      "id": "ref_08",
+      "authors": [
+        "Hutchins, E"
+      ],
+      "title": "The cultural ecosystem of human cognition",
+      "year": 2014,
+      "journal": "Philosophical Psychol.27",
+      "volume": "34",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Hutchins, E. (2014). The cultural ecosystem of human cognition. Philosophical Psychol.27,34-49.doi:10.1080/09515089.2013.830548 Hutchins,E.(2020).\"Thedistributedcognitionperspectiveonhumaninteraction,\" inRootsofHumanSociality:Culture,CognitionandInteraction,edsN.J.EnfieldandS. C.Levinson(NewYork,NY:Routledge),375-398."
+    },
+    {
+      "id": "ref_09",
+      "authors": [
+        "Hutchins, E., and Klausen, T"
+      ],
+      "title": "\"Distributed cognition in airline cockpit,\" in Cognition and Communication at Work, eds Y",
+      "year": 2012,
+      "journal": "Engström and D. Middleton (Cambridge: Cambridge University Press)",
+      "volume": "15",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Hutchins, E., and Klausen, T. (2012). \"Distributed cognition in airline cockpit,\" in Cognition and Communication at Work, eds Y. Engström and D. Middleton (Cambridge: Cambridge University Press), 15-34. doi:10.1017/CBO9781139174077.002 Ihde,D.(1990).TechnologyandtheLifeworld:FromGardentoEarth.Bloomingston: IndianaUniversityPress."
+    },
+    {
+      "id": "ref_10",
+      "authors": [
+        "Kieverstein, J"
+      ],
+      "title": "\"Extended cognition,\" in The Oxford Handbook of 4e Cognition, eds A.",
+      "year": 2018,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Kieverstein, J. (2018). \"Extended cognition,\" in The Oxford Handbook of 4e Cognition, eds A."
+    },
+    {
+      "id": "ref_11",
+      "authors": [
+        "Newen, L. Bruin, L., S. Gallagher (Oxford: Oxford University Press),19-40. Kirsh, D"
+      ],
+      "title": "The intelligent use of space",
+      "year": 1995,
+      "journal": "Art. Int. 73",
+      "volume": "31",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Newen, L. Bruin, L., S. Gallagher (Oxford: Oxford University Press),19-40. Kirsh, D. (1995). The intelligent use of space. Art. Int. 73, 31-38. doi:10.1016/0004-3702(94)00017-U Lakoff,G.,andJohnson,M.(1999).PhilosophyintheFlesh:theEmbodiedMindand itsChallengetoWesternThought.NewYork,NY:BasicBooks. Leder,D.(1990).TheAbsentBody.Chicago:UniversityofChicagoPress. Malafouris,L.(2013).HowTingsShapetheMind:ATheoryofMaterialEngagement. LondonandCambridge,MA:MITPress. Malafouris,L.,andPoulsgaard,K.S.(2020).Understandingthehermeneuticsof digital materiality in contemporary architectural modelling: a material engagement perspective.AIandSociety. 11 frontiersin.org Hillesund Mangen,A.,Olivier,G.,andVelay,J.L.(2019).Co textreadinprintbookandonKindle:whereinthe Psychol.Cognit.Sci.2,38.doi:10.3389/fpsyg.2019.00 McLaughlin,T.(2015).ReadingandtheBody:The York,NY:PalgraveMacmillan."
+    },
+    {
+      "id": "ref_12",
+      "authors": [
+        "Menary, R"
+      ],
+      "title": "Writing as thinkin doi:10.1016/j.langsci.2007.01.005 Newen,A.,andBruin,L.,andGallagher,S.(2018 concepts,andcentralissues,\"inTheOxfordhandbo L.Bruin,S.Gallagher(Oxford:OxfordUniversityPr Noë,A.(2004).ActioninPerception.London:MI",
+      "year": 2007,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Menary, R. (2007). Writing as thinkin doi:10.1016/j.langsci.2007.01.005 Newen,A.,andBruin,L.,andGallagher,S.(2018 concepts,andcentralissues,\"inTheOxfordhandbo L.Bruin,S.Gallagher(Oxford:OxfordUniversityPr Noë,A.(2004).ActioninPerception.London:MI"
+    },
+    {
+      "id": "ref_13",
+      "authors": [
+        "O'Regan, J. K., and Noë, A"
+      ],
+      "title": "A s and visual consciousness",
+      "year": 2001,
+      "journal": "Behavioral and B doi:10.1017/S0140525X01000115 Polkinghorne,D.E.(1988).Narrativeknowing StateUniversityofNewYorkPress. Poulsgaard,K.S.(2020).DigitalMateriality:Crea Design at 3XN Architects and GXN Innovation. D ofOxford. Pulvermüller,F.(2005).Brainmechanismslinki Neurosci.6",
+      "volume": "576",
+      "pages": null,
+      "doi": null,
+      "raw_text": "O'Regan, J. K., and Noë, A. (2001). A s and visual consciousness. Behavioral and B doi:10.1017/S0140525X01000115 Polkinghorne,D.E.(1988).Narrativeknowing StateUniversityofNewYorkPress. Poulsgaard,K.S.(2020).DigitalMateriality:Crea Design at 3XN Architects and GXN Innovation. D ofOxford. Pulvermüller,F.(2005).Brainmechanismslinki Neurosci.6,576-582.doi:10.1038/nrn1706 Rowlands,M.(2010).TheNewScienceofMind.F Phenomenology.Cambridge,MA:London:TheMIT Schilhab,T.,andBalling,G.,andKuzmicˇov,A.(2 printtoscreenreading.FirstMonday,23,9435.doi: FrontiersinPsychology 10.3389/fpsyg.2023.1165700 omparingcomprehensionofalong Smith,J.A.,andOsborn,M.(2015).\"Interpretativephenomenologicalanalysis,\" textandwheninthestory?Front. in Qualitative Psychology: A Practical Guide to"
+    },
+    {
+      "id": "ref_14",
+      "authors": [
+        "Methods, J. A. Smith. (London: 0038 Sage),25-53. ePhysicalPracticeofReading.New Steffensen, S. V"
+      ],
+      "title": "Distributed language and dialogism: notes on non-locality, sense-making and interactivity",
+      "year": 2015,
+      "journal": "Lang. Sci. 40",
+      "volume": "105",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Methods, J. A. Smith. (London: 0038 Sage),25-53. ePhysicalPracticeofReading.New Steffensen, S. V. (2015). Distributed language and dialogism: notes on non-locality, sense-making and interactivity. Lang. Sci. 40, 105-119. doi:10.1016/j.langsci.2015.01.004 ng. Lang. Sci. 29, 621-632. Susi,T.(2006).ThePuzzleofSocialActivity:TheSignificanceofToolsincognition andcooperation.DissertationNo.1019.LinköpingStudiesinScienceandTechnology. 8).\"Cognition:historicalroots,key Availableonlieat:https://www.diva-portal.org/smash/get/diva2.22308./FULLTEXT01. ookof4eCognition,edsA.Newen, pdf(accessedAugust22,2006). ress),3-18."
+    },
+    {
+      "id": "ref_15",
+      "authors": [
+        "Tenopir, C.",
+        "Christian, L., and Kaufman, J. (2019) Seeking, reading, ITPress. and use of scholarly articles: an international study of perceptions and sensorimotor account of vision behavior of researchers. Publications 17, 18. doi: 10.3390/publications70 Brain Sciences 24, 939-1031. 10018 Trasmundi,S.B.,andCowley,S.J"
+      ],
+      "title": "Readers:HowReadersBegetImaging. andthehumansciences.Albany: Front.Psychol.11,682.doi:10.3389/fpsyg.2020.531682",
+      "year": 2020,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Tenopir, C., Christian, L., and Kaufman, J. (2019) Seeking, reading, ITPress. and use of scholarly articles: an international study of perceptions and sensorimotor account of vision behavior of researchers. Publications 17, 18. doi: 10.3390/publications70 Brain Sciences 24, 939-1031. 10018 Trasmundi,S.B.,andCowley,S.J.(2020).Readers:HowReadersBegetImaging. andthehumansciences.Albany: Front.Psychol.11,682.doi:10.3389/fpsyg.2020.531682"
+    },
+    {
+      "id": "ref_16",
+      "authors": [
+        "Trasmundi, S. B.",
+        "Kokkola, L.",
+        "Schilhab, T., and Mangen, ativityandCollaborationinDigital A"
+      ],
+      "title": "A distributed perspective on reading: implications D.Phil.-thesis",
+      "year": 2021,
+      "journal": "Oxford: University for education. Language Sci. 84",
+      "volume": "367",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Trasmundi, S. B., Kokkola, L., Schilhab, T., and Mangen, ativityandCollaborationinDigital A. (2021). A distributed perspective on reading: implications D.Phil.-thesis. Oxford: University for education. Language Sci. 84, 367. doi: 10.1016/j.langsci.2021. 101367 inglanguageandaction.Nat.Rev. Varela,F.J.,Thompson,E.,andRosch,E.(1991).TheEmbodiedMind:Cognitive ScienceandHumanExperience.Cambridge,MA:MITPress. FromExtendedMindtoEmbodied Wolf,M.(2018).Reader,ComeHome:TheReadingBraininaDigitalWorld.New TPress. York:HarperCollin. 2018).Decreasingmaterialityfrom Yin,R.K.(2014).CaseStudyResearch:DesignandMethods,5thEdn.LosAngeles, 10.5210/fm.v23i10.9435 CA:Sage. 12 frontiersin.org"
+    },
+    {
+      "id": "ref_17",
+      "authors": [
+        "Thornberry, R. J.",
+        "Nakamura, S."
+      ],
+      "title": "Hierarchical Attention Networks for Multimodal Sentiment Fusion",
+      "year": 2023,
+      "journal": "Journal of Advanced Computational Intelligence",
+      "volume": "17",
+      "pages": "234-251",
+      "doi": null,
+      "raw_text": "Thornberry, R. J., & Nakamura, S. (2023). Hierarchical Attention Networks for Multimodal Sentiment Fusion. Journal of Advanced Computational Intelligence, 17, 234-251."
+    },
+    {
+      "id": "ref_18",
+      "authors": [
+        "Okonkwo, C. M."
+      ],
+      "title": "Bayesian Optimization of Sparse Transformer Architectures",
+      "year": 2024,
+      "journal": "Neural Computing and Applications",
+      "volume": "42",
+      "pages": "1102-1119",
+      "doi": "10.9999/fake-doi-12345",
+      "raw_text": "Okonkwo, C. M. (2024). Bayesian Optimization of Sparse Transformer Architectures. Neural Computing and Applications, 42, 1102-1119. doi:10.9999/fake-doi-12345"
+    },
+    {
+      "id": "ref_19",
+      "authors": [
+        "Petrov, I. V.",
+        "Chen, L."
+      ],
+      "title": "This Paper Does Not Exist In Any Database Anywhere",
+      "year": 2099,
+      "journal": "Fictitious Review of Imaginary Science",
+      "volume": "1",
+      "pages": "1-5",
+      "doi": null,
+      "raw_text": "Petrov, I. V., & Chen, L. (2099). This Paper Does Not Exist In Any Database Anywhere. Fictitious Review of Imaginary Science, 1, 1-5."
+    }
+  ],
+  "model_used": "regex:apa"
+}

@@ -1,0 +1,628 @@
+{
+  "source_pdf": "/media/connor/New Volume/open_source_projects/local-llm-ref-verifier/tests/fixtures/papers/ieee/attention_is_all_you_need.pdf",
+  "references": [
+    {
+      "id": "ref_02",
+      "authors": [
+        "DzmitryBahdanau",
+        "KyunghyunCho",
+        "andYoshuaBe learningtoalignandtranslate"
+      ],
+      "title": "CoRR,abs/1409.047",
+      "year": 1409,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[2] DzmitryBahdanau,KyunghyunCho,andYoshuaBe learningtoalignandtranslate. CoRR,abs/1409.047"
+    },
+    {
+      "id": "ref_03",
+      "authors": [
+        "DennyBritz",
+        "AnnaGoldie",
+        "Minh-ThangLuong",
+        "and machinetranslationarchitectures"
+      ],
+      "title": "CoRR,abs/1703.0",
+      "year": 1703,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[3] DennyBritz,AnnaGoldie,Minh-ThangLuong,and machinetranslationarchitectures. CoRR,abs/1703.0"
+    },
+    {
+      "id": "ref_04",
+      "authors": [
+        "JianpengCheng",
+        "LiDong",
+        "andMirellaLapata"
+      ],
+      "title": "Long reading",
+      "year": 1601,
+      "journal": "arXivpreprintarXiv:",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[4] JianpengCheng,LiDong,andMirellaLapata. Long reading. arXivpreprintarXiv:1601.06733,2016. 10 stituencyparsing(ResultsareonSection23 Training WSJ23F1 ly,discriminative 88.3 ly,discriminative 90.4 ly,discriminative 90.4 ly,discriminative 91.7 ly,discriminative 91.3 mi-supervised 91.3 mi-supervised 91.3 mi-supervised 92.1 mi-supervised 92.1 mi-supervised 92.7 multi-task 93.0 generative 93.3 00. Weusedabeamsizeof21andα=0.3 k-specific tuning our model performs sur- reportedmodelswiththeexceptionofthe heTransformeroutperformstheBerkeley- setof40Ksentences. uencetransductionmodelbasedentirelyon usedinencoder-decoderarchitectureswith gnificantly faster than architectures based 2014 English-to-German and WMT 2014 tateoftheart. Intheformertaskourbest es. sandplantoapplythemtoothertasks. We utandoutputmodalitiesotherthantextand efficientlyhandlelargeinputsandoutputs sequentialisanotherresearchgoalsofours. s is available at https://github.com/ nnerandStephanGouwsfortheirfruitful Hinton. Layernormalization. arXivpreprint engio. Neuralmachinetranslationbyjointly 73,2014. QuocV.Le. Massiveexplorationofneural 03906,2017. gshort-termmemory-networksformachine"
+    },
+    {
+      "id": "ref_05",
+      "authors": [
+        "KyunghyunCho",
+        "BartvanMerrienboer",
+        "CaglarGulcehre",
+        "FethiBougares",
+        "HolgerSchwenk",
+        "andYoshuaBengio"
+      ],
+      "title": "Learningphraserepresentationsusingrnnencoder-decoderforstatistical machinetranslation",
+      "year": 1406,
+      "journal": "CoRR,abs/",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[5] KyunghyunCho,BartvanMerrienboer,CaglarGulcehre,FethiBougares,HolgerSchwenk, andYoshuaBengio. Learningphraserepresentationsusingrnnencoder-decoderforstatistical machinetranslation. CoRR,abs/1406.1078,2014."
+    },
+    {
+      "id": "ref_06",
+      "authors": [
+        "Francois Chollet"
+      ],
+      "title": "Xception: Deep learning with depthwise separable convolutions",
+      "year": 1610,
+      "journal": "arXiv preprintarXiv:",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[6] Francois Chollet. Xception: Deep learning with depthwise separable convolutions. arXiv preprintarXiv:1610.02357,2016."
+    },
+    {
+      "id": "ref_07",
+      "authors": [
+        "JunyoungChung",
+        "ÇaglarGülçehre",
+        "KyunghyunCho",
+        "andYoshuaBengio"
+      ],
+      "title": "Empiricalevaluation ofgatedrecurrentneuralnetworksonsequencemodeling",
+      "year": 1412,
+      "journal": "CoRR,abs/",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[7] JunyoungChung,ÇaglarGülçehre,KyunghyunCho,andYoshuaBengio. Empiricalevaluation ofgatedrecurrentneuralnetworksonsequencemodeling. CoRR,abs/1412.3555,2014."
+    },
+    {
+      "id": "ref_09",
+      "authors": [
+        "JonasGehring",
+        "MichaelAuli",
+        "DavidGrangier",
+        "DenisYarats",
+        "andYannN.Dauphin"
+      ],
+      "title": "Convolu- tionalsequencetosequencelearning",
+      "year": 1705,
+      "journal": "arXivpreprintarXiv:",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[9] JonasGehring,MichaelAuli,DavidGrangier,DenisYarats,andYannN.Dauphin. Convolu- tionalsequencetosequencelearning. arXivpreprintarXiv:1705.03122v2,2017."
+    },
+    {
+      "id": "ref_10",
+      "authors": [
+        "Alex Graves"
+      ],
+      "title": "Generating sequences with recurrent neural networks",
+      "year": 1308,
+      "journal": "arXiv preprint arXiv:",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[10] Alex Graves. Generating sequences with recurrent neural networks. arXiv preprint arXiv:1308.0850,2013."
+    },
+    {
+      "id": "ref_11",
+      "authors": [
+        "Kaiming He",
+        "Xiangyu Zhang",
+        "Shaoqing Ren",
+        "Jian Sun"
+      ],
+      "title": "Deep residual learning for im- age recognition",
+      "year": 2016,
+      "journal": "In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition,pages770-778",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[11] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. Deep residual learning for im- age recognition. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition,pages770-778,2016."
+    },
+    {
+      "id": "ref_12",
+      "authors": [
+        "SeppHochreiter",
+        "YoshuaBengio",
+        "PaoloFrasconi",
+        "andJürgenSchmidhuber"
+      ],
+      "title": "Gradientflowin recurrentnets: thedifficultyoflearninglong-termdependencies,2001",
+      "year": 2001,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[12] SeppHochreiter,YoshuaBengio,PaoloFrasconi,andJürgenSchmidhuber. Gradientflowin recurrentnets: thedifficultyoflearninglong-termdependencies,2001."
+    },
+    {
+      "id": "ref_13",
+      "authors": [
+        "Sepp Hochreiter",
+        "Jürgen Schmidhuber"
+      ],
+      "title": "Long short-term memory",
+      "year": 1735,
+      "journal": "Neural computation, 9(8):",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[13] Sepp Hochreiter and Jürgen Schmidhuber. Long short-term memory. Neural computation, 9(8):1735-1780,1997."
+    },
+    {
+      "id": "ref_14",
+      "authors": [
+        "ZhongqiangHuangandMaryHarper"
+      ],
+      "title": "Self-trainingPCFGgrammarswithlatentannotations acrosslanguages",
+      "year": 2009,
+      "journal": "InProceedingsofthe",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[14] ZhongqiangHuangandMaryHarper. Self-trainingPCFGgrammarswithlatentannotations acrosslanguages. InProceedingsofthe2009ConferenceonEmpiricalMethodsinNatural LanguageProcessing,pages832-841.ACL,August2009."
+    },
+    {
+      "id": "ref_15",
+      "authors": [
+        "RafalJozefowicz",
+        "OriolVinyals",
+        "MikeSchuster",
+        "NoamShazeer",
+        "andYonghuiWu"
+      ],
+      "title": "Exploring thelimitsoflanguagemodeling",
+      "year": 1602,
+      "journal": "arXivpreprintarXiv:",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[15] RafalJozefowicz,OriolVinyals,MikeSchuster,NoamShazeer,andYonghuiWu. Exploring thelimitsoflanguagemodeling. arXivpreprintarXiv:1602.02410,2016."
+    },
+    {
+      "id": "ref_16",
+      "authors": [
+        "ŁukaszKaiserandSamyBengio"
+      ],
+      "title": "Canactivememoryreplaceattention? InAdvancesinNeural InformationProcessingSystems,(NIPS),2016",
+      "year": 2016,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[16] ŁukaszKaiserandSamyBengio. Canactivememoryreplaceattention? InAdvancesinNeural InformationProcessingSystems,(NIPS),2016."
+    },
+    {
+      "id": "ref_17",
+      "authors": [
+        "ŁukaszKaiserandIlyaSutskever"
+      ],
+      "title": "NeuralGPUslearnalgorithms",
+      "year": 2016,
+      "journal": "InInternationalConference onLearningRepresentations(ICLR)",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[17] ŁukaszKaiserandIlyaSutskever. NeuralGPUslearnalgorithms. InInternationalConference onLearningRepresentations(ICLR),2016."
+    },
+    {
+      "id": "ref_19",
+      "authors": [
+        "YoonKim",
+        "CarlDenton",
+        "LuongHoang",
+        "andAlexanderM.Rush"
+      ],
+      "title": "Structuredattentionnetworks",
+      "year": 2017,
+      "journal": "InInternationalConferenceonLearningRepresentations",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[19] YoonKim,CarlDenton,LuongHoang,andAlexanderM.Rush. Structuredattentionnetworks. InInternationalConferenceonLearningRepresentations,2017."
+    },
+    {
+      "id": "ref_20",
+      "authors": [
+        "DiederikKingmaandJimmyBa"
+      ],
+      "title": "Adam: Amethodforstochasticoptimization",
+      "year": 2015,
+      "journal": "InICLR",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[20] DiederikKingmaandJimmyBa. Adam: Amethodforstochasticoptimization. InICLR,2015."
+    },
+    {
+      "id": "ref_21",
+      "authors": [
+        "OleksiiKuchaievandBorisGinsburg"
+      ],
+      "title": "FactorizationtricksforLSTMnetworks",
+      "year": 1703,
+      "journal": "arXivpreprint arXiv:",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[21] OleksiiKuchaievandBorisGinsburg. FactorizationtricksforLSTMnetworks. arXivpreprint arXiv:1703.10722,2017."
+    },
+    {
+      "id": "ref_22",
+      "authors": [
+        "Zhouhan Lin",
+        "Minwei Feng",
+        "Cicero Nogueira dos Santos",
+        "Mo Yu",
+        "Bing Xiang",
+        "Bowen Zhou",
+        "Yoshua Bengio"
+      ],
+      "title": "A structured self-attentive sentence embedding",
+      "year": 1703,
+      "journal": "arXiv preprint arXiv:",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[22] Zhouhan Lin, Minwei Feng, Cicero Nogueira dos Santos, Mo Yu, Bing Xiang, Bowen Zhou, and Yoshua Bengio. A structured self-attentive sentence embedding. arXiv preprint arXiv:1703.03130,2017."
+    },
+    {
+      "id": "ref_23",
+      "authors": [
+        "Minh-ThangLuong",
+        "QuocV.Le",
+        "IlyaSutskever",
+        "OriolVinyals",
+        "andLukaszKaiser"
+      ],
+      "title": "Multi-task sequencetosequencelearning",
+      "year": 1511,
+      "journal": "arXivpreprintarXiv:",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[23] Minh-ThangLuong,QuocV.Le,IlyaSutskever,OriolVinyals,andLukaszKaiser. Multi-task sequencetosequencelearning. arXivpreprintarXiv:1511.06114,2015."
+    },
+    {
+      "id": "ref_24",
+      "authors": [
+        "Minh-ThangLuong",
+        "HieuPham",
+        "andChristopherDManning"
+      ],
+      "title": "Effectiveapproachestoattention- basedneuralmachinetranslation",
+      "year": 1508,
+      "journal": "arXivpreprintarXiv:",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[24] Minh-ThangLuong,HieuPham,andChristopherDManning. Effectiveapproachestoattention- basedneuralmachinetranslation. arXivpreprintarXiv:1508.04025,2015. 11"
+    },
+    {
+      "id": "ref_25",
+      "authors": [
+        "MitchellPMarcus",
+        "MaryAnnMarcinkiewicz",
+        "andBeatriceSantorini.Buildingalargeannotated corpusofenglish: Thepenntreebank"
+      ],
+      "title": "Computationallinguistics,19(2):313-330,1993",
+      "year": 1993,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[25] MitchellPMarcus,MaryAnnMarcinkiewicz,andBeatriceSantorini.Buildingalargeannotated corpusofenglish: Thepenntreebank. Computationallinguistics,19(2):313-330,1993."
+    },
+    {
+      "id": "ref_26",
+      "authors": [
+        "DavidMcClosky",
+        "EugeneCharniak",
+        "andMarkJohnson"
+      ],
+      "title": "Effectiveself-trainingforparsing",
+      "year": 2006,
+      "journal": "In ProceedingsoftheHumanLanguageTechnologyConferenceoftheNAACL,MainConference, pages152-159.ACL,June",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[26] DavidMcClosky,EugeneCharniak,andMarkJohnson. Effectiveself-trainingforparsing. In ProceedingsoftheHumanLanguageTechnologyConferenceoftheNAACL,MainConference, pages152-159.ACL,June2006."
+    },
+    {
+      "id": "ref_27",
+      "authors": [
+        "AnkurParikh",
+        "OscarTäckström",
+        "DipanjanDas",
+        "andJakobUszkoreit"
+      ],
+      "title": "Adecomposableattention model",
+      "year": 2016,
+      "journal": "InEmpiricalMethodsinNaturalLanguageProcessing",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[27] AnkurParikh,OscarTäckström,DipanjanDas,andJakobUszkoreit. Adecomposableattention model. InEmpiricalMethodsinNaturalLanguageProcessing,2016."
+    },
+    {
+      "id": "ref_28",
+      "authors": [
+        "RomainPaulus",
+        "CaimingXiong",
+        "andRichardSocher"
+      ],
+      "title": "Adeepreinforcedmodelforabstractive summarization",
+      "year": 1705,
+      "journal": "arXivpreprintarXiv:",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[28] RomainPaulus,CaimingXiong,andRichardSocher. Adeepreinforcedmodelforabstractive summarization. arXivpreprintarXiv:1705.04304,2017."
+    },
+    {
+      "id": "ref_29",
+      "authors": [
+        "Slav Petrov",
+        "Leon Barrett",
+        "Romain Thibaux",
+        "Dan Klein"
+      ],
+      "title": "Learning accurate, compact, and interpretable tree annotation",
+      "year": 2006,
+      "journal": "In Proceedings of the 21st International Conference on ComputationalLinguisticsand44thAnnualMeetingoftheACL,pages433-440.ACL,July",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[29] Slav Petrov, Leon Barrett, Romain Thibaux, and Dan Klein. Learning accurate, compact, and interpretable tree annotation. In Proceedings of the 21st International Conference on ComputationalLinguisticsand44thAnnualMeetingoftheACL,pages433-440.ACL,July 2006."
+    },
+    {
+      "id": "ref_30",
+      "authors": [
+        "OfirPressandLiorWolf"
+      ],
+      "title": "Usingtheoutputembeddingtoimprovelanguagemodels",
+      "year": 1608,
+      "journal": "arXiv preprintarXiv:",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[30] OfirPressandLiorWolf. Usingtheoutputembeddingtoimprovelanguagemodels. arXiv preprintarXiv:1608.05859,2016."
+    },
+    {
+      "id": "ref_31",
+      "authors": [
+        "RicoSennrich",
+        "BarryHaddow",
+        "andAlexandraBirch"
+      ],
+      "title": "Neuralmachinetranslationofrarewords withsubwordunits",
+      "year": 1508,
+      "journal": "arXivpreprintarXiv:",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[31] RicoSennrich,BarryHaddow,andAlexandraBirch. Neuralmachinetranslationofrarewords withsubwordunits. arXivpreprintarXiv:1508.07909,2015."
+    },
+    {
+      "id": "ref_32",
+      "authors": [
+        "NoamShazeer",
+        "AzaliaMirhoseini",
+        "KrzysztofMaziarz",
+        "AndyDavis",
+        "QuocLe",
+        "GeoffreyHinton",
+        "andJeffDean"
+      ],
+      "title": "Outrageouslylargeneuralnetworks: Thesparsely-gatedmixture-of-experts layer",
+      "year": 1701,
+      "journal": "arXivpreprintarXiv:",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[32] NoamShazeer,AzaliaMirhoseini,KrzysztofMaziarz,AndyDavis,QuocLe,GeoffreyHinton, andJeffDean. Outrageouslylargeneuralnetworks: Thesparsely-gatedmixture-of-experts layer. arXivpreprintarXiv:1701.06538,2017."
+    },
+    {
+      "id": "ref_33",
+      "authors": [
+        "NitishSrivastava",
+        "GeoffreyEHinton",
+        "AlexKrizhevsky",
+        "IlyaSutskever",
+        "andRuslanSalakhutdi- nov"
+      ],
+      "title": "Dropout: asimplewaytopreventneuralnetworksfromoverfitting",
+      "year": 1929,
+      "journal": "JournalofMachine LearningResearch,15(1):",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[33] NitishSrivastava,GeoffreyEHinton,AlexKrizhevsky,IlyaSutskever,andRuslanSalakhutdi- nov. Dropout: asimplewaytopreventneuralnetworksfromoverfitting. JournalofMachine LearningResearch,15(1):1929-1958,2014."
+    },
+    {
+      "id": "ref_34",
+      "authors": [
+        "Sainbayar Sukhbaatar",
+        "Arthur Szlam",
+        "Jason Weston",
+        "Rob Fergus"
+      ],
+      "title": "End-to-end memory networks",
+      "year": 2440,
+      "journal": "InC.Cortes, N.D.Lawrence, D.D.Lee, M.Sugiyama, andR.Garnett, editors, AdvancesinNeuralInformationProcessingSystems28,pages",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[34] Sainbayar Sukhbaatar, Arthur Szlam, Jason Weston, and Rob Fergus. End-to-end memory networks. InC.Cortes, N.D.Lawrence, D.D.Lee, M.Sugiyama, andR.Garnett, editors, AdvancesinNeuralInformationProcessingSystems28,pages2440-2448.CurranAssociates, Inc.,2015."
+    },
+    {
+      "id": "ref_35",
+      "authors": [
+        "IlyaSutskever",
+        "OriolVinyals",
+        "andQuocVVLe"
+      ],
+      "title": "Sequencetosequencelearningwithneural networks",
+      "year": 3104,
+      "journal": "InAdvancesinNeuralInformationProcessingSystems,pages",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[35] IlyaSutskever,OriolVinyals,andQuocVVLe. Sequencetosequencelearningwithneural networks. InAdvancesinNeuralInformationProcessingSystems,pages3104-3112,2014."
+    },
+    {
+      "id": "ref_36",
+      "authors": [
+        "ChristianSzegedy",
+        "VincentVanhoucke",
+        "SergeyIoffe",
+        "JonathonShlens",
+        "andZbigniewWojna"
+      ],
+      "title": "Rethinkingtheinceptionarchitectureforcomputervision",
+      "year": 1512,
+      "journal": "CoRR,abs/",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[36] ChristianSzegedy,VincentVanhoucke,SergeyIoffe,JonathonShlens,andZbigniewWojna. Rethinkingtheinceptionarchitectureforcomputervision. CoRR,abs/1512.00567,2015."
+    },
+    {
+      "id": "ref_37",
+      "authors": [
+        "Vinyals&Kaiser",
+        "Koo",
+        "Petrov",
+        "Sutskever",
+        "andHinton"
+      ],
+      "title": "Grammarasaforeignlanguage",
+      "year": 2015,
+      "journal": "In AdvancesinNeuralInformationProcessingSystems",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[37] Vinyals&Kaiser, Koo, Petrov, Sutskever, andHinton. Grammarasaforeignlanguage. In AdvancesinNeuralInformationProcessingSystems,2015."
+    },
+    {
+      "id": "ref_38",
+      "authors": [
+        "Yonghui Wu",
+        "Mike Schuster",
+        "Zhifeng Chen",
+        "Quoc V Le",
+        "Mohammad Norouzi",
+        "Wolfgang Macherey",
+        "MaximKrikun",
+        "YuanCao",
+        "QinGao",
+        "KlausMacherey",
+        "etal"
+      ],
+      "title": "Google'sneuralmachine translationsystem: Bridgingthegapbetweenhumanandmachinetranslation",
+      "year": 1609,
+      "journal": "arXivpreprint arXiv:",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[38] Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V Le, Mohammad Norouzi, Wolfgang Macherey,MaximKrikun,YuanCao,QinGao,KlausMacherey,etal. Google'sneuralmachine translationsystem: Bridgingthegapbetweenhumanandmachinetranslation. arXivpreprint arXiv:1609.08144,2016."
+    },
+    {
+      "id": "ref_39",
+      "authors": [
+        "Jie Zhou",
+        "Ying Cao",
+        "Xuguang Wang",
+        "Peng Li",
+        "Wei Xu"
+      ],
+      "title": "Deep recurrent models with fast-forwardconnectionsforneuralmachinetranslation",
+      "year": 1606,
+      "journal": "CoRR,abs/",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[39] Jie Zhou, Ying Cao, Xuguang Wang, Peng Li, and Wei Xu. Deep recurrent models with fast-forwardconnectionsforneuralmachinetranslation. CoRR,abs/1606.04199,2016."
+    },
+    {
+      "id": "ref_40",
+      "authors": [
+        "Muhua Zhu",
+        "Yue Zhang",
+        "Wenliang Chen",
+        "Min Zhang",
+        "Jingbo Zhu"
+      ],
+      "title": "Fast and accurate shift-reduceconstituentparsing",
+      "year": 2013,
+      "journal": "InProceedingsofthe51stAnnualMeetingoftheACL(Volume 1: LongPapers),pages434-443.ACL,August",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[40] Muhua Zhu, Yue Zhang, Wenliang Chen, Min Zhang, and Jingbo Zhu. Fast and accurate shift-reduceconstituentparsing. InProceedingsofthe51stAnnualMeetingoftheACL(Volume 1: LongPapers),pages434-443.ACL,August2013. 12 Input-Input Layer5 AttentionVisualizations tI tI si si ni ni siht siht tirips tirips taht taht a a ytirojam ytirojam fo fo naciremA naciremA stnemnrevog stnemnrevog evah evah dessap dessap wen wen swal swal ecnis ecnis 9002 9002 gnikam gnikam eht eht noitartsiger noitartsiger ro ro Figure 3: An example of the attention mechanism following l encoderself-attentioninlayer5of6. Manyoftheattentionhead theverb'making',completingthephrase'making...moredifficu theword'making'. Differentcolorsrepresentdifferentheads. Be 13 gnitov gnitov ssecorp ssecorp erom erom tluciffid tluciffid . . >SOE< >SOE< >dap< >dap< >dap< >dap< >dap< >dap< >dap< >dap< >dap< >dap< >dap< >dap< long-distance dependencies in the dsattendtoadistantdependencyof ult'. Attentionshereshownonlyfor estviewedincolor. Input-Input Layer5 ehT ehT waL waL lliw lliw reven reven eb eb tcefrep tcefrep , , tub tub sti sti noitacilppa noitacilppa dluohs dluohs eb eb tsuj tsuj - - siht siht si si tahw tahw ew ew era era gnissim gnissim , , ni ni ym ym noinipo noinipo . . >SOE< >SOE< >dap< >dap< Input-Input Layer5 ehT ehT waL waL lliw lliw reven reven eb eb tcefrep tcefrep , , tub tub sti sti noitacilppa noitacilppa dluohs dluohs eb eb tsuj tsuj - - siht siht si si tahw tahw ew ew era era gnissim gnissim , , ni ni ym ym noinipo noinipo . . >SOE< >SOE< >dap< >dap< Figure4: Twoattentionheads,alsoinlayer5of6,apparentlyinvolvedinanaphoraresolution. Top: Fullattentionsforhead5. Bottom: Isolatedattentionsfromjusttheword'its'forattentionheads5 and6. Notethattheattentionsareverysharpforthisword. 14 Input-Input ehT ehT waL waL lliw lliw reven reven eb eb tcefrep tcefrep Input-Input ehT ehT waL waL lliw lliw reven reven eb eb tcefrep tcefrep Figure5: Manyofthea sentence. Wegivetwosu atlayer5of6. Thehead t Layer5 , , tub tub sti sti noitacilppa noitacilppa dluohs dluohs eb eb tsuj tsuj - - siht siht si si tahw tahw ew ew era era gnissim gnissim , , ni ni ym ym noinipo noinipo . . >SOE< >SOE< >dap< >dap< t Layer5 , , tub tub sti sti noitacilppa noitacilppa dluohs dluohs eb eb tsuj tsuj - - siht siht si si tahw tahw ew ew era era gnissim gnissim , , ni ni ym ym noinipo noinipo . . >SOE< >SOE< >dap< >dap< attentionheadsexhibitbehaviourthatseemsrelatedtothestructureofthe uchexamplesabove,fromtwodifferentheadsfromtheencoderself-attention dsclearlylearnedtoperformdifferenttasks. 15"
+    },
+    {
+      "id": "ref_38",
+      "authors": [
+        "Thornberry, R. J.",
+        "Nakamura, S."
+      ],
+      "title": "Hierarchical Attention Networks for Multimodal Sentiment Fusion",
+      "year": 2023,
+      "journal": "Journal of Advanced Computational Intelligence",
+      "volume": "17",
+      "pages": "234-251",
+      "doi": null,
+      "raw_text": "Thornberry, R. J., & Nakamura, S. (2023). Hierarchical Attention Networks for Multimodal Sentiment Fusion. Journal of Advanced Computational Intelligence, 17, 234-251."
+    },
+    {
+      "id": "ref_39",
+      "authors": [
+        "Okonkwo, C. M."
+      ],
+      "title": "Bayesian Optimization of Sparse Transformer Architectures",
+      "year": 2024,
+      "journal": "Neural Computing and Applications",
+      "volume": "42",
+      "pages": "1102-1119",
+      "doi": "10.9999/fake-doi-12345",
+      "raw_text": "Okonkwo, C. M. (2024). Bayesian Optimization of Sparse Transformer Architectures. Neural Computing and Applications, 42, 1102-1119. doi:10.9999/fake-doi-12345"
+    },
+    {
+      "id": "ref_40",
+      "authors": [
+        "Petrov, I. V.",
+        "Chen, L."
+      ],
+      "title": "This Paper Does Not Exist In Any Database Anywhere",
+      "year": 2099,
+      "journal": "Fictitious Review of Imaginary Science",
+      "volume": "1",
+      "pages": "1-5",
+      "doi": null,
+      "raw_text": "Petrov, I. V., & Chen, L. (2099). This Paper Does Not Exist In Any Database Anywhere. Fictitious Review of Imaginary Science, 1, 1-5."
+    }
+  ],
+  "model_used": "regex:ieee"
+}

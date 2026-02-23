@@ -15,4 +15,5 @@ env/
 .mypy_cache/
 output/
 *.pdf
+!tests/fixtures/**/*.pdf
 #.claude/

@@ -1,0 +1,297 @@
+{
+  "source_pdf": "/media/connor/New Volume/open_source_projects/local-llm-ref-verifier/tests/fixtures/papers/ieee/yolo.pdf",
+  "references": [
+    {
+      "id": "ref_01",
+      "authors": [
+        "M.B.BlaschkoandC.H.Lampert"
+      ],
+      "title": "Learningtolocalizeob- jectswithstructuredoutputregression",
+      "year": 2008,
+      "journal": "InComputerVision- ECCV",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[1] M.B.BlaschkoandC.H.Lampert. Learningtolocalizeob- jectswithstructuredoutputregression. InComputerVision- ECCV2008,pages2-15.Springer,2008. 4"
+    },
+    {
+      "id": "ref_04",
+      "authors": [
+        "N.DalalandB.Triggs"
+      ],
+      "title": "Histogramsoforientedgradientsfor humandetection",
+      "year": 2005,
+      "journal": "InComputerVisionandPatternRecogni- tion",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[4] N.DalalandB.Triggs. Histogramsoforientedgradientsfor humandetection. InComputerVisionandPatternRecogni- tion,2005.CVPR2005.IEEEComputerSocietyConference on,volume1,pages886-893.IEEE,2005. 4,8"
+    },
+    {
+      "id": "ref_08",
+      "authors": [
+        "D.Erhan",
+        "C.Szegedy",
+        "A.Toshev",
+        "andD.Anguelov.Scalable object detection using deep neural networks"
+      ],
+      "title": "In Computer VisionandPatternRecognition(CVPR),2014IEEEConfer- enceon,pages2155-2162.IEEE,2014",
+      "year": 2014,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[8] D.Erhan,C.Szegedy,A.Toshev,andD.Anguelov.Scalable object detection using deep neural networks. In Computer VisionandPatternRecognition(CVPR),2014IEEEConfer- enceon,pages2155-2162.IEEE,2014. 5,6"
+    },
+    {
+      "id": "ref_10",
+      "authors": [
+        "P.F.Felzenszwalb",
+        "R.B.Girshick",
+        "D.McAllester",
+        "andD.Ra- manan"
+      ],
+      "title": "Object detection with discriminatively trained part basedmodels",
+      "year": 1627,
+      "journal": "IEEETransactionsonPatternAnalysisand MachineIntelligence,32(9):",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[10] P.F.Felzenszwalb,R.B.Girshick,D.McAllester,andD.Ra- manan. Object detection with discriminatively trained part basedmodels. IEEETransactionsonPatternAnalysisand MachineIntelligence,32(9):1627-1645,2010. 1,4"
+    },
+    {
+      "id": "ref_11",
+      "authors": [
+        "S.GidarisandN.Komodakis"
+      ],
+      "title": "Objectdetectionviaamulti- region&semanticsegmentation-awareCNNmodel",
+      "year": 1505,
+      "journal": "CoRR, abs/",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[11] S.GidarisandN.Komodakis. Objectdetectionviaamulti- region&semanticsegmentation-awareCNNmodel. CoRR, abs/1505.01749,2015. 7"
+    },
+    {
+      "id": "ref_12",
+      "authors": [
+        "S.Ginosar",
+        "D.Haas",
+        "T.Brown",
+        "andJ.Malik"
+      ],
+      "title": "Detectingpeo- pleincubistart.InComputerVision-ECCV2014Workshops, pages101-116.Springer,2014",
+      "year": 2014,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[12] S.Ginosar,D.Haas,T.Brown,andJ.Malik. Detectingpeo- pleincubistart.InComputerVision-ECCV2014Workshops, pages101-116.Springer,2014. 7"
+    },
+    {
+      "id": "ref_13",
+      "authors": [
+        "R.Girshick",
+        "J.Donahue",
+        "T.Darrell",
+        "andJ.Malik"
+      ],
+      "title": "Richfea- ture hierarchies for accurate object detection and semantic segmentation",
+      "year": 2014,
+      "journal": "InComputerVisionandPatternRecognition (CVPR)",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[13] R.Girshick,J.Donahue,T.Darrell,andJ.Malik. Richfea- ture hierarchies for accurate object detection and semantic segmentation. InComputerVisionandPatternRecognition (CVPR),2014IEEEConferenceon, pages580-587.IEEE, 2014. 1,4,7"
+    },
+    {
+      "id": "ref_16",
+      "authors": [
+        "B.Hariharan",
+        "P.Arbela´ez",
+        "R.Girshick",
+        "andJ.Malik"
+      ],
+      "title": "Simul- taneous detection and segmentation",
+      "year": 2014,
+      "journal": "In Computer Vision- ECCV",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[16] B.Hariharan,P.Arbela´ez,R.Girshick,andJ.Malik. Simul- taneous detection and segmentation. In Computer Vision- ECCV2014,pages297-312.Springer,2014. 7"
+    },
+    {
+      "id": "ref_17",
+      "authors": [
+        "K.He",
+        "X.Zhang",
+        "S.Ren",
+        "andJ.Sun.Spatialpyramidpooling indeepconvolutionalnetworksforvisualrecognition"
+      ],
+      "title": "arXiv preprintarXiv:1406.4729,2014",
+      "year": 1406,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[17] K.He,X.Zhang,S.Ren,andJ.Sun.Spatialpyramidpooling indeepconvolutionalnetworksforvisualrecognition. arXiv preprintarXiv:1406.4729,2014. 5"
+    },
+    {
+      "id": "ref_19",
+      "authors": [
+        "D.Hoiem",
+        "Y.Chodpathumwan",
+        "andQ.Dai.Diagnosingerror inobjectdetectors"
+      ],
+      "title": "InComputerVision-ECCV2012,pages 340-353.Springer,2012",
+      "year": 2012,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[19] D.Hoiem,Y.Chodpathumwan,andQ.Dai.Diagnosingerror inobjectdetectors. InComputerVision-ECCV2012,pages 340-353.Springer,2012. 6"
+    },
+    {
+      "id": "ref_21",
+      "authors": [
+        "R.LienhartandJ.Maydt"
+      ],
+      "title": "Anextendedsetofhaar-likefea- turesforrapidobjectdetection",
+      "year": 2002,
+      "journal": "InImageProcessing",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[21] R.LienhartandJ.Maydt. Anextendedsetofhaar-likefea- turesforrapidobjectdetection. InImageProcessing.2002. Proceedings. 2002 International Conference on, volume 1, pagesI-900.IEEE,2002. 4"
+    },
+    {
+      "id": "ref_22",
+      "authors": [
+        "M.Lin",
+        "Q.Chen",
+        "andS.Yan"
+      ],
+      "title": "Networkinnetwork",
+      "year": 1312,
+      "journal": "CoRR, abs/",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[22] M.Lin,Q.Chen,andS.Yan. Networkinnetwork. CoRR, abs/1312.4400,2013. 2"
+    },
+    {
+      "id": "ref_29",
+      "authors": [
+        "S.Ren",
+        "K.He",
+        "R.B.Girshick",
+        "X.Zhang",
+        "andJ.Sun"
+      ],
+      "title": "Object detection networks on convolutional feature maps",
+      "year": 1504,
+      "journal": "CoRR, abs/",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[29] S.Ren,K.He,R.B.Girshick,X.Zhang,andJ.Sun. Object detection networks on convolutional feature maps. CoRR, abs/1504.06066,2015. 3,7"
+    },
+    {
+      "id": "ref_31",
+      "authors": [
+        "M.A.SadeghiandD.Forsyth"
+      ],
+      "title": "30hzobjectdetectionwith dpm v5",
+      "year": 2014,
+      "journal": "In Computer Vision-ECCV",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[31] M.A.SadeghiandD.Forsyth. 30hzobjectdetectionwith dpm v5. In Computer Vision-ECCV 2014, pages 65-79. Springer,2014. 5,6"
+    },
+    {
+      "id": "ref_33",
+      "authors": [
+        "Z.ShenandX.Xue.Domoredropoutsinpool5featuremaps forbetterobjectdetection"
+      ],
+      "title": "arXivpreprintarXiv:1409.6911, 2014",
+      "year": 1409,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[33] Z.ShenandX.Xue.Domoredropoutsinpool5featuremaps forbetterobjectdetection. arXivpreprintarXiv:1409.6911, 2014. 7"
+    },
+    {
+      "id": "ref_38",
+      "authors": [
+        "J.Yan",
+        "Z.Lei",
+        "L.Wen",
+        "andS.Z.Li"
+      ],
+      "title": "Thefastestdeformable partmodelforobjectdetection.InComputerVisionandPat- ternRecognition(CVPR),2014IEEEConferenceon,pages 2497-2504.IEEE,2014",
+      "year": 2014,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[38] J.Yan,Z.Lei,L.Wen,andS.Z.Li. Thefastestdeformable partmodelforobjectdetection.InComputerVisionandPat- ternRecognition(CVPR),2014IEEEConferenceon,pages 2497-2504.IEEE,2014. 5,6"
+    },
+    {
+      "id": "ref_39",
+      "authors": [
+        "C.L.ZitnickandP.Dolla´r.Edgeboxes:Locatingobjectpro- posalsfromedges"
+      ],
+      "title": "InComputerVision-ECCV2014,pages 391-405.Springer,2014",
+      "year": 2014,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "[39] C.L.ZitnickandP.Dolla´r.Edgeboxes:Locatingobjectpro- posalsfromedges. InComputerVision-ECCV2014,pages 391-405.Springer,2014. 4"
+    },
+    {
+      "id": "ref_18",
+      "authors": [
+        "Thornberry, R. J.",
+        "Nakamura, S."
+      ],
+      "title": "Hierarchical Attention Networks for Multimodal Sentiment Fusion",
+      "year": 2023,
+      "journal": "Journal of Advanced Computational Intelligence",
+      "volume": "17",
+      "pages": "234-251",
+      "doi": null,
+      "raw_text": "Thornberry, R. J., & Nakamura, S. (2023). Hierarchical Attention Networks for Multimodal Sentiment Fusion. Journal of Advanced Computational Intelligence, 17, 234-251."
+    },
+    {
+      "id": "ref_19",
+      "authors": [
+        "Okonkwo, C. M."
+      ],
+      "title": "Bayesian Optimization of Sparse Transformer Architectures",
+      "year": 2024,
+      "journal": "Neural Computing and Applications",
+      "volume": "42",
+      "pages": "1102-1119",
+      "doi": "10.9999/fake-doi-12345",
+      "raw_text": "Okonkwo, C. M. (2024). Bayesian Optimization of Sparse Transformer Architectures. Neural Computing and Applications, 42, 1102-1119. doi:10.9999/fake-doi-12345"
+    },
+    {
+      "id": "ref_20",
+      "authors": [
+        "Petrov, I. V.",
+        "Chen, L."
+      ],
+      "title": "This Paper Does Not Exist In Any Database Anywhere",
+      "year": 2099,
+      "journal": "Fictitious Review of Imaginary Science",
+      "volume": "1",
+      "pages": "1-5",
+      "doi": null,
+      "raw_text": "Petrov, I. V., & Chen, L. (2099). This Paper Does Not Exist In Any Database Anywhere. Fictitious Review of Imaginary Science, 1, 1-5."
+    }
+  ],
+  "model_used": "regex:ieee"
+}
