@@ -1,0 +1,773 @@
+{
+  "source_pdf": "tests/fixtures/papers/chicago/mdpi_humanities_toy_tourism.pdf",
+  "references": [
+    {
+      "id": "ref_01",
+      "authors": [
+        "Andrews, Hazel"
+      ],
+      "title": "Feeling at Home: Embodying Britishness in a Spanish Charter Tourist Resort",
+      "year": 2005,
+      "journal": "Tourist Studies",
+      "volume": "5",
+      "pages": "247-66",
+      "doi": "10.1177/1468797605070336",
+      "raw_text": "Andrews, Hazel. 2005. Feeling at Home: Embodying Britishness in a Spanish Charter Tourist Resort. Tourist Studies 5: 247-66. https://doi.org/10.1177/1468797605070336."
+    },
+    {
+      "id": "ref_02",
+      "authors": [
+        "Andrews, Hazel"
+      ],
+      "title": "'Tourism as a Moment of Being",
+      "year": 2009,
+      "journal": "Suomen Antropologi",
+      "volume": "34",
+      "pages": "5-21",
+      "doi": "10.30676/jfas.116518",
+      "raw_text": "Andrews, Hazel. 2009a. 'Tourism as a Moment of Being. Suomen Antropologi 34: 5-21. https://doi.org/10.30676/jfas.116518."
+    },
+    {
+      "id": "ref_03",
+      "authors": [
+        "Andrews, Hazel"
+      ],
+      "title": "'\"Tits Out for the Boys and No Back Chat\"': Gendered Space on Holiday'",
+      "year": 2009,
+      "journal": "Journal of Space and Culture",
+      "volume": "12",
+      "pages": "166-82",
+      "doi": "10.1177/1206331208325603",
+      "raw_text": "Andrews, Hazel. 2009b. '\"Tits Out for the Boys and No Back Chat\"': Gendered Space on Holiday'. Journal of Space and Culture 12: 166-82. https://doi.org/10.1177/1206331208325603."
+    },
+    {
+      "id": "ref_04",
+      "authors": [
+        "Andrews, Hazel"
+      ],
+      "title": "The British on Holiday: Charter Tourism, Identity and Consumption",
+      "year": 2011,
+      "journal": "Bristol: Channel View",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Andrews, Hazel. 2011. The British on Holiday: Charter Tourism, Identity and Consumption. Bristol: Channel View. Andrews Hazel, ed. 2014. The Enchantment of Violence: Tales from the Balearics. In Tourism and Violence. Farnham: Ashgate, pp. 49- 67."
+    },
+    {
+      "id": "ref_05",
+      "authors": [
+        "Andrews, Hazel"
+      ],
+      "title": "Becoming Through Tourism: Imagination in Practice",
+      "year": 2017,
+      "journal": "Suomen Antropologi",
+      "volume": "42",
+      "pages": "31-44",
+      "doi": null,
+      "raw_text": "Andrews, Hazel. 2017. Becoming Through Tourism: Imagination in Practice. Suomen Antropologi 42: 31-44"
+    },
+    {
+      "id": "ref_06",
+      "authors": [
+        "Andrews, Hazel"
+      ],
+      "title": "Tourists and the Carnivalesque: Partying in the Land of Cockaigne",
+      "year": 2023,
+      "journal": "Journal of Festive Studies",
+      "volume": "5",
+      "pages": "167-89",
+      "doi": "10.33823/jfs.2023.5.1.142",
+      "raw_text": "Andrews, Hazel. 2023. Tourists and the Carnivalesque: Partying in the Land of Cockaigne. Journal of Festive Studies 5: 167-89. https://doi.org/10.33823/jfs.2023.5.1.142."
+    },
+    {
+      "id": "ref_09",
+      "authors": [
+        "Cohen, Erik"
+      ],
+      "title": "Tourism as Play",
+      "year": 1985,
+      "journal": "Religion",
+      "volume": "15",
+      "pages": "291-304",
+      "doi": null,
+      "raw_text": "Cohen, Erik. 1985. Tourism as Play. Religion 15: 291-304."
+    },
+    {
+      "id": "ref_10",
+      "authors": [
+        "Crick, Malcolm"
+      ],
+      "title": "Tracing the Anthropological Self: Quizzical Reflections on Field Work, Tourism, and the Ludic",
+      "year": 1985,
+      "journal": "Social Analysis",
+      "volume": "17",
+      "pages": "71-92",
+      "doi": null,
+      "raw_text": "Crick, Malcolm. 1985. Tracing the Anthropological Self: Quizzical Reflections on Field Work, Tourism, and the Ludic. Social Analysis 17: 71-92."
+    },
+    {
+      "id": "ref_11",
+      "authors": [
+        "Csikszentmihalyi, Mihalyi",
+        "Stith Bennett"
+      ],
+      "title": "An Exploratory Model of Play",
+      "year": 1971,
+      "journal": "American Anthropologist",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Csikszentmihalyi, Mihalyi, and Stith Bennett. 1971. An Exploratory Model of Play. American Anthropologist 73: 45-48. Durkheim, Émile. 1912. The Elementary Forms of the Religious Life. Translated by Joseph Ward Swain. London: George Allen & Unwin."
+    },
+    {
+      "id": "ref_12",
+      "authors": [
+        "Eberle, Scott G"
+      ],
+      "title": "The Elements of Play: Toward a Philosophy and a Definition of Play",
+      "year": 2014,
+      "journal": "Journal of Play",
+      "volume": "6",
+      "pages": "214-33",
+      "doi": null,
+      "raw_text": "Eberle, Scott G. 2014. The Elements of Play: Toward a Philosophy and a Definition of Play. Journal of Play 6: 214-33."
+    },
+    {
+      "id": "ref_13",
+      "authors": [
+        "Geertz, Clifford"
+      ],
+      "title": "The Interpretation of Cultures",
+      "year": 1973,
+      "journal": "New York: Basic Books Inc",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Geertz, Clifford. 1973. The Interpretation of Cultures. New York: Basic Books Inc."
+    },
+    {
+      "id": "ref_14",
+      "authors": [
+        "Geertz, Clifford"
+      ],
+      "title": "Making Experience, Authoring Selves",
+      "year": 1986,
+      "journal": "In The Anthropology of Experience",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Geertz, Clifford. 1986. Making Experience, Authoring Selves. In The Anthropology of Experience. Edited by Victor Witter Turner and Edward M. Bruner. Chicago: University of Illinois Press, pp. 373-80."
+    },
+    {
+      "id": "ref_15",
+      "authors": [
+        "Godbey, Geoffrey",
+        "Alan Graefe"
+      ],
+      "title": "Repeat Tourism, Play and Monetary Spending",
+      "year": 1991,
+      "journal": "Annals of Tourism Research",
+      "volume": "18",
+      "pages": "213-25",
+      "doi": "10.1016/0160-7383(91)90005-V",
+      "raw_text": "Godbey, Geoffrey, and Alan Graefe. 1991. Repeat Tourism, Play and Monetary Spending. Annals of Tourism Research 18: 213-25. https://doi.org/10.1016/0160-7383(91)90005-V."
+    },
+    {
+      "id": "ref_16",
+      "authors": [
+        "Gottlieb, Alma"
+      ],
+      "title": "Americans' Vacations",
+      "year": 1982,
+      "journal": "Annals of Tourism Research",
+      "volume": "9",
+      "pages": "165-87",
+      "doi": null,
+      "raw_text": "Gottlieb, Alma. 1982. Americans' Vacations. Annals of Tourism Research 9: 165-87."
+    },
+    {
+      "id": "ref_17",
+      "authors": [
+        "Gyimóthy, Szilvia",
+        "Reidar J. Mykletun"
+      ],
+      "title": "Play in adventure tourism: The Case of Arctic Trekking",
+      "year": 2004,
+      "journal": "Annals of Tourism Research",
+      "volume": "31",
+      "pages": "855-78",
+      "doi": null,
+      "raw_text": "Gyimóthy, Szilvia, and Reidar J. Mykletun. 2004. Play in adventure tourism: The Case of Arctic Trekking. Annals of Tourism Research 31: 855-78."
+    },
+    {
+      "id": "ref_18",
+      "authors": [
+        "Handelman, Don"
+      ],
+      "title": "A Note on Play",
+      "year": 1974,
+      "journal": "American Anthropologist New Series",
+      "volume": "76",
+      "pages": "66-68",
+      "doi": null,
+      "raw_text": "Handelman, Don. 1974. A Note on Play. American Anthropologist New Series 76: 66-68."
+    },
+    {
+      "id": "ref_19",
+      "authors": [
+        "Haywood, Les, Francis Kew, Peter Bramham, John Spink, John Capenerhurst",
+        "Ian Henry"
+      ],
+      "title": "Understanding Leisure, 2nd ed",
+      "year": 1990,
+      "journal": "Cheltenham: Stanley Thornes",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Haywood, Les, Francis Kew, Peter Bramham, John Spink, John Capenerhurst, and Ian Henry. 1990. Understanding Leisure, 2nd ed. Cheltenham: Stanley Thornes."
+    },
+    {
+      "id": "ref_22",
+      "authors": [
+        "Heidegger, Martin"
+      ],
+      "title": "Being and Time",
+      "year": 1978,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Heidegger, Martin. 1978. Being and Time. Oxford: Wiley-Blackwell."
+    },
+    {
+      "id": "ref_23",
+      "authors": [
+        "Heljakka, Katriina"
+      ],
+      "title": "Bel far niente? Photography as Productive Play in Creative Cultures of the 21st Century",
+      "year": 2018,
+      "journal": "In Fotografia e culture visuali del XXI secolo",
+      "volume": null,
+      "pages": null,
+      "doi": "10.131.34/978-88-94885-84-2/41",
+      "raw_text": "Heljakka, Katriina. 2018. Bel far niente? Photography as Productive Play in Creative Cultures of the 21st Century. In Fotografia e culture visuali del XXI secolo. Edited by Enrico Menduni and Lorenzo Marmo. Rome: Romatre Press. https://doi.org/10.131.34/978-88-94885-84-2/41."
+    },
+    {
+      "id": "ref_24",
+      "authors": [
+        "Heljakka, Katriina"
+      ],
+      "title": "Masked Belles and Beasts: Uncovering Toys as Extensions, Avatars and Activists in Human Identity Play",
+      "year": 2023,
+      "journal": "In Masks and Human Connections",
+      "volume": null,
+      "pages": null,
+      "doi": "10.1007/978-3-031-16673-0_3",
+      "raw_text": "Heljakka, Katriina. 2023. Masked Belles and Beasts: Uncovering Toys as Extensions, Avatars and Activists in Human Identity Play. In Masks and Human Connections. Edited by Luísa Magalhães and Cândido Oliveira Martins. Cham: Palgrave Macmillan, pp. 29-45. https://doi.org/10.1007/978-3-031-16673-0_3."
+    },
+    {
+      "id": "ref_25",
+      "authors": [
+        "Heljakka, Katriina",
+        "Juulia Räikkönen. 2021a. Puzzling out"
+      ],
+      "title": "Toyrism",
+      "year": 2021,
+      "journal": ": Conceptualizing value co-creation in toy tourism. Tourism Management Perspectives. https://doi.org/",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Heljakka, Katriina, and Juulia Räikkönen. 2021a. Puzzling out \"Toyrism\": Conceptualizing value co-creation in toy tourism. Tourism Management Perspectives. https://doi.org/10.1016/j.tmp.2021.100791. Heljakka Katriina, and Räikkönen Juulia. 2021b. Playing it safe: Toyrism (toy tourism) as revenge travel in pandemic times. Paper presented at the 29th Nordic Symposium in Tourism and Hospitality Research Shaping Mobile Futures: Challenges and Possi- bilities in Precarious Times Akureyri, Iceland/e-Conference, Akureyri, Iceland, September 21-23."
+    },
+    {
+      "id": "ref_26",
+      "authors": [
+        "Heljakka, Katriina",
+        "Juulia Räikkönen"
+      ],
+      "title": "#Instadolls on staycation-Doll dramas narrating popular culture tourism and re- gional development",
+      "year": 2023,
+      "journal": "Scandinavian Journal of Hospitality and Tourism",
+      "volume": null,
+      "pages": null,
+      "doi": "10.1080/15022250.2023.2199699",
+      "raw_text": "Heljakka, Katriina, and Juulia Räikkönen. 2023. #Instadolls on staycation-Doll dramas narrating popular culture tourism and re- gional development. Scandinavian Journal of Hospitality and Tourism. https://doi.org/10.1080/15022250.2023.2199699."
+    },
+    {
+      "id": "ref_27",
+      "authors": [
+        "Heljakka, Katriina",
+        "Pirita Ihamäki"
+      ],
+      "title": "Toy Tourism",
+      "year": 2017,
+      "journal": "From Travel Bugs to characters with wanderlust",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Heljakka, Katriina, and Pirita Ihamäki. 2017. Toy Tourism. From Travel Bugs to characters with wanderlust. In Locating Imagination in Popular Culture."
+    },
+    {
+      "id": "ref_29",
+      "authors": [
+        "Henricks, Thomas S"
+      ],
+      "title": "Play as Experience",
+      "year": 2015,
+      "journal": "American Journal of Play",
+      "volume": "8",
+      "pages": "8-49",
+      "doi": null,
+      "raw_text": "Henricks, Thomas S. 2015. Play as Experience. American Journal of Play 8: 8-49."
+    },
+    {
+      "id": "ref_30",
+      "authors": [
+        "Henricks, Thomas S"
+      ],
+      "title": "Reason and Rationalization. A Theory of Modern Play",
+      "year": 2016,
+      "journal": "American Journal of Play",
+      "volume": "8",
+      "pages": "287-324",
+      "doi": null,
+      "raw_text": "Henricks, Thomas S. 2016. Reason and Rationalization. A Theory of Modern Play. American Journal of Play 8: 287-324"
+    },
+    {
+      "id": "ref_31",
+      "authors": [
+        "Hesse, Herman"
+      ],
+      "title": "The Glass Bead Game",
+      "year": 1969,
+      "journal": "Translated by Richard and Clara Winston",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Hesse, Herman. 1969. The Glass Bead Game. Translated by Richard and Clara Winston. London: Jonathan Cape. First published 1946."
+    },
+    {
+      "id": "ref_32",
+      "authors": [
+        "Huizinga, Johan"
+      ],
+      "title": "Homo Ludens",
+      "year": 2016,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Huizinga, Johan. 2016. Homo Ludens. A Study of the Play-Element in Culture. Kettering: Angelico Press."
+    },
+    {
+      "id": "ref_33",
+      "authors": [
+        "Ingold, Tim"
+      ],
+      "title": "The Tempoarlity of the Landscape",
+      "year": 1993,
+      "journal": "World Archaeology",
+      "volume": "25",
+      "pages": "152-75",
+      "doi": null,
+      "raw_text": "Ingold, Tim. 1993. The Tempoarlity of the Landscape. World Archaeology 25: 152-75"
+    },
+    {
+      "id": "ref_36",
+      "authors": [
+        "Ingold, Tim"
+      ],
+      "title": "Being Alive",
+      "year": 2011,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Ingold, Tim. 2011. Being Alive. Essays on Movement, Knowledge and Description. London: Routledge."
+    },
+    {
+      "id": "ref_37",
+      "authors": [
+        "Ingold, Tim"
+      ],
+      "title": "Introduction",
+      "year": 2012,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Ingold, Tim. 2012. Introduction. In Imagining Landscapes: Past, Present and Future. Edited by Monica Janowski and Tim Ingold. Farn- ham: Ashgate, pp. 1-18."
+    },
+    {
+      "id": "ref_38",
+      "authors": [
+        "Ivanov, Stanislav Hristov"
+      ],
+      "title": "Tourism beyond humans-Robots, pets and Teddy bears",
+      "year": 2019,
+      "journal": "In Tourism and Intercultural Communication and Innovations",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Ivanov, Stanislav Hristov. 2019. Tourism beyond humans-Robots, pets and Teddy bears. In Tourism and Intercultural Communication and Innovations. Edited by Genka Rafailova and Stoyan Marinov. Newcastle upon Tyne: Cambridge Scholars Publishing, pp. 12-30."
+    },
+    {
+      "id": "ref_39",
+      "authors": [
+        "Jackson, Michael"
+      ],
+      "title": "Paths toward a Clearing",
+      "year": 1989,
+      "journal": "Radical Empiricism and Ethnographic Inquiry",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Jackson, Michael. 1989. Paths toward a Clearing. Radical Empiricism and Ethnographic Inquiry. Bloomington: Indiana University Press."
+    },
+    {
+      "id": "ref_40",
+      "authors": [
+        "Jackson, Michael, ed"
+      ],
+      "title": "Things as They Are",
+      "year": 1996,
+      "journal": "New Directions in Phenomenological Anthropology",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Jackson, Michael, ed. 1996. Things as They Are. New Directions in Phenomenological Anthropology. Bloomington: Indiana University Press."
+    },
+    {
+      "id": "ref_41",
+      "authors": [
+        "Jackson, Michael"
+      ],
+      "title": "Existential Anthropology",
+      "year": 2005,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Jackson, Michael. 2005. Existential Anthropology."
+    },
+    {
+      "id": "ref_43",
+      "authors": [
+        "Jackson, Michael",
+        "Albert Piette, eds"
+      ],
+      "title": "Anthropology and the Existential Turn",
+      "year": 2015,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Jackson, Michael, and Albert Piette, eds. 2015. Anthropology and the Existential Turn. In What Is Existential Anthropology? Oxford: Berghahn, pp. 1-29."
+    },
+    {
+      "id": "ref_44",
+      "authors": [
+        "James, William"
+      ],
+      "title": "Essays in Radical Empiricism",
+      "year": 1976,
+      "journal": "Cambridge: Harvard University Press",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "James, William. 1976. Essays in Radical Empiricism. Cambridge: Harvard University Press."
+    },
+    {
+      "id": "ref_45",
+      "authors": [
+        "Jarman, Derek"
+      ],
+      "title": "Modern Nature",
+      "year": 1991,
+      "journal": "Harmondsworth: Vintage",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Jarman, Derek. 1991. Modern Nature. Harmondsworth: Vintage."
+    },
+    {
+      "id": "ref_46",
+      "authors": [
+        "Kane, Maurice J.",
+        "Hazel Tucker"
+      ],
+      "title": "Adventure tourism: The freedom to play with reality",
+      "year": 2004,
+      "journal": "Tourist Studies",
+      "volume": "4",
+      "pages": "217-34",
+      "doi": "10.1177/1468797604057323",
+      "raw_text": "Kane, Maurice J., and Hazel Tucker. 2004. Adventure tourism: The freedom to play with reality. Tourist Studies 4: 217-34. https://doi.org/10.1177/1468797604057323."
+    },
+    {
+      "id": "ref_47",
+      "authors": [
+        "Levinovitz, Alan"
+      ],
+      "title": "Towards a Theory of Toys and Toy-Play",
+      "year": 2017,
+      "journal": "Human Studies",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Levinovitz, Alan. 2017. Towards a Theory of Toys and Toy-Play. Human Studies 40: 267-84. https://doi.org/10.1007/s10746-016-9418- 0."
+    },
+    {
+      "id": "ref_48",
+      "authors": [
+        "Light, Duncan"
+      ],
+      "title": "Performing Transylvania: Tourism, fantasy and play in a liminal place",
+      "year": 2009,
+      "journal": "Tourist Studies",
+      "volume": "9",
+      "pages": "240-58",
+      "doi": "10.1177/1468797610382707",
+      "raw_text": "Light, Duncan. 2009. Performing Transylvania: Tourism, fantasy and play in a liminal place. Tourist Studies 9: 240-58. https://doi.org/10.1177/1468797610382707."
+    },
+    {
+      "id": "ref_49",
+      "authors": [
+        "MacCannell, Dean"
+      ],
+      "title": "Staged Authenticity: Arrangements of Social Space in Tourist Settings",
+      "year": 1973,
+      "journal": "American Journal of Sociology",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "MacCannell, Dean. 1973. Staged Authenticity: Arrangements of Social Space in Tourist Settings. American Journal of Sociology 79: 589- 603."
+    },
+    {
+      "id": "ref_50",
+      "authors": [
+        "Malaby, Thomas M"
+      ],
+      "title": "Anthropology and Play: The Contours of Playful Experience",
+      "year": 2009,
+      "journal": "New Literary History",
+      "volume": "40",
+      "pages": "205-18",
+      "doi": null,
+      "raw_text": "Malaby, Thomas M. 2009. Anthropology and Play: The Contours of Playful Experience. New Literary History 40: 205-18."
+    },
+    {
+      "id": "ref_51",
+      "authors": [
+        "Massie, Pascal"
+      ],
+      "title": "Masks and the Space of Play",
+      "year": 2018,
+      "journal": "Research in Phenomenology",
+      "volume": "48",
+      "pages": "119-46",
+      "doi": "10.1163/15691640-12341387",
+      "raw_text": "Massie, Pascal. 2018. Masks and the Space of Play. Research in Phenomenology 48: 119-46. https://doi.org/10.1163/15691640-12341387."
+    },
+    {
+      "id": "ref_52",
+      "authors": [
+        "Merleau-Ponty, Maurice"
+      ],
+      "title": "Phenomenology of Perception",
+      "year": 1962,
+      "journal": "London: Routledge",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Merleau-Ponty, Maurice. 1962. Phenomenology of Perception. London: Routledge."
+    },
+    {
+      "id": "ref_53",
+      "authors": [
+        "Mitchell, Claudia",
+        "Jacqueline Reid-Walsh"
+      ],
+      "title": "And I want to Thank you Barbie: Barbie as a Site for Cultural Interrogation",
+      "year": 1995,
+      "journal": "The Review of Education/Pedagogy/Cultural Studies",
+      "volume": "17",
+      "pages": "143-55",
+      "doi": "10.1080/1071441950170204",
+      "raw_text": "Mitchell, Claudia, and Jacqueline Reid-Walsh. 1995. And I want to Thank you Barbie: Barbie as a Site for Cultural Interrogation. The Review of Education/Pedagogy/Cultural Studies 17: 143-55. https://doi.org/10.1080/1071441950170204."
+    },
+    {
+      "id": "ref_54",
+      "authors": [
+        "Okely, Judith"
+      ],
+      "title": "Thinking through Fieldwork",
+      "year": 1994,
+      "journal": "In Analysing Qualitative Data",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Okely, Judith. 1994. Thinking through Fieldwork. In Analysing Qualitative Data. Edited by Alan Bryman and Robert G. Burgess. Lon- don: Routledge, pp. 18-34."
+    },
+    {
+      "id": "ref_55",
+      "authors": [
+        "Palmer, Catherine"
+      ],
+      "title": "Being and Dwelling through Tourism",
+      "year": 2018,
+      "journal": "An Anthropological Perspective",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Palmer, Catherine. 2018. Being and Dwelling through Tourism. An Anthropological Perspective. London: Routledge."
+    },
+    {
+      "id": "ref_56",
+      "authors": [
+        "Robinson, Shanna"
+      ],
+      "title": "Toys on the Move: Vicarious Travel, Imagination and the Case of Travelling Toy Mascots",
+      "year": 2014,
+      "journal": "In Travel and Imagination",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Robinson, Shanna. 2014. Toys on the Move: Vicarious Travel, Imagination and the Case of Travelling Toy Mascots. In Travel and Imagination. Edited by Garth Lean, Russell Staiff and Emma Waterton. Farnham: Ashgate, pp. 149-64."
+    },
+    {
+      "id": "ref_57",
+      "authors": [
+        "Salazar, Noel"
+      ],
+      "title": "'Tourism Imaginaries: A Conceptual Approach.'",
+      "year": 2012,
+      "journal": "Annals of Tourism Research",
+      "volume": "39",
+      "pages": "863-82",
+      "doi": "10.1016/j.annals.2011.10.004",
+      "raw_text": "Salazar, Noel. 2012. 'Tourism Imaginaries: A Conceptual Approach.' Annals of Tourism Research 39: 863-82. https://doi.org/10.1016/j.annals.2011.10.004."
+    },
+    {
+      "id": "ref_58",
+      "authors": [
+        "Salazar, Noel",
+        "Nelson Graburn"
+      ],
+      "title": "'Introduction: Toward an Anthropology of Tourism Imaginaries'",
+      "year": 2014,
+      "journal": "In Tourism Imaginaries",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Salazar, Noel, and Nelson Graburn. 2014. 'Introduction: Toward an Anthropology of Tourism Imaginaries'. In Tourism Imaginaries. Anthropological Approaches. Edited by Noel Salazar and Nelson Graburn. Oxford: Berghahn, pp. 1-28."
+    },
+    {
+      "id": "ref_59",
+      "authors": [
+        "Satre, Jean-Paul"
+      ],
+      "title": "Search for a Method",
+      "year": 1968,
+      "journal": "Translated by Hazel Barnes",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Satre, Jean-Paul. 1968. Search for a Method. Translated by Hazel Barnes. New York: Vintage."
+    },
+    {
+      "id": "ref_60",
+      "authors": [
+        "Sutton-Smith, Brian"
+      ],
+      "title": "The Ambiguity of Play",
+      "year": 1997,
+      "journal": "London: Harvard University Press. Taylor, T. L. 2022. Ethnography as Play. American Journal of Play",
+      "volume": "14",
+      "pages": "33-57",
+      "doi": null,
+      "raw_text": "Sutton-Smith, Brian. 1997. The Ambiguity of Play. London: Harvard University Press. Taylor, T. L. 2022. Ethnography as Play. American Journal of Play 14: 33-57."
+    },
+    {
+      "id": "ref_61",
+      "authors": [
+        "Thibault, Mattia",
+        "Katriina Heljakka"
+      ],
+      "title": "Toyification",
+      "year": 2018,
+      "journal": "A Conceptual Statement",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Thibault, Mattia, and Katriina Heljakka. 2018. Toyification. A Conceptual Statement. Paper presented at the 8th International Toy Research Association World Conference, Paris, France, July 11-13. Edited by Gilles Brougère and Mark Allen. Available online: https://hal-univ-paris13.archives-ouvertes.fr/hal-02083004 (accessed on 18 May 2023)."
+    },
+    {
+      "id": "ref_62",
+      "authors": [
+        "Turner, Victor"
+      ],
+      "title": "The Ritual Process",
+      "year": 1969,
+      "journal": "Harmondsworth: Penguin",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Turner, Victor. 1969. The Ritual Process. Harmondsworth: Penguin."
+    },
+    {
+      "id": "ref_63",
+      "authors": [
+        "Turner, Victor"
+      ],
+      "title": "From Ritual to Theatre",
+      "year": 1982,
+      "journal": "The Human Seriousness of Play",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Turner, Victor. 1982. From Ritual to Theatre. The Human Seriousness of Play. New York: PAJ Publications."
+    },
+    {
+      "id": "ref_64",
+      "authors": [
+        "Wengel, Yana"
+      ],
+      "title": "LEGO® Serious Play® in multi-method tourism research",
+      "year": 2020,
+      "journal": "International Journal of Contemporary Hospitality Manage- ment",
+      "volume": "32",
+      "pages": "1605-23",
+      "doi": "10.1108/IJCHM-04-2019-0358",
+      "raw_text": "Wengel, Yana. 2020. LEGO® Serious Play® in multi-method tourism research. International Journal of Contemporary Hospitality Manage- ment 32: 1605-23. https://doi.org/10.1108/IJCHM-04-2019-0358."
+    },
+    {
+      "id": "ref_65",
+      "authors": [
+        "Williams, Rebecca"
+      ],
+      "title": "Funko Hannibal in Florence: Fan Tourism, Transmediality, and 'Paratextual-Spatio-Play'",
+      "year": 2019,
+      "journal": "JOMEC Journal",
+      "volume": "14",
+      "pages": "71-90",
+      "doi": "https://doi.org/10.18573/jomec.179",
+      "raw_text": "Williams, Rebecca. 2019. Funko Hannibal in Florence: Fan Tourism, Transmediality, and 'Paratextual-Spatio-Play'. JOMEC Journal 14: 71-90. https://doi.org/https://doi.org/10.18573/jomec.179."
+    },
+    {
+      "id": "ref_66",
+      "authors": [
+        "Yildiz, Sevcan, Didem Kutlu",
+        "Yasin Oğuz Özmenekşe"
+      ],
+      "title": "Consumer Feedback on 'Teddy Tour Berlin.' Within the Concept of Toy Tourism",
+      "year": 2023,
+      "journal": "Tourism",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Yildiz, Sevcan, Didem Kutlu, and Yasin Oğuz Özmenekşe. 2023. Consumer Feedback on 'Teddy Tour Berlin.' Within the Concept of Toy Tourism. Tourism 71: 723-34. https://doi.org/10.37741/t.71.4.5. Disclaimer/Publisher's Note: The statements, opinions and data contained in all publications are solely those of the individual au- thor(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content."
+    }
+  ],
+  "model_used": "regex:chicago"
+}

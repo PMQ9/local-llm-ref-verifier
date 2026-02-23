@@ -1,0 +1,254 @@
+{
+  "source_pdf": "tests/fixtures/papers/chicago/mdpi_humanities_hui_identity.pdf",
+  "references": [
+    {
+      "id": "ref_01",
+      "authors": [
+        "Anderson,Benedict.1983.ImaginedCommunities:ReflectionsontheOriginandSpread Bai,Lian白练.1985"
+      ],
+      "title": "Ai'kou",
+      "year": 1983,
+      "journal": "隘口(MountainPass).XinjiangHuizuWenxue",
+      "volume": null,
+      "pages": "12-1",
+      "doi": null,
+      "raw_text": "Anderson,Benedict.1983.ImaginedCommunities:ReflectionsontheOriginandSpread Bai,Lian白练.1985.\"Ai'kou\"隘口(MountainPass).XinjiangHuizuWenxue1:12-1"
+    },
+    {
+      "id": "ref_02",
+      "authors": [
+        "Bai,Lian白练. 2015"
+      ],
+      "title": "Ai'kou",
+      "year": 2015,
+      "journal": "隘口(Mountainpass). InDamozhiguang大漠之光(T chubanshe,pp.",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Bai,Lian白练. 2015. \"Ai'kou\"隘口(Mountainpass). InDamozhiguang大漠之光(T chubanshe,pp.20-27."
+    },
+    {
+      "id": "ref_03",
+      "authors": [
+        "Bai,Shouyi白寿彝,ed.2000.Huizurenwuzhi回族人物志(RecordsofMuslimPersona Benite,ZviBen‑dor"
+      ],
+      "title": "FollowtheWhiteCamel: IslaminChinato1800",
+      "year": 2010,
+      "journal": "InThe Irwin",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Bai,Shouyi白寿彝,ed.2000.Huizurenwuzhi回族人物志(RecordsofMuslimPersona Benite,ZviBen‑dor. 2010. FollowtheWhiteCamel: IslaminChinato1800. InThe Irwin.CambridgeandNewYork:CambridgeUniversityPress,vol.4,pp.409"
+    },
+    {
+      "id": "ref_04",
+      "authors": [
+        "Berry,Michael.2008.AHistoryofPain:TraumainModernChineseLiteratureandFilm Bovingdon, Gardner"
+      ],
+      "title": "Hu Wants Something New: Discourse and the Deep DifferenceandConstitutionalisminPan‑Asia.EditedbySusanH.Williams.New Cashman,Ray.2006.CriticalNostalgiaandMaterialCultureinNorthernIreland.Jo DeGrandis,Mario.2020.OldStories,NewNeeds:TheMultipleAppropriationsoft TheIrishJournalofAsianStudies6:94-114",
+      "year": 2016,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Berry,Michael.2008.AHistoryofPain:TraumainModernChineseLiteratureandFilm Bovingdon, Gardner. 2016. Hu Wants Something New: Discourse and the Deep DifferenceandConstitutionalisminPan‑Asia.EditedbySusanH.Williams.New Cashman,Ray.2006.CriticalNostalgiaandMaterialCultureinNorthernIreland.Jo DeGrandis,Mario.2020.OldStories,NewNeeds:TheMultipleAppropriationsoft TheIrishJournalofAsianStudies6:94-114."
+    },
+    {
+      "id": "ref_05",
+      "authors": [
+        "Ding,Hong丁宏.1999.Dongganwenhuayanjiu东干文化硏究(ResearchonDunganCult Feuerwerker,Yi‑tsiMei. 1998. ThePost‑Modern'SearchforRoots'inHanShaogo Text:Self‑RepresentationandthePeasant"
+      ],
+      "title": "Other",
+      "year": 1999,
+      "journal": "inModernChineseLiterature.Sta Gladney,DruC.",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Ding,Hong丁宏.1999.Dongganwenhuayanjiu东干文化硏究(ResearchonDunganCult Feuerwerker,Yi‑tsiMei. 1998. ThePost‑Modern'SearchforRoots'inHanShaogo Text:Self‑RepresentationandthePeasant\"Other\"inModernChineseLiterature.Sta Gladney,DruC.1996.MuslimChinese:EthnicNationalisminthePeople'sRepublic.Ca Gladney, Dru C. 2004. Dislocating China: Reflections on Muslims, Minorities, and O ChicagoPress."
+    },
+    {
+      "id": "ref_06",
+      "authors": [
+        "Han,Shaogong韩少功.1985.'WenxuedeGen'文学的根(TheRootsofLiterature).Z Hartley,LauranR.,andPatriciaSchiaffini‑Vedani,eds"
+      ],
+      "title": "Introduction",
+      "year": 2008,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Han,Shaogong韩少功.1985.'WenxuedeGen'文学的根(TheRootsofLiterature).Z Hartley,LauranR.,andPatriciaSchiaffini‑Vedani,eds. 2008. Introduction. InMod DukeUniversityPress,pp.xiii-xxxviii."
+    },
+    {
+      "id": "ref_08",
+      "authors": [
+        "Hladíková,Kamila.2013.TheExoticOtherandNegotiationofTibetanSelf:Representatio Olomouc:UniverzitaPalackéhovOlomouci. Huizujianshibianxiezu《回族简史》编写组,ed.2009.Huizujianshi回族族简史(Con 12of13 thcentury.Forinstance,inTseringWoeser'sTibet: msconveyadeepsenseofnostalgiaforthefading ontestedclassificationofTashiDawaasaTibetan 'shybridethnicbackgroundandthepredominant rthe"
+      ],
+      "title": "root‑seeking",
+      "year": 2013,
+      "journal": "umbrellawerenotsent‑down who grew up in Gaomi Township, northeast of p.",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Hladíková,Kamila.2013.TheExoticOtherandNegotiationofTibetanSelf:Representatio Olomouc:UniverzitaPalackéhovOlomouci. Huizujianshibianxiezu《回族简史》编写组,ed.2009.Huizujianshi回族族简史(Con 12of13 thcentury.Forinstance,inTseringWoeser'sTibet: msconveyadeepsenseofnostalgiaforthefading ontestedclassificationofTashiDawaasaTibetan 'shybridethnicbackgroundandthepredominant rthe\"root‑seeking\"umbrellawerenotsent‑down who grew up in Gaomi Township, northeast of p. 2)carryanostalgictone,throughitsevocative oveanddisdainfortheplaceanditsinhabitants. 423-29). apowerfultoolforcritiquingthepresent. usly-inthelargerculturaldiscourseofthetime paradiseonearth(cfr.Lopez1998). se.Forarecentreiterationofthisnarrativesee,for 37). sown."
+    },
+    {
+      "id": "ref_09",
+      "authors": [
+        "Here,Ilimitmyselftofewconsiderations. culture,theextensionoftheterritoryindicatedby tralPlains"
+      ],
+      "title": "\"ordinarilyfunctionsasablanketterm thologyasthecoreareaofpoliticsandcivilization. ierormargin",
+      "year": 2018,
+      "journal": "(Song",
+      "volume": null,
+      "pages": "137-60",
+      "doi": null,
+      "raw_text": "Here,Ilimitmyselftofewconsiderations. culture,theextensionoftheterritoryindicatedby tralPlains\"\"ordinarilyfunctionsasablanketterm thologyasthecoreareaofpoliticsandcivilization. ierormargin\"(Song2018,p.34).Theimprecision dedtoclarifywhattheymeanexactly.Forinstance, neralconsideredbyMingobserverstobeChina's heearliesthistoricalrecordslocateChinesestates nthebordersofpresent‑dayShaanxi,theareathat hetermrefers\"totheentireareaofpresentHenan hernHubei,Anhui,andJiangsuprovinces.Some territoryisperfectlyflat\"(Sage1992,p.219). dofNationalism.London:VersoEditions. 15. TheLightintheDesert). Yinchuan: Ningxiarenmin alities).Yinchuan:Ningxiarenminchubanshe. NewCambridgeHistoryofIslam. EditedbyRobert 9-26.[CrossRef] m.NewYork:ColumbiaUniversityPress. p Structure of Minzu Policies in China. In Social wYork:CambridgeUniversityPress,pp.165-94. ournalofAmericanFolklore119:137-60.[CrossRef] theChinese‑SpeakingMuslims'OriginNarratives. ture).Beijing:Zhongyangminzudaxuechubanshe. ong,MoYan,andWangAnyi."
+    },
+    {
+      "id": "ref_11",
+      "authors": [
+        "Huo, Da 霍达"
+      ],
+      "title": "Musilin de zangli 穆斯林的葬礼 (Funeral of a Muslim)",
+      "year": 1988,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Huo, Da 霍达. 1988. Musilin de zangli 穆斯林的葬礼 (Funeral of a Muslim). 北京长 wenyichubanshe."
+    },
+    {
+      "id": "ref_12",
+      "authors": [
+        "Lau,JosephS.1993. VisitationofthePastinHanShaogong'sPost‑1985Fiction. InFromM Twentieth‑CenturyChina.EditedbyDavidWangandEllenWidmer.Cambridge:Ha Leenhouts,Mark"
+      ],
+      "title": "CultureAgainstPolitics: Root‑SeekingLiterature",
+      "year": 2016,
+      "journal": "InTheColum EditedbyKirkA",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Lau,JosephS.1993. VisitationofthePastinHanShaogong'sPost‑1985Fiction. InFromM Twentieth‑CenturyChina.EditedbyDavidWangandEllenWidmer.Cambridge:Ha Leenhouts,Mark. 2016. CultureAgainstPolitics: Root‑SeekingLiterature. InTheColum EditedbyKirkA.Denton.NewYork:ColumbiaUniversityPress,pp.299-306."
+    },
+    {
+      "id": "ref_14",
+      "authors": [
+        "Li, Shujiang 李树江",
+        "Zhengwei Wang 王正伟, eds"
+      ],
+      "title": "Huizu minjian gushi xuan 中国少数民族民间文学丛书‑故事大系.Shanghai:Shanghaiwenyichubanshe",
+      "year": 1985,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Li, Shujiang 李树江, and Zhengwei Wang 王正伟, eds. 1985. Huizu minjian gushi xuan 中国少数民族民间文学丛书‑故事大系.Shanghai:Shanghaiwenyichubanshe."
+    },
+    {
+      "id": "ref_15",
+      "authors": [
+        "Lipman,JonathanNeaman.1997.FamiliarStrangers:AHistoryofMuslimsinNorthwestCh Lopez,DonaldS.1998.PrisonersofShangri‑La:TibetanBuddhismandtheWest.Chicago:U Ma, Jian马建"
+      ],
+      "title": "LiangchuNideShetaiHuoKongkongdangdang亮出你的舌苔或 wenxue1-2:98-116",
+      "year": 1987,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Lipman,JonathanNeaman.1997.FamiliarStrangers:AHistoryofMuslimsinNorthwestCh Lopez,DonaldS.1998.PrisonersofShangri‑La:TibetanBuddhismandtheWest.Chicago:U Ma, Jian马建. 1987. LiangchuNideShetaiHuoKongkongdangdang亮出你的舌苔或 wenxue1-2:98-116."
+    },
+    {
+      "id": "ref_16",
+      "authors": [
+        "Millward, James A"
+      ],
+      "title": "Beyond the Pass: Economy, Ethnicity, and Empire in Qing Ce UniversityPress",
+      "year": 1998,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Millward, James A. 1998. Beyond the Pass: Economy, Ethnicity, and Empire in Qing Ce UniversityPress."
+    },
+    {
+      "id": "ref_21",
+      "authors": [
+        "Song, Nianshen"
+      ],
+      "title": "MakingBordersinModernEastAsia: TheTumenRiverDemarcatio UniversityPress",
+      "year": 2018,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Song, Nianshen. 2018. MakingBordersinModernEastAsia: TheTumenRiverDemarcatio UniversityPress."
+    },
+    {
+      "id": "ref_22",
+      "authors": [
+        "Virtanen,RiikaJ.2008. DevelopmentandUrbanSpaceinContemporaryTibetanLitera Change.EditedbyPatriciaSchiaffini‑VedaniandLauranR.Hartley.Durham:Duke Visser,Robin"
+      ],
+      "title": "PostUrbanFiction",
+      "year": 2003,
+      "journal": "InTheColumbiaCompaniontoModernEastAsian KirkA",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Virtanen,RiikaJ.2008. DevelopmentandUrbanSpaceinContemporaryTibetanLitera Change.EditedbyPatriciaSchiaffini‑VedaniandLauranR.Hartley.Durham:Duke Visser,Robin. 2003. PostUrbanFiction. InTheColumbiaCompaniontoModernEastAsian KirkA.Denton.NewYork:ColumbiaUniversityPress,pp.570-77."
+    },
+    {
+      "id": "ref_23",
+      "authors": [
+        "Wang,Dewei"
+      ],
+      "title": "Introduction",
+      "year": 2000,
+      "journal": "InChineseLiteratureintheSecondHalfofaModernCen QiandDeweiWang",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Wang,Dewei. 2000. Introduction. InChineseLiteratureintheSecondHalfofaModernCen QiandDeweiWang.Bloomington:IndianaUniversityPress,pp.i-xliii."
+    },
+    {
+      "id": "ref_25",
+      "authors": [
+        "Wang,Yiyan"
+      ],
+      "title": "ThePoliticsofRepresentingTibet: Alai'sTibetanNative‑PlaceStori 96-130",
+      "year": 2013,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Wang,Yiyan. 2013. ThePoliticsofRepresentingTibet: Alai'sTibetanNative‑PlaceStori 96-130. Weise唯色[TseringWoeser].2003.Xizang:Jianghongsededitu西藏:绛红色的地图(Tibet: Yang,Feng杨峰.1990.BaiLianXiaoshuochuangzuozuolun白练小说创作作论(ACritica Huizuwenxue6:68-71."
+    },
+    {
+      "id": "ref_26",
+      "authors": [
+        "Yau,Wai‑Ping"
+      ],
+      "title": "MagicRealismasaCriticalResponsetotheAnthropocene",
+      "year": 2019,
+      "journal": "InCh andTextintheAgeofClimateChange",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Yau,Wai‑Ping. 2019. MagicRealismasaCriticalResponsetotheAnthropocene. InCh andTextintheAgeofClimateChange. EditedbyKwai‑CheungLoandJessicaYeung. PalgraveMacmillan,pp.109-30."
+    },
+    {
+      "id": "ref_27",
+      "authors": [
+        "Yue,Gang. 2004. EchoesfromtheHimalayas: TheQuestofMaLihua,aChineseIntelle 13:69-88.[CrossRef] Zhang,Chengzhi张承志.1991.Xinlingshi心灵史(HistoryoftheSoul).Guangzhou:Hua ZhaxiDawa扎西达娃. 2013"
+      ],
+      "title": "Xizang,xizaipishengkoushangdehun",
+      "year": 2004,
+      "journal": "西藏，系在皮绳 xiangtu xiaoshuo 中国乡土小说 (Chinese xiangtu) fiction. Edited by Dianbo Zheng chubanshe,pp.",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Yue,Gang. 2004. EchoesfromtheHimalayas: TheQuestofMaLihua,aChineseIntelle 13:69-88.[CrossRef] Zhang,Chengzhi张承志.1991.Xinlingshi心灵史(HistoryoftheSoul).Guangzhou:Hua ZhaxiDawa扎西达娃. 2013. \"Xizang,xizaipishengkoushangdehun\"西藏，系在皮绳 xiangtu xiaoshuo 中国乡土小说 (Chinese xiangtu) fiction. Edited by Dianbo Zheng chubanshe,pp.83-97. Disclaimer/Publisher'sNote: Thestatements,opinionsanddatacontainedinallpublic thor(s)andcontributor(s)andnotofMDPIand/ortheeditor(s). MDPIand/ortheeditor peopleorpropertyresultingfromanyideas,methods,instructionsorproductsreferredt 13of13 长篇小说创作丛书. Beijing: Beijing shiyuan MayFourthtoJuneFourth: FictionandFilmin arvardUniversityPress,pp.19-42. mbiaCompaniontoModernChineseLiterature. rsandAssociates.Canberra:CanberraCollege n 回族民间故事选 (A Selection of Hui Stories). hina.Seattle:UniversityofWashingtonPress. UniversityofChicagoPress. 或空空荡荡(StickoutYourTongue). Renmin entral Asia, 1759-1864. Stanford: Stanford ojiachubanshe. pectives.Cambridge,MA:CambridgeUniver‑ esofMao'sRusticationProgram. Washington, yofNewYorkPress. .Durham:DukeUniversityPress. IdentidadesdeZhaxiDawa. EstudiosdeAsia MingBorderlands.CambridgeandNewYork: on, 1881-1919. Cambridge, MA:Cambridge ature. InModernTibetanLiteratureandSocial eUniversityPress,pp.236-62.[CrossRef] nLiterature. EditedbyJoshuaS.Mostowand ntury: ACriticalSurvey. EditedbyBangyuan ies. ModernChineseLiteratureandCulture25: :ACrimsonMap).Taibei:Shiyingchubanshe. alExpositiononBaiLian'sCreativeWriting). hineseShockoftheAnthropocene: Image,Music . Singapore: SpringerSingaporePteLimited, ectualinTibet. JournalofContemporaryChina achengchubanshe. 绳扣上的魂(Asoulinbondage). InZhongguo 郑电波. Zhengzhou: Zhongyuan nongmin cationsaresolelythoseoftheindividualau‑ r(s)disclaimresponsibilityforanyinjuryto tointhecontent."
+    }
+  ],
+  "model_used": "regex:chicago"
+}

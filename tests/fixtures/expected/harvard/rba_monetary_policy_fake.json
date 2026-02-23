@@ -1,0 +1,748 @@
+{
+  "source_pdf": "tests/fixtures/papers/harvard/rba_monetary_policy.pdf",
+  "references": [
+    {
+      "id": "ref_01",
+      "authors": [
+        "AltavillaC,MDarracqParièsandGNicoletti"
+      ],
+      "title": "LoanSupply,CreditMarketsandtheEuro Area Financial Crisis",
+      "year": 2019,
+      "journal": "JournalofBanking&Finance",
+      "volume": "109",
+      "pages": null,
+      "doi": null,
+      "raw_text": "AltavillaC,MDarracqParièsandGNicoletti(2019),'LoanSupply,CreditMarketsandtheEuro Area Financial Crisis',JournalofBanking&Finance, 109, Article 105658."
+    },
+    {
+      "id": "ref_02",
+      "authors": [
+        "Antolín-Díaz J, I Petrella",
+        "JF Rubio-Ramírez"
+      ],
+      "title": "Structural Scenario Analysis with SVARs",
+      "year": 2021,
+      "journal": "JournalofMonetaryEconomics",
+      "volume": "117",
+      "pages": "798-815",
+      "doi": null,
+      "raw_text": "Antolín-Díaz J, I Petrella and JF Rubio-Ramírez (2021), 'Structural Scenario Analysis with SVARs',JournalofMonetaryEconomics, 117, pp 798-815."
+    },
+    {
+      "id": "ref_03",
+      "authors": [
+        "Antolín-Díaz J",
+        "JF Rubio-Ramírez"
+      ],
+      "title": "Narrative Sign Restrictions for SVARs",
+      "year": 2018,
+      "journal": "The AmericanEconomicReview",
+      "volume": "108",
+      "pages": "2802-2829",
+      "doi": null,
+      "raw_text": "Antolín-Díaz J and JF Rubio-Ramírez (2018), 'Narrative Sign Restrictions for SVARs', The AmericanEconomicReview, 108(10), pp 2802-2829."
+    },
+    {
+      "id": "ref_04",
+      "authors": [
+        "Arias JE, D Caldara",
+        "JF Rubio-Ramírez"
+      ],
+      "title": "The Systematic Component of Monetary PolicyinSVARs:AnAgnosticIdentificationProcedure",
+      "year": 2019,
+      "journal": "JournalofMonetaryEconomics",
+      "volume": "101",
+      "pages": "1-13",
+      "doi": null,
+      "raw_text": "Arias JE, D Caldara and JF Rubio-Ramírez (2019), 'The Systematic Component of Monetary PolicyinSVARs:AnAgnosticIdentificationProcedure',JournalofMonetaryEconomics,101,pp 1-13."
+    },
+    {
+      "id": "ref_05",
+      "authors": [
+        "Arias JE, JF Rubio-Ramírez",
+        "DF Waggoner"
+      ],
+      "title": "Inference Based on Structural Vector Autoregressions Identified with Sign and Zero Restrictions: Theory and Applications",
+      "year": 2018,
+      "journal": "Econometrica",
+      "volume": "86",
+      "pages": "685-720",
+      "doi": null,
+      "raw_text": "Arias JE, JF Rubio-Ramírez and DF Waggoner (2018), 'Inference Based on Structural Vector Autoregressions Identified with Sign and Zero Restrictions: Theory and Applications',Econometrica, 86(2), pp 685-720."
+    },
+    {
+      "id": "ref_06",
+      "authors": [
+        "Arias JE, JF Rubio-Ramírez",
+        "DF Waggoner"
+      ],
+      "title": "Inference in Bayesian Proxy-SVARs",
+      "year": 2021,
+      "journal": "JournalofEconometrics",
+      "volume": "225",
+      "pages": "88-106",
+      "doi": null,
+      "raw_text": "Arias JE, JF Rubio-Ramírez and DF Waggoner (2021), 'Inference in Bayesian Proxy-SVARs', JournalofEconometrics, 225(1), pp 88-106."
+    },
+    {
+      "id": "ref_08",
+      "authors": [
+        "Badinger H",
+        "S Schiman"
+      ],
+      "title": "Measuring Monetary Policy in the Euro Area Using SVARs with Residual Restrictions",
+      "year": 2023,
+      "journal": "AmericanEconomicJournal:Macroeconomics",
+      "volume": "15",
+      "pages": "279-305",
+      "doi": null,
+      "raw_text": "Badinger H and S Schiman (2023), 'Measuring Monetary Policy in the Euro Area Using SVARs with Residual Restrictions',AmericanEconomicJournal:Macroeconomics, 15(2), pp 279-305."
+    },
+    {
+      "id": "ref_09",
+      "authors": [
+        "Basu A, H Shioya",
+        "C Park"
+      ],
+      "title": "SignRestrictions,StructuralVectorAutoregressions,and Useful Prior Information",
+      "year": 2011,
+      "journal": "Econometrica",
+      "volume": "83",
+      "pages": "1963-1999",
+      "doi": null,
+      "raw_text": "Basu A, H Shioya and C Park (2011), StatisticalInference:TheMinimumDistanceApproach, Monographs on Statistics and Applied Probability 120, Chapman & Hall/CRC Press, Boca Raton. BaumeisterCandJDHamilton(2015),'SignRestrictions,StructuralVectorAutoregressions,and Useful Prior Information',Econometrica, 83(5), pp 1963-1999. BenZeevN(2018),'What Can We Learn about News Shocks from the Late 1990s and Early 2000s Boom-Bust Period?',JournalofEconomicDynamics&Control, 87, pp 94-105."
+    },
+    {
+      "id": "ref_10",
+      "authors": [
+        "Berger T, J Richter",
+        "B Wong"
+      ],
+      "title": "A Unified Approach for Jointly Estimating the Business andFinancialCycle,andtheRoleofFinancialFactors",
+      "year": 2022,
+      "journal": "JournalofEconomicDynamics&Control",
+      "volume": "136",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Berger T, J Richter and B Wong (2022), 'A Unified Approach for Jointly Estimating the Business andFinancialCycle,andtheRoleofFinancialFactors',JournalofEconomicDynamics&Control,136, Article 104315. BertholdB(2023),'TheMacroeconomicEffectsofUncertaintyandRiskAversionShocks',European EconomicReview, 154, Article 104442."
+    },
+    {
+      "id": "ref_11",
+      "authors": [
+        "Blanchard OJ",
+        "D Quah"
+      ],
+      "title": "The Dynamic Effects of Aggregate Demand and Supply Disturbances",
+      "year": 1989,
+      "journal": "TheAmericanEconomicReview",
+      "volume": "79",
+      "pages": "655-673",
+      "doi": null,
+      "raw_text": "Blanchard OJ and D Quah (1989), 'The Dynamic Effects of Aggregate Demand and Supply Disturbances',TheAmericanEconomicReview, 79(4), pp 655-673."
+    },
+    {
+      "id": "ref_13",
+      "authors": [
+        "Caggiano G",
+        "E Castelnuovo"
+      ],
+      "title": "Global Financial Uncertainty",
+      "year": 2023,
+      "journal": "Journal of Applied Econometrics",
+      "volume": "38",
+      "pages": "432-449",
+      "doi": null,
+      "raw_text": "Caggiano G and E Castelnuovo (2023), 'Global Financial Uncertainty', Journal of Applied Econometrics, 38(3), pp 432-449."
+    },
+    {
+      "id": "ref_14",
+      "authors": [
+        "Caggiano G, E Castelnuovo, S Delrio",
+        "R Kima"
+      ],
+      "title": "Financial Uncertainty and Real Activity: The Good, the Bad, and the Ugly",
+      "year": 2021,
+      "journal": "EuropeanEconomicReview",
+      "volume": "136",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Caggiano G, E Castelnuovo, S Delrio and R Kima (2021), 'Financial Uncertainty and Real Activity: The Good, the Bad, and the Ugly',EuropeanEconomicReview, 136, Article 103750."
+    },
+    {
+      "id": "ref_15",
+      "authors": [
+        "Cheng K",
+        "Y Yang"
+      ],
+      "title": "Revisiting the Effects of Monetary Policy Shocks: Evidence from SVAR with Narrative Sign Restrictions",
+      "year": 2020,
+      "journal": "EconomicsLetters",
+      "volume": "196",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Cheng K and Y Yang (2020), 'Revisiting the Effects of Monetary Policy Shocks: Evidence from SVAR with Narrative Sign Restrictions',EconomicsLetters, 196, Article 109598."
+    },
+    {
+      "id": "ref_16",
+      "authors": [
+        "Conti AM, A Nobili",
+        "FM Signoretti"
+      ],
+      "title": "Bank Capital Requirement Shocks: A Narrative Perspective",
+      "year": 2023,
+      "journal": "EuropeanEconomicReview",
+      "volume": "151",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Conti AM, A Nobili and FM Signoretti (2023), 'Bank Capital Requirement Shocks: A Narrative Perspective',EuropeanEconomicReview, 151, Article 104254."
+    },
+    {
+      "id": "ref_17",
+      "authors": [
+        "Del Negro M",
+        "F Schorfheide"
+      ],
+      "title": "Bayesian Macroeconometrics",
+      "year": 2011,
+      "journal": "in J Geweke, G Koop and H van Dijk (eds), TheOxfordHandbookofBayesianEconometrics, Oxford Handbooks, Oxford University Press, Oxford, pp",
+      "volume": "293",
+      "pages": "293-389",
+      "doi": null,
+      "raw_text": "Del Negro M and F Schorfheide (2011), 'Bayesian Macroeconometrics', in J Geweke, G Koop and H van Dijk (eds), TheOxfordHandbookofBayesianEconometrics, Oxford Handbooks, Oxford University Press, Oxford, pp 293-389. FanelliLandAMarsi(2022),'SovereignSpreadsandUnconventionalMonetaryPolicyintheEuro Area: A Tale of Three Shocks',EuropeanEconomicReview, 150, Article 104281."
+    },
+    {
+      "id": "ref_18",
+      "authors": [
+        "Furlanetto F",
+        "Ø Robstad"
+      ],
+      "title": "Immigration and the Macroeconomy: Some New Empirical Evidence",
+      "year": 2019,
+      "journal": "ReviewofEconomicDynamics",
+      "volume": "34",
+      "pages": "1-19",
+      "doi": null,
+      "raw_text": "Furlanetto F and Ø Robstad (2019), 'Immigration and the Macroeconomy: Some New Empirical Evidence',ReviewofEconomicDynamics, 34, pp 1-19."
+    },
+    {
+      "id": "ref_19",
+      "authors": [
+        "Gafarov B, M Meier",
+        "JL Montiel Olea"
+      ],
+      "title": "Delta-Method Inference for a Class of Set- Identified SVARs",
+      "year": 2018,
+      "journal": "JournalofEconometrics",
+      "volume": "203",
+      "pages": "316-327",
+      "doi": null,
+      "raw_text": "Gafarov B, M Meier and JL Montiel Olea (2018), 'Delta-Method Inference for a Class of Set- Identified SVARs',JournalofEconometrics, 203(2), pp 316-327."
+    },
+    {
+      "id": "ref_20",
+      "authors": [
+        "Giacomini R",
+        "T Kitagawa"
+      ],
+      "title": "Robust Bayesian Inference for Set-identified Models",
+      "year": 2021,
+      "journal": "Econometrica",
+      "volume": "89",
+      "pages": "1519-1556",
+      "doi": null,
+      "raw_text": "Giacomini R and T Kitagawa (2021a), 'Robust Bayesian Inference for Set-identified Models', Econometrica, 89(4), pp 1519-1556."
+    },
+    {
+      "id": "ref_21",
+      "authors": [
+        "Giacomini R",
+        "T Kitagawa"
+      ],
+      "title": "Supplement to \"Robust Bayesian Inference for Set- Identified Models\"",
+      "year": 2021,
+      "journal": "Econometrica",
+      "volume": "89",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Giacomini R and T Kitagawa (2021b), 'Supplement to \"Robust Bayesian Inference for Set- Identified Models\"',Econometrica, 89(4), Supporting Information, Online Appendix."
+    },
+    {
+      "id": "ref_22",
+      "authors": [
+        "Giacomini R, T Kitagawa",
+        "M Read"
+      ],
+      "title": "Robust Bayesian Analysis for Econometrics",
+      "year": 2021,
+      "journal": "Centre for Economic Policy Research Research Discussion Paper No DP",
+      "volume": "16488",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Giacomini R, T Kitagawa and M Read (2021), 'Robust Bayesian Analysis for Econometrics', Centre for Economic Policy Research Research Discussion Paper No DP16488."
+    },
+    {
+      "id": "ref_23",
+      "authors": [
+        "Giacomini R, T Kitagawa",
+        "M Read"
+      ],
+      "title": "Narrative Restrictions and Proxies",
+      "year": 2022,
+      "journal": "Journalof Business&EconomicStatistics",
+      "volume": "40",
+      "pages": "1415-1425",
+      "doi": null,
+      "raw_text": "Giacomini R, T Kitagawa and M Read (2022a), 'Narrative Restrictions and Proxies', Journalof Business&EconomicStatistics, 40(4), pp 1415-1425."
+    },
+    {
+      "id": "ref_24",
+      "authors": [
+        "Giacomini R, T Kitagawa",
+        "M Read"
+      ],
+      "title": "Robust Bayesian Inference in Proxy SVARs",
+      "year": 2022,
+      "journal": "JournalofEconometrics",
+      "volume": "228",
+      "pages": "107-126",
+      "doi": null,
+      "raw_text": "Giacomini R, T Kitagawa and M Read (2022b), 'Robust Bayesian Inference in Proxy SVARs', JournalofEconometrics, 228(1), pp 107-126."
+    },
+    {
+      "id": "ref_25",
+      "authors": [
+        "Granziera E, HR Moon",
+        "F Schorfheide"
+      ],
+      "title": "Inference for VARs Identified with Sign Restrictions",
+      "year": 2018,
+      "journal": "QuantitativeEconomics",
+      "volume": "9",
+      "pages": "1087-1121",
+      "doi": null,
+      "raw_text": "Granziera E, HR Moon and F Schorfheide (2018), 'Inference for VARs Identified with Sign Restrictions',QuantitativeEconomics, 9(3), pp 1087-1121."
+    },
+    {
+      "id": "ref_26",
+      "authors": [
+        "Hamilton JD"
+      ],
+      "title": "TimeSeriesAnalysis",
+      "year": 1994,
+      "journal": "Princeton University Press",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Hamilton JD (1994),TimeSeriesAnalysis, Princeton University Press, Princeton."
+    },
+    {
+      "id": "ref_27",
+      "authors": [
+        "Harrison A, X Liu",
+        "SL Stewart"
+      ],
+      "title": "Structural Sources of Oil Market Volatility and Correlation Dynamics",
+      "year": 2023,
+      "journal": "EnergyEconomics",
+      "volume": "121",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Harrison A, X Liu and SL Stewart (2023), 'Structural Sources of Oil Market Volatility and Correlation Dynamics',EnergyEconomics, 121, Article 106658."
+    },
+    {
+      "id": "ref_28",
+      "authors": [
+        "Herwatz H",
+        "S Wang"
+      ],
+      "title": "Point Estimation in Sign-Restricted SVARs Based on Independence Criteria with an Application to Rational Bubbles",
+      "year": 2023,
+      "journal": "JournalofEconomicDynamics& Control",
+      "volume": "151",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Herwatz H and S Wang (2023), 'Point Estimation in Sign-Restricted SVARs Based on Independence Criteria with an Application to Rational Bubbles', JournalofEconomicDynamics& Control, 151, Article 104630."
+    },
+    {
+      "id": "ref_29",
+      "authors": [
+        "Inoue A",
+        "L Kilian"
+      ],
+      "title": "Joint Bayesian Inference about Impulse Responses in VAR Models",
+      "year": 2022,
+      "journal": "JournalofEconometrics",
+      "volume": "231",
+      "pages": "457-476",
+      "doi": null,
+      "raw_text": "Inoue A and L Kilian (2022),'Joint Bayesian Inference about Impulse Responses in VAR Models', JournalofEconometrics, 231(2), pp 457-476."
+    },
+    {
+      "id": "ref_30",
+      "authors": [
+        "Kilian L",
+        "H Lütkepohl"
+      ],
+      "title": "DoesDrawingdowntheUSStrategicPetroleumReserveHelpStabilize Oil Prices?",
+      "year": 2017,
+      "journal": "JournalofAppliedEconometrics",
+      "volume": "35",
+      "pages": "673-691",
+      "doi": null,
+      "raw_text": "Kilian L and H Lütkepohl (2017),StructuralVectorAutoregressiveAnalysis, Themes in Modern Econometrics, Cambridge University Press, Cambridge. KilianLandXZhou(2020),'DoesDrawingdowntheUSStrategicPetroleumReserveHelpStabilize Oil Prices?',JournalofAppliedEconometrics, 35(6), pp 673-691."
+    },
+    {
+      "id": "ref_31",
+      "authors": [
+        "Kilian L",
+        "X Zhou"
+      ],
+      "title": "Oil Prices, Exchange Rates and Interest Rates",
+      "year": 2022,
+      "journal": "Journal of InternationalMoneyandFinance",
+      "volume": "126",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Kilian L and X Zhou (2022), 'Oil Prices, Exchange Rates and Interest Rates', Journal of InternationalMoneyandFinance, 126, Article 102679."
+    },
+    {
+      "id": "ref_32",
+      "authors": [
+        "Komarova T"
+      ],
+      "title": "Binary Choice Models with Discrete Regressors: Identification and Misspecification",
+      "year": 2013,
+      "journal": "JournalofEconometrics",
+      "volume": "177",
+      "pages": "14-33",
+      "doi": null,
+      "raw_text": "Komarova T (2013), 'Binary Choice Models with Discrete Regressors: Identification and Misspecification',JournalofEconometrics, 177(1), pp 14-33."
+    },
+    {
+      "id": "ref_33",
+      "authors": [
+        "Larsen VH"
+      ],
+      "title": "Components of Uncertainty",
+      "year": 2021,
+      "journal": "International Economic Review",
+      "volume": "62",
+      "pages": "769-788",
+      "doi": null,
+      "raw_text": "Larsen VH (2021), 'Components of Uncertainty', International Economic Review, 62(2), pp 769-788."
+    },
+    {
+      "id": "ref_34",
+      "authors": [
+        "Laumer S"
+      ],
+      "title": "Government Spending and Heterogeneous Consumption Dynamics",
+      "year": 2020,
+      "journal": "Journalof EconomicDynamics&Control",
+      "volume": "114",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Laumer S (2020), 'Government Spending and Heterogeneous Consumption Dynamics',Journalof EconomicDynamics&Control, 114, Article 103868."
+    },
+    {
+      "id": "ref_35",
+      "authors": [
+        "LudvigsonSC,SMaandSNg"
+      ],
+      "title": "ShockRestrictedStructuralVector-Autoregressions",
+      "year": 2018,
+      "journal": "NBER Working Paper No",
+      "volume": "23225",
+      "pages": null,
+      "doi": null,
+      "raw_text": "LudvigsonSC,SMaandSNg(2018),'ShockRestrictedStructuralVector-Autoregressions',NBER Working Paper No 23225, rev January 2020."
+    },
+    {
+      "id": "ref_36",
+      "authors": [
+        "Ludvigson SC, S Ma",
+        "S Ng"
+      ],
+      "title": "Uncertainty and Business Cycles: Exogenous Impulse or Endogenous Response?",
+      "year": 2021,
+      "journal": "AmericanEconomicJournal:Macroeconomics",
+      "volume": "13",
+      "pages": "369-410",
+      "doi": null,
+      "raw_text": "Ludvigson SC, S Ma and S Ng (2021), 'Uncertainty and Business Cycles: Exogenous Impulse or Endogenous Response?',AmericanEconomicJournal:Macroeconomics, 13(4), pp 369-410."
+    },
+    {
+      "id": "ref_37",
+      "authors": [
+        "Maffei-Faccioli N",
+        "E Vella"
+      ],
+      "title": "Does Immigration Grow the Pie? Asymmetric Evidence from Germany",
+      "year": 2021,
+      "journal": "EuropeanEconomicReview",
+      "volume": "138",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Maffei-Faccioli N and E Vella (2021), 'Does Immigration Grow the Pie? Asymmetric Evidence from Germany',EuropeanEconomicReview, 138, Article 103846."
+    },
+    {
+      "id": "ref_38",
+      "authors": [
+        "Manski CF"
+      ],
+      "title": "Maximum Score Estimation of the Stochastic Utility Model of Choice",
+      "year": 1975,
+      "journal": "Journal ofEconometrics",
+      "volume": "3",
+      "pages": "205-228",
+      "doi": null,
+      "raw_text": "Manski CF (1975), 'Maximum Score Estimation of the Stochastic Utility Model of Choice', Journal ofEconometrics, 3(3), pp 205-228."
+    },
+    {
+      "id": "ref_39",
+      "authors": [
+        "Manski CF"
+      ],
+      "title": "Semiparametric Analysis of Discrete Response: Asymptotic Properties of the Maximum Score Estimator",
+      "year": 1985,
+      "journal": "JournalofEconometrics",
+      "volume": "27",
+      "pages": "313-333",
+      "doi": null,
+      "raw_text": "Manski CF (1985), 'Semiparametric Analysis of Discrete Response: Asymptotic Properties of the Maximum Score Estimator',JournalofEconometrics, 27(3), pp 313-333."
+    },
+    {
+      "id": "ref_40",
+      "authors": [
+        "Mertens K",
+        "MO Ravn"
+      ],
+      "title": "The Dynamic Effects of Personal and Corporate Income Tax Changes in the United States",
+      "year": 2013,
+      "journal": "TheAmericanEconomicReview",
+      "volume": "103",
+      "pages": "1212-1247",
+      "doi": null,
+      "raw_text": "Mertens K and MO Ravn (2013), 'The Dynamic Effects of Personal and Corporate Income Tax Changes in the United States',TheAmericanEconomicReview, 103(4), pp 1212-1247."
+    },
+    {
+      "id": "ref_41",
+      "authors": [
+        "Montiel Olea JL",
+        "J Nesbit"
+      ],
+      "title": "(Machine) Learning Parameter Regions",
+      "year": 2021,
+      "journal": "Journalof Econometrics",
+      "volume": "221",
+      "pages": "716-744",
+      "doi": null,
+      "raw_text": "Montiel Olea JL and J Nesbit (2021), '(Machine) Learning Parameter Regions', Journalof Econometrics, 221(1, Part C), pp 716-744."
+    },
+    {
+      "id": "ref_42",
+      "authors": [
+        "Montiel Olea JL, JH Stock",
+        "MW Watson"
+      ],
+      "title": "Inference in Structural Vector Autoregressions Identified with an External Instrument",
+      "year": 2021,
+      "journal": "JournalofEconometrics",
+      "volume": "225",
+      "pages": "74-87",
+      "doi": null,
+      "raw_text": "Montiel Olea JL, JH Stock and MW Watson (2021), 'Inference in Structural Vector Autoregressions Identified with an External Instrument',JournalofEconometrics, 225(1), pp 74-87."
+    },
+    {
+      "id": "ref_43",
+      "authors": [
+        "Moon HR",
+        "F Schorfheide"
+      ],
+      "title": "Bayesian and Frequentist Inference in Partially Identified Models",
+      "year": 2012,
+      "journal": "Econometrica",
+      "volume": "80",
+      "pages": "755-782",
+      "doi": null,
+      "raw_text": "Moon HR and F Schorfheide (2012), 'Bayesian and Frequentist Inference in Partially Identified Models',Econometrica, 80(2), pp 755-782."
+    },
+    {
+      "id": "ref_44",
+      "authors": [
+        "Neri S"
+      ],
+      "title": "Long-Term Inflation Expectations and Monetary Policy in the Euro Area before the Pandemic",
+      "year": 2023,
+      "journal": "EuropeanEconomicReview",
+      "volume": "154",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Neri S (2023), 'Long-Term Inflation Expectations and Monetary Policy in the Euro Area before the Pandemic',EuropeanEconomicReview, 154, Article 104426."
+    },
+    {
+      "id": "ref_45",
+      "authors": [
+        "Petterson MS, D Seim",
+        "JM Shapiro"
+      ],
+      "title": "Bounds on a Slope from Size Restrictions on Economic Shocks",
+      "year": 2023,
+      "journal": "AmericanEconomicJournal:Microeconomics",
+      "volume": "15",
+      "pages": "552-572",
+      "doi": null,
+      "raw_text": "Petterson MS, D Seim and JM Shapiro (2023), 'Bounds on a Slope from Size Restrictions on Economic Shocks',AmericanEconomicJournal:Microeconomics, 15(3), pp 552-572."
+    },
+    {
+      "id": "ref_46",
+      "authors": [
+        "Plagborg-Møller M"
+      ],
+      "title": "Bayesian Inference on Structural Impulse Response Functions",
+      "year": 2019,
+      "journal": "QuantitativeEconomics",
+      "volume": "10",
+      "pages": "145-184",
+      "doi": null,
+      "raw_text": "Plagborg-Møller M (2019), 'Bayesian Inference on Structural Impulse Response Functions', QuantitativeEconomics, 10(1), pp 145-184."
+    },
+    {
+      "id": "ref_47",
+      "authors": [
+        "Plagborg-Møller M"
+      ],
+      "title": "Discussion of \"Narrat Giacomini, Toru Kitagawa, and Matthew Read",
+      "year": 2022,
+      "journal": "Journa pp 1434-1437. Plagborg-MøllerMandCKWolf(2021a),'LocalProj Responses',Econometrica",
+      "volume": "89",
+      "pages": "955-980",
+      "doi": null,
+      "raw_text": "Plagborg-Møller M (2022), 'Discussion of \"Narrat Giacomini, Toru Kitagawa, and Matthew Read', Journa pp 1434-1437. Plagborg-MøllerMandCKWolf(2021a),'LocalProj Responses',Econometrica, 89(2), pp 955-980."
+    },
+    {
+      "id": "ref_48",
+      "authors": [
+        "Plagborg-Møller M",
+        "CK Wolf"
+      ],
+      "title": "Supplem the Same Impulse Responses\"",
+      "year": 2021,
+      "journal": "Econometrica",
+      "volume": "89",
+      "pages": "483-509",
+      "doi": null,
+      "raw_text": "Plagborg-Møller M and CK Wolf (2021b), 'Supplem the Same Impulse Responses\"',Econometrica, 89(2), Su Poirier DJ (1998), 'Revising Beliefs in Nonidentif pp 483-509."
+    },
+    {
+      "id": "ref_49",
+      "authors": [
+        "Read M"
+      ],
+      "title": "Algorithms for Inference in SVARs TheEconometricsJournal, 25(3), pp 699-718. ReadM(2022b),",
+      "year": 2022,
+      "journal": "TheUnit-EffectNormalisationinSet-I RBA Research Discussion Paper No",
+      "volume": "2022",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Read M (2022a), 'Algorithms for Inference in SVARs TheEconometricsJournal, 25(3), pp 699-718. ReadM(2022b),'TheUnit-EffectNormalisationinSet-I RBA Research Discussion Paper No 2022-04."
+    },
+    {
+      "id": "ref_51",
+      "authors": [
+        "Redl C"
+      ],
+      "title": "Uncertainty Matters: Evidence from Economics",
+      "year": 2020,
+      "journal": null,
+      "volume": "124",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Redl C (2020), 'Uncertainty Matters: Evidence from Economics, 124, Article 103296."
+    },
+    {
+      "id": "ref_52",
+      "authors": [
+        "Reichlin L, G Ricco",
+        "M Tarbé"
+      ],
+      "title": "Monetary- Union",
+      "year": 2023,
+      "journal": "EuropeanEconomicReview",
+      "volume": "151",
+      "pages": "121-184",
+      "doi": null,
+      "raw_text": "Reichlin L, G Ricco and M Tarbé (2023), 'Monetary- Union',EuropeanEconomicReview, 151, Article 104328 Romer CD and DH Romer (1989), 'Does Monetary Friedman and Schwartz', in OJ Blanchard and S Fischer ( MIT Press, Cambridge, pp 121-184."
+    },
+    {
+      "id": "ref_53",
+      "authors": [
+        "Rosen AM",
+        "T Ura"
+      ],
+      "title": "Finite Sample Inferenc for Microdata Methods and Practice, cemmap Working P Rothenberg TJ (1971), 'Identification in Parametric M Rubio-RamírezJF,DFWaggonerandTZha(2010) of Identification and Algorithms for Inference',TheRevie Rüth SK and W Van der Veken (forthcoming), 'Mo in Set-Identified SVARs: Revisited",
+      "year": 2020,
+      "journal": "Journal of Applied Ec Sims CA (1980), 'Macroeconomics and Reality',Econo Stock JH and MW Watson (2018), 'Identification a Macroeconomics Using External Instruments',TheEcono Uhlig H (2005), 'What Are the Effects of Monetary P Identification Procedure',JournalofMonetaryEconomic tive Restrictions and Proxies\" by Raffaella alofBusiness&EconomicStatistics, 40(4), jectionsandVARsEstimatetheSameImpulse ment to \"Local Projections and VARs Estimate upporting Information, Online Appendix. fied Models', Econometric Theory, 14(4), Identified With Sign and Zero Restrictions', IdentifiedStructuralVectorAutoregressions', nce in SVARs Using \"Soft\" Sign Restrictions', m Close Elections', JournalofInternational -Fiscal Crosswinds in the European Monetary 8. y Policy Matter? A New Test in the Spirit of (eds),NBERMacroeconomicsAnnual, 4, The ce for the Maximum Score Estimand', Centre Paper CWP22/20. Models',Econometrica, 39(3), pp 577-591. ),'StructuralVectorAutoregressions:Theory iewofEconomicStudies, 77(2), pp 665-696. onetary Policy and Exchange Rate Anomalies conometrics. ometrica, 48(1), pp 1-48. and Estimation of Dynamic Causal Effects in nomicJournal",
+      "volume": "128",
+      "pages": "917-948",
+      "doi": null,
+      "raw_text": "Rosen AM and T Ura (2020), 'Finite Sample Inferenc for Microdata Methods and Practice, cemmap Working P Rothenberg TJ (1971), 'Identification in Parametric M Rubio-RamírezJF,DFWaggonerandTZha(2010) of Identification and Algorithms for Inference',TheRevie Rüth SK and W Van der Veken (forthcoming), 'Mo in Set-Identified SVARs: Revisited', Journal of Applied Ec Sims CA (1980), 'Macroeconomics and Reality',Econo Stock JH and MW Watson (2018), 'Identification a Macroeconomics Using External Instruments',TheEcono Uhlig H (2005), 'What Are the Effects of Monetary P Identification Procedure',JournalofMonetaryEconomic tive Restrictions and Proxies\" by Raffaella alofBusiness&EconomicStatistics, 40(4), jectionsandVARsEstimatetheSameImpulse ment to \"Local Projections and VARs Estimate upporting Information, Online Appendix. fied Models', Econometric Theory, 14(4), Identified With Sign and Zero Restrictions', IdentifiedStructuralVectorAutoregressions', nce in SVARs Using \"Soft\" Sign Restrictions', m Close Elections', JournalofInternational -Fiscal Crosswinds in the European Monetary 8. y Policy Matter? A New Test in the Spirit of (eds),NBERMacroeconomicsAnnual, 4, The ce for the Maximum Score Estimand', Centre Paper CWP22/20. Models',Econometrica, 39(3), pp 577-591. ),'StructuralVectorAutoregressions:Theory iewofEconomicStudies, 77(2), pp 665-696. onetary Policy and Exchange Rate Anomalies conometrics. ometrica, 48(1), pp 1-48. and Estimation of Dynamic Causal Effects in nomicJournal, 128(610), pp 917-948."
+    },
+    {
+      "id": "ref_55",
+      "authors": [
+        "Uhlig H"
+      ],
+      "title": "Shocks, Sign and L Samuelson (eds),Advances Econometric Society Monographs WolfCK(2020),",
+      "year": 2017,
+      "journal": "SVAR(Mis)Ide EconomicJournal:Macroeconomi ZhouX(",
+      "volume": "2020",
+      "pages": "130-140",
+      "doi": null,
+      "raw_text": "Uhlig H (2017), 'Shocks, Sign and L Samuelson (eds),Advances Econometric Society Monographs WolfCK(2020),'SVAR(Mis)Ide EconomicJournal:Macroeconomi ZhouX(2020),'Refining the Wo pp 130-140. 35 Restrictions, and Identification', in B Honoré, A Pakes, M Piazzesi esinEconomicsandEconometrics:EleventhWorldCongress, Vol 2, s, Cambridge University Press, Cambridge, pp 95-127. entificationandtheRealEffectsofMonetaryPolicyShocks',American mics, 12(4), pp 1-32. orkhorse Oil Market Model',JournalofAppliedEconometrics, 35(1),"
+    },
+    {
+      "id": "ref_fake_01",
+      "authors": [
+        "Petrov, I. V.",
+        "Chen, L."
+      ],
+      "title": "This Paper Does Not Exist In Any Database Anywhere",
+      "year": 2099,
+      "journal": "Fictitious Review of Imaginary Science",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Petrov, I. V. and Chen, L. (2099) This Paper Does Not Exist."
+    },
+    {
+      "id": "ref_fake_02",
+      "authors": [
+        "Yang, Z.",
+        "Yang, D."
+      ],
+      "title": "Hierarchical Attention Networks for Document Classification",
+      "year": 2016,
+      "journal": "Proceedings of NAACL",
+      "volume": null,
+      "pages": null,
+      "doi": "10.9999/fake-doi-12345",
+      "raw_text": "Yang, Z. and Yang, D. (2016) Hierarchical Attention Networks."
+    },
+    {
+      "id": "ref_fake_03",
+      "authors": [
+        "Snoek, J.",
+        "Larochelle, H."
+      ],
+      "title": "Practical Bayesian Optimization of Machine Learning Algorithms",
+      "year": 2012,
+      "journal": "Advances in Neural Information Processing Systems",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Snoek, J. and Larochelle, H. (2012) Practical Bayesian Optimization."
+    }
+  ],
+  "model_used": "regex:harvard"
+}

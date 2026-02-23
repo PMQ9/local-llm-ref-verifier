@@ -1,0 +1,309 @@
+{
+  "source_pdf": "tests/fixtures/papers/chicago/nber_labor_force.pdf",
+  "references": [
+    {
+      "id": "ref_01",
+      "authors": [
+        "Aaronson, Daniel, Davis, Jonathan",
+        "Hu, Luojia"
+      ],
+      "title": "Explaining the decline in the U.S",
+      "year": 2012,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Aaronson, Daniel, Davis, Jonathan, and Hu, Luojia. 2012. Explaining the decline in the U.S. labor force participation rate. Chicago Fed Letter."
+    },
+    {
+      "id": "ref_02",
+      "authors": [
+        "Aaronson, Stephanie, Fallick, Bruce, Figura, Andrew, Pingle, Jonathan",
+        "Wascher, William"
+      ],
+      "title": "The Recent Decline in the Labor Force Participation Rate and Its Implications for Potential Labor Supply",
+      "year": 2006,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Aaronson, Stephanie, Fallick, Bruce, Figura, Andrew, Pingle, Jonathan, and Wascher, William. 2006. The Recent Decline in the Labor Force Participation Rate and Its Implications for Potential Labor Supply. Brookings Papers on Economic Activity, 37(1), 69(cid:21)154."
+    },
+    {
+      "id": "ref_03",
+      "authors": [
+        "Aaronson, Stephanie, Cajner, Tomaz, Fallick, Bruce, Galbis-Reig, Felix, Smith, Christopher",
+        "Wascher, William"
+      ],
+      "title": "Labor Force Participation: Recent Developments and Future Prospects",
+      "year": 2014,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Aaronson, Stephanie, Cajner, Tomaz, Fallick, Bruce, Galbis-Reig, Felix, Smith, Christopher, and Wascher, William. 2014. Labor Force Participation: Recent Developments and Future Prospects. Brookings Papers on Economic Activity, 45(2 (Fall)), 197(cid:21)275."
+    },
+    {
+      "id": "ref_04",
+      "authors": [
+        "Aaronson, Stephanie R, Daly, Mary C, Wascher, William L",
+        "Wilcox, David W"
+      ],
+      "title": "Okun Revisited: Who Bene(cid:28)ts Most from a Strong Economy? Brookings Papers on Economic Activity, 2019(1), 333(cid:21)404",
+      "year": 2019,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Aaronson, Stephanie R, Daly, Mary C, Wascher, William L, and Wilcox, David W. 2019. Okun Revisited: Who Bene(cid:28)ts Most from a Strong Economy? Brookings Papers on Economic Activity, 2019(1), 333(cid:21)404."
+    },
+    {
+      "id": "ref_05",
+      "authors": [
+        "Bach, Katie"
+      ],
+      "title": "Is 'long Covid' worsening the labor shortage? Barnichon, Regis, and Nekarda, Christopher J",
+      "year": 2022,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Bach, Katie. 2022. Is 'long Covid' worsening the labor shortage? Barnichon, Regis, and Nekarda, Christopher J. 2012. The Ins and Outs of Forecasting Un- employment: Using Labor Force Flows to Forecast the Labor Market. Brookings Papers on Economic Activity, 43(2 (Fall)), 83(cid:21)131."
+    },
+    {
+      "id": "ref_07",
+      "authors": [
+        "Daly, Mary C., Hobijn, Bart",
+        "Kwok, Joyce"
+      ],
+      "title": "Jobless Recovery Redux? FRBSF Economic Letter",
+      "year": 2009,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Daly, Mary C., Hobijn, Bart, and Kwok, Joyce. 2009. Jobless Recovery Redux? FRBSF Economic Letter."
+    },
+    {
+      "id": "ref_08",
+      "authors": [
+        "Dubina, Kevin S., Morisi, Teresa L., Rieley, Michael",
+        "Wagoner, Andrea"
+      ],
+      "title": "Projections overview and highlights, 2018(cid:21)28",
+      "year": 2019,
+      "journal": "Monthly Labor Review",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Dubina, Kevin S., Morisi, Teresa L., Rieley, Michael, and Wagoner, Andrea. 2019. Projections overview and highlights, 2018(cid:21)28. Monthly Labor Review."
+    },
+    {
+      "id": "ref_09",
+      "authors": [
+        "Elsby, Michael, Hobijn, Bart, Karahan, Fatih, Ko‡ar, Gizem",
+        "(cid:147)ahin, Ay‡eg(cid:252)l"
+      ],
+      "title": "Flow Origins of Labor Force Participation Fluctuations",
+      "year": 2019,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Elsby, Michael, Hobijn, Bart, Karahan, Fatih, Ko‡ar, Gizem, and (cid:147)ahin, Ay‡eg(cid:252)l. 2019. Flow Origins of Labor Force Participation Fluctuations. AEA Papers and Proceedings, 109(May), 461(cid:21)464."
+    },
+    {
+      "id": "ref_10",
+      "authors": [
+        "Elsby, Michael W. L., Michaels, Ryan",
+        "Solon, Gary"
+      ],
+      "title": "The Ins and Outs of Cyclical Unemployment",
+      "year": 2009,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Elsby, Michael W. L., Michaels, Ryan, and Solon, Gary. 2009. The Ins and Outs of Cyclical Unemployment. American Economic Journal: Macroeconomics, 1(1), 84(cid:21)110. (cid:16)Missing(cid:17) Workers and (cid:16)Missing(cid:17) Jobs Since the Pandemic Hobijn and (cid:147)ahin Elsby, Michael W.L., Hobijn, Bart, and (cid:147)ahin, Ay‡eg(cid:252)l. 2015. On the Importance of the ParticipationMarginforLaborMarketFluctuations. Journal of Monetary Economics,72(C), 64(cid:21)82."
+    },
+    {
+      "id": "ref_11",
+      "authors": [
+        "Faria-e-Castro, Miguel"
+      ],
+      "title": "The COVID Retirement Boom",
+      "year": 2021,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Faria-e-Castro, Miguel. 2021. The COVID Retirement Boom. Economic Synopses, October, 1(cid:21)2."
+    },
+    {
+      "id": "ref_12",
+      "authors": [
+        "Fujita, Shigeru",
+        "Ramey, Garey"
+      ],
+      "title": "The Cyclicality of Job Loss and Hiring",
+      "year": 2006,
+      "journal": "Tech",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Fujita, Shigeru, and Ramey, Garey. 2006. The Cyclicality of Job Loss and Hiring. Tech. rept."
+    },
+    {
+      "id": "ref_14",
+      "authors": [
+        "Hobijn, Bart"
+      ],
+      "title": "(cid:16)Great Resignations(cid:17) Are Common During Fast Recoveries",
+      "year": 2022,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Hobijn, Bart. 2022. (cid:16)Great Resignations(cid:17) Are Common During Fast Recoveries. FRBSF Eco- nomic Letter, 2022(08), 1(cid:21)06."
+    },
+    {
+      "id": "ref_15",
+      "authors": [
+        "Hobijn, Robert E.",
+        "(cid:147)ahin, Ay‡eg(cid:252)l"
+      ],
+      "title": "Maximum Employment and the Participation Cycle",
+      "year": 2021,
+      "journal": "Jackson Hole Economic Policy Symposium Proceedings",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Hobijn, Robert E., and (cid:147)ahin, Ay‡eg(cid:252)l. 2021. Maximum Employment and the Participation Cycle. Jackson Hole Economic Policy Symposium Proceedings."
+    },
+    {
+      "id": "ref_16",
+      "authors": [
+        "Hornstein, Andreas, Kudlyak, Marianna",
+        "Schweinert, Annemarie"
+      ],
+      "title": "The Labor Force Participation Rate Trend and Its Projections",
+      "year": 2018,
+      "journal": "FRBSF Economic Letter",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Hornstein, Andreas, Kudlyak, Marianna, and Schweinert, Annemarie. 2018. The Labor Force Participation Rate Trend and Its Projections. FRBSF Economic Letter. National Center for Health Statistics. 2022. Excess Deaths Associated with COVID-19. Website URL: https://www.cdc.gov/nchs/nvss/vsrr/covid19 [Last accessed 10/29/2022]."
+    },
+    {
+      "id": "ref_17",
+      "authors": [
+        "Nie, Jun",
+        "Yang, Shu-Kuei X"
+      ],
+      "title": "What Has Driven the Recent Increase in Retirements? Economic Bulletin, August, 1(cid:21)4",
+      "year": 2021,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Nie, Jun, and Yang, Shu-Kuei X. 2021. What Has Driven the Recent Increase in Retirements? Economic Bulletin, August, 1(cid:21)4."
+    },
+    {
+      "id": "ref_18",
+      "authors": [
+        "Reinhart, Carmen M.",
+        "Rogo(cid:27), Kenneth S"
+      ],
+      "title": "This Time Is Di(cid:27)erent: Eight Centuries of Financial Folly",
+      "year": 2009,
+      "journal": "Princeton University Press",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Reinhart, Carmen M., and Rogo(cid:27), Kenneth S. 2009. This Time Is Di(cid:27)erent: Eight Centuries of Financial Folly. Princeton University Press."
+    },
+    {
+      "id": "ref_19",
+      "authors": [
+        "Robertson, John",
+        "Willis, Jonathan"
+      ],
+      "title": "Assessing Recent Labor Market Improvement",
+      "year": 2022,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Robertson, John, and Willis, Jonathan. 2022. Assessing Recent Labor Market Improvement. Federal Reserve Bank of Atlanta - Macroblog, March 1, 2022. (cid:147)ahin, Ay‡eg(cid:252)l, Tasci, Murat, and Yan, Jin. 2021 (February). Unemployment in the Time of COVID-19: A Flow-Based Approach to Real-time Unemployment Projections. Working Paper 28445. National Bureau of Economic Research."
+    },
+    {
+      "id": "ref_20",
+      "authors": [
+        "Shimer, Robert"
+      ],
+      "title": "The Cyclical Behavior of Equilibrium Unemployment and Vacancies",
+      "year": 2005,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Shimer, Robert. 2005. The Cyclical Behavior of Equilibrium Unemployment and Vacancies. American Economic Review, 95(1), 25(cid:21)49. (cid:16)Missing(cid:17) Workers and (cid:16)Missing(cid:17) Jobs Summers, Lawrence H. 1986. Why is t ment? Brookings Papers on Econom Thompson, Daniel. 2022. Pandemic D tirement Timing. Census Bureau: ber 19, https://www.census.gov/li timing.html [last accessed: 10/31/2"
+    },
+    {
+      "id": "ref_21",
+      "authors": [
+        "Zandweghe, Willem Van"
+      ],
+      "title": "Inte Economic Review, 97(Q I), 5(cid:21)34",
+      "year": 2012,
+      "journal": null,
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Zandweghe, Willem Van. 2012. Inte Economic Review, 97(Q I), 5(cid:21)34. (cid:16)Missing(cid:17) Workers and (cid:16)Missing 14 12 10 8 6 4 2007 2009 2011 tnecreP Unemployment rate 67 66 65 64 63 62 61 60 2007 2009 2011 tnecreP Labor force particip Figure 1: Unem Source: BLS. (cid:16)Missing(cid:17) Workers and (cid:16)Missing 170 160 150 140 130 120 2007 2009 2011 )snoillim( sboj Nonfarm payrolls Pre-COVID 'trend' Fi Source: BLS and author's calculation Note: Post-COVID 'trend' is based between February 2015 and February (cid:16)Missing(cid:17) Workers and (cid:16)Missing 170 160 150 140 130 120 2007 2009 2011 )SPC( snosrep / )SEC( sboj fo snoilliM Nonfarm payroll em Nonfarm payroll em Employment level ( Figure 3: Three employm Source: BLS Note: CPS proxy for nonfarm payrol seasonally adjusted(cid:17) by the BLS. (cid:16)Missing(cid:17) Workers and (cid:16)M 67 66 65 64 63 62 61 60 2004 tnecrep Actual Figu Source: BLS and authors' calc Note: Actual is seasonally adj (2011,2015,2020,2021), : Teal et al. (2006), Aaronson et al. (cid:16)Missing(cid:17) Workers and (cid:16)Missing 6 5 4 3 2 2007 2009 2011 tnecreP Figure 5: Labor force Source: BLS. Note: Seasonally adjusted monthly d (cid:16)Missing(cid:17) Workers and (cid:16)M 3 2 st (cid:16)Missing(cid:17) Workers and (cid:16)M Cou Unemployment rate LFPR - cycle LFPR - trend Population growth Survey di(cid:27)erence Scope di(cid:27)erence Total Source: BLS and authors' calc Notes: Percentage points are nonfarm payroll jobs. (cid:16)Missing(cid:17) Workers and (cid:16)Missing(cid:17) Jobs Since the Pandemic Hobijn and (cid:147)ahin A Mathematical details A.1 Six-Flow Decomposition of the Participation Rate The state of the labor market can be summarized by two shares, the share of the population that is employed in month t, which we denote by E , and the share that is unemployed, U . t t The share of nonparticipants, N , is simply implied by the constraint that the three shares add t up to one. The transition probabilities determine the evolution of these shares according to the following two equations22 E = (1−P −P )E +P U +P (1−E −U ), and (12) t E,U,t E,N,t t−1 U,E,t t−1 N,E,t t−1 t−1 U = (1−P −P )U +P E +P (1−E −U ). (13) t U,E,t U,N,t t−1 E,U,t t−1 N,U,t t−1 t−1 For the purpose of our decomposition it is easier to write these equations in matrix form. The state of the labor is represented by the vector (cid:104) (cid:105)′ s = E U . (14) t t t Given this de(cid:28)nition, equations (12)-(13) can be written as ∆s = s −s = d +P s , (15) t t t−1 t t t−1 where (cid:34) (cid:35) (cid:34) (cid:35) P −P −P −P P −P N,E,t E,N,t E,U,t N,E,t U,E,t N,E,t d = , and P = . (16) t t P P −P −P −P −P N,U,t E,U,t N,U,t U,E,t U,N,t N,U,t For our decomposition we split the movements of the stocks into two parts. The (cid:28)rst part is the changes in the long-run value of the state vector if the current (cid:29)ow probabilities remain unchanged. This often is referred to as the (cid:29)ow steady-state and it is the value s¯ for which t ∆s = 0. For given matrices d and P , it is equal to t t t s¯ = −P−1d (17) t t t The second part is the changes in deviations from the steady state, (s −s¯ ). The change t−1 t−1 22 The estimated transition probabilities are margin adjusted, using the method in Elsby et al. (2015) to satisfy these equations. (cid:16)Missing(cid:17) Workers and (cid:16)Missing(cid:17) Jobs Since the Pandemic Hobijn and (cid:147)ahin in the state vector is related to these two parts as follows ∆s = P (s −s¯ ) = P (s −s¯ )−P (s¯ −s¯ ). (18) t t t−1 t t t−1 t−1 t t t−1 Rearrangingtermsin(18),wecanwritethecurrentdeviationfromthesteadystateasafunction of the current change in the state vector. That is, (s −s¯ ) = (I +P )(s −s¯ )−(I +P )(s¯ −s¯ ) (19) t t t t−1 t−1 t t t−1 = (I +P )P−1∆s t t t This allows us to write the current change in the state as the sum of the transitional dynamics through the past change in the state and the changes in the steady state. ∆s = P (I +P )P−1 ∆s −P ∆s¯ . (20) t t t−1 t−1 t−1 t t The (cid:28)nal step is to attribute the changes in the steady state, i.e., ∆s¯ to changes in the t di(cid:27)erent matrices made up of transition probabilities. For this, we use that 1 1 ∆d = − ∆P (s¯ +s¯ )− (P +P )∆s¯ , (21) t t t t−1 t t−1 t 2 2 where (cid:88) (cid:88) ∂d (cid:88) (cid:88) ∂P t t ∆d = ∆P , and ∆P = ∆P . (22) t s,s′,t t s,s′,t ∂P ∂P s,s′,t s,s′,t s∈{E,U,N}s′∈{E,U,N} s∈{E,U,N}s′∈{E,U,N} Using this we can trace the change in the steady state back to changes in the (cid:29)ow transitions that drive ∆d and ∆P , which yields t t (cid:20) 1 (cid:21)−1(cid:20) 1 (cid:21) ∆s¯ = (P +P ) −∆d − ∆P (s¯ +s¯ ) . (23) t t t−1 t t t t−1 2 2 Combining equations (20) and (23), we write the change in the state vector as the sum of transitional dynamics plus the changes in the steady state attributable to the six di(cid:27)erent (cid:29)ow transition probabilities. ∆s = P (I +P )P−1 ∆s +P (P +P )−1[2∆d +∆P (s¯ +s¯ )] (24) t t t−1 t−1 t−1 t t t−1 t t t t−1 (cid:16)Missing(cid:17) Workers and (cid:16)Missing(cid:17) Jobs Since the Pandemic Hobijn and (cid:147)ahin This is a decomposition of changes in the state vector s . The labor force participation rate is t LFPR = E +U = ι′s , (25) t t t 2 t where ι is the 2-dimensional summation operator, i.e., a column vector with ones. The de- 2 composition we use for the LFPR is t ∆LFPR = ι′P (I +P )P−1 ∆s +ι′P (P +P )−1[2∆d +∆P (s¯ +s¯ )] (26) t 2 t t−1 t−1 t−1 2 t t t−1 t t t t−1 A.2 Attachment Wedge If those who are unemployed were as attached to the labor force as the employed, then the cyclical component would have no e(cid:27)ect on participation. To understand this, it is important to realize that the current change in the LFPR is a distributed lag of current and past changes in the (cid:29)ow steady-state.23 Because this lag structure is complicated, we focus on the change in the (cid:29)ow steady-state due to changes in the job-loss and job-(cid:28)nding rates, which we denote by c ∆LFPR , to explain the intuition for what drives the cycle component in our decomposition. t In Appendix A, we show that this equals 1 c (cid:0)¯ ¯ (cid:1) ∆LFPR = − LFPR P −P ((1−u¯ )∆P −u¯ ∆P ), (27) t D t U,N,t E,N,t t E,U,t t U,E,t t where LFPR is the (cid:29)ow steady-state labor force participation rate and u¯ is the (cid:29)ow steady- t t state unemployment rate, both averaged across periods t and t−1. D is the determinant of t P ¯ t = 1/ 2 (P t +P t−1 ), P ¯ E,N,t = 1/ 2 (P E,N,t +P E,N,t−1 ), and P ¯ U,N,t = 1/ 2 (P U,N,t +P U,N,t−1 ).24 The third and fourth terms of this expression are the ones that matter the most for the intuition of what drives the participation cycle. The third term is the di(cid:27)erence between the rate that unemployed and employed workers (cid:0)¯ ¯ (cid:1) leave the labor force: P −P . We refer to this term as the attachment wedge. It U,N,t E,N,t captures the di(cid:27)erence in the attachment to the labor force of those unemployed versus those employed. It is positive because the employed are more attached to the labor force than the ¯ ¯ unemployed, i.e., P > P . A positive attachment wedge is necessary for a procyclical U,N,t E,N,t participation cycle. The fourth term, ((1−u¯ )∆P −u¯ ∆P ), is the change in the (cid:29)ow steady-state un- t E,U,t t U,E,t employmentrateduetochangesinthejob-lossandjob-(cid:28)ndingrates. Itcapturestheshiftinthe 23 See Appendix A for a derivation of this lag expression. 24 The determinant D is positive in all periods for the observed transition probabilities in the data. t (cid:16)Missing(cid:17) Workers and (cid:16)Missing(cid:17) Jobs Since the Pandemic composition of the labor force between unemployed and em ments of persons between these two states and not due to margin. Equation (27) is important because it shows that, to u participation rate, it is essential to study the likelihood of w than workers entering the labor force. This likelihood is a individuals within the labor force since there is a quantita between the unemployed and employed. (cid:16)Missing(cid:17) Workers and (cid:16)M B Additional emp 1.06 1.04 1.02 1.00 0.98 2007 2009 oitaR Survey d Pre-COV 0.96 0.95 0.94 0.93 0.92 0.91 2007 2009 oitaR Scope di Pre-COV 270 265 260 255 250 245 240 235 230 2007 2009 snosrep fo snoilliM Civilian n Pre-COVI Figure B.1: Survey di(cid:27)ere Source: BLS and author's calc Draft: November 21, 2022 Missing(cid:17) Jobs Since the Pandemic Hobijn and (cid:147)ahin pirical results 2015-Feb 2020-Feb 2022-Oct difference VID trend 2011 2013 2015 2017 2019 2021 (a) Survey di(cid:27)erence 2015-Feb 2020-Feb 2022-Oct ifference VID trend 2011 2013 2015 2017 2019 2021 (b) Scope di(cid:27)erence 2015-Feb 2020-Feb 2022-Oct noninstitutional population ID trend 2011 2013 2015 2017 2019 2021 (c) Civilian noninstitutional population ence, scope di(cid:27)erence, and population growth (with pre-COVID trend) culations. 2 Page 36"
+    },
+    {
+      "id": "ref_fake_01",
+      "authors": [
+        "Petrov, I. V.",
+        "Chen, L."
+      ],
+      "title": "This Paper Does Not Exist In Any Database Anywhere",
+      "year": 2099,
+      "journal": "Fictitious Review of Imaginary Science",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Petrov, I. V. and Chen, L. (2099) This Paper Does Not Exist."
+    },
+    {
+      "id": "ref_fake_02",
+      "authors": [
+        "Yang, Z.",
+        "Yang, D."
+      ],
+      "title": "Hierarchical Attention Networks for Document Classification",
+      "year": 2016,
+      "journal": "Proceedings of NAACL",
+      "volume": null,
+      "pages": null,
+      "doi": "10.9999/fake-doi-12345",
+      "raw_text": "Yang, Z. and Yang, D. (2016) Hierarchical Attention Networks."
+    },
+    {
+      "id": "ref_fake_03",
+      "authors": [
+        "Snoek, J.",
+        "Larochelle, H."
+      ],
+      "title": "Practical Bayesian Optimization of Machine Learning Algorithms",
+      "year": 2012,
+      "journal": "Advances in Neural Information Processing Systems",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Snoek, J. and Larochelle, H. (2012) Practical Bayesian Optimization."
+    }
+  ],
+  "model_used": "regex:chicago"
+}

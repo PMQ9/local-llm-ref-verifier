@@ -1,0 +1,596 @@
+{
+  "source_pdf": "tests/fixtures/papers/harvard/rba_financial_conditions.pdf",
+  "references": [
+    {
+      "id": "ref_01",
+      "authors": [
+        "Ballantyne A, T Cusbert , R Evans, R Guttmann, J Hambur, A Hamilton, E Kendall, R McCririck, G Nodari",
+        "D Rees"
+      ],
+      "title": "MARTIN Has Its Place: A Macroeconometric Model of the Australian Economy",
+      "year": 2019,
+      "journal": "RBA Research Discussion Paper No",
+      "volume": "2019",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Ballantyne A, T Cusbert , R Evans, R Guttmann, J Hambur, A Hamilton, E Kendall, R McCririck, G Nodari and D Rees (2019), 'MARTIN Has Its Place: A Macroeconometric Model of the Australian Economy', RBA Research Discussion Paper No 2019-07."
+    },
+    {
+      "id": "ref_02",
+      "authors": [
+        "Beckers B"
+      ],
+      "title": "Credit Spreads, Monetary Policy and the Price Puzzle",
+      "year": 2020,
+      "journal": "RBA Research Discussion Paper No",
+      "volume": "2020",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Beckers B (2020), 'Credit Spreads, Monetary Policy and the Price Puzzle', RBA Research Discussion Paper No 2020-01."
+    },
+    {
+      "id": "ref_03",
+      "authors": [
+        "Berkelmans L",
+        "G Spence"
+      ],
+      "title": "Realisation Ratios in the Capital Expenditure Survey",
+      "year": 2013,
+      "journal": "RBA Bulletin, December, pp",
+      "volume": "1",
+      "pages": "1-6",
+      "doi": null,
+      "raw_text": "Berkelmans L and G Spence (2013), 'Realisation Ratios in the Capital Expenditure Survey', RBA Bulletin, December, pp 1-6."
+    },
+    {
+      "id": "ref_04",
+      "authors": [
+        "Bernanke BS",
+        "M Gertler"
+      ],
+      "title": "Inside the Black Box: The Credit Channel of Monetary Policy Transmission",
+      "year": 1995,
+      "journal": "Journal of Economic Perspectives",
+      "volume": "9",
+      "pages": "27-48",
+      "doi": null,
+      "raw_text": "Bernanke BS and M Gertler (1995), 'Inside the Black Box: The Credit Channel of Monetary Policy Transmission', Journal of Economic Perspectives, 9(4), pp 27-48."
+    },
+    {
+      "id": "ref_05",
+      "authors": [
+        "Brassil A, CG Gibbs",
+        "C Ryan"
+      ],
+      "title": "Optimal Monetary Policy when Expectations are Rational, Fixed, Learned, or Anything in Between",
+      "year": 2023,
+      "journal": "Unpublished manuscript, Reserve Bank of Australia",
+      "volume": "7",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Brassil A, CG Gibbs and C Ryan (2023), 'Optimal Monetary Policy when Expectations are Rational, Fixed, Learned, or Anything in Between', Unpublished manuscript, Reserve Bank of Australia, 7 September."
+    },
+    {
+      "id": "ref_06",
+      "authors": [
+        "Caballero RJ"
+      ],
+      "title": "Aggregate Investment",
+      "year": 1999,
+      "journal": "in JB Taylor and M Woodford (eds), Handbook of Macroeconomics: Volume",
+      "volume": "1",
+      "pages": "813-862",
+      "doi": null,
+      "raw_text": "Caballero RJ (1999), 'Aggregate Investment', in JB Taylor and M Woodford (eds), Handbook of Macroeconomics: Volume 1B, Handbooks in Economics 15, Elsevier Science, Amsterdam, pp 813-862."
+    },
+    {
+      "id": "ref_07",
+      "authors": [
+        "Cameron AC",
+        "DL Miller"
+      ],
+      "title": "A Practitioner's Guide to Cluster-Robust Inference",
+      "year": 2015,
+      "journal": "The Journal of Human Resources",
+      "volume": "50",
+      "pages": "317-372",
+      "doi": null,
+      "raw_text": "Cameron AC and DL Miller (2015), 'A Practitioner's Guide to Cluster-Robust Inference', The Journal of Human Resources, 50(2), pp 317-372."
+    },
+    {
+      "id": "ref_08",
+      "authors": [
+        "Casiraghi M, T McGregor",
+        "D Palazzo"
+      ],
+      "title": "Young Firms and Monetary Policy Transmission",
+      "year": 2021,
+      "journal": "IMF Working Paper No WP/",
+      "volume": "21",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Casiraghi M, T McGregor and D Palazzo (2021), 'Young Firms and Monetary Policy Transmission', IMF Working Paper No WP/21/63."
+    },
+    {
+      "id": "ref_09",
+      "authors": [
+        "Cassidy N, E Doherty",
+        "T Gill"
+      ],
+      "title": "Forecasting Business Investment Using the Capital Expenditure Survey",
+      "year": 2012,
+      "journal": "RBA Bulletin, September, pp",
+      "volume": "1",
+      "pages": "1-10",
+      "doi": null,
+      "raw_text": "Cassidy N, E Doherty and T Gill (2012), 'Forecasting Business Investment Using the Capital Expenditure Survey', RBA Bulletin, September, pp 1-10."
+    },
+    {
+      "id": "ref_10",
+      "authors": [
+        "Chirinko RS"
+      ],
+      "title": "Business Fixed Investment Spending: Modeling Strategies, Empirical Results, and Policy Implications",
+      "year": 1993,
+      "journal": "Journal of Economic Literature",
+      "volume": "31",
+      "pages": "1875-1911",
+      "doi": null,
+      "raw_text": "Chirinko RS (1993), 'Business Fixed Investment Spending: Modeling Strategies, Empirical Results, and Policy Implications', Journal of Economic Literature, 31(4), pp 1875-1911."
+    },
+    {
+      "id": "ref_12",
+      "authors": [
+        "Cockerell L",
+        "S Pennings"
+      ],
+      "title": "Private Business Investment in Australia",
+      "year": 2007,
+      "journal": "RBA Research Discussion Paper No",
+      "volume": "2007",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Cockerell L and S Pennings (2007), 'Private Business Investment in Australia', RBA Research Discussion Paper No 2007-09."
+    },
+    {
+      "id": "ref_13",
+      "authors": [
+        "Debelle G"
+      ],
+      "title": "Business Investment in Australia",
+      "year": 2017,
+      "journal": "Address to the UBS Australasia Conference",
+      "volume": "2017",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Debelle G (2017), 'Business Investment in Australia', Address to the UBS Australasia Conference 2017, Sydney, 13 November."
+    },
+    {
+      "id": "ref_14",
+      "authors": [
+        "Demmou L, I Stefanescu",
+        "A Arquie"
+      ],
+      "title": "Productivity Growth and Finance: The Role of Intangible Assets - A Sector Level Analysis",
+      "year": 2019,
+      "journal": "OECD Economics Department Working Papers No",
+      "volume": "1547",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Demmou L, I Stefanescu and A Arquie (2019), 'Productivity Growth and Finance: The Role of Intangible Assets - A Sector Level Analysis', OECD Economics Department Working Papers No 1547."
+    },
+    {
+      "id": "ref_15",
+      "authors": [
+        "Durante E, A Ferrando",
+        "P Vermeulen"
+      ],
+      "title": "Monetary Policy, Investment and Firm Heterogeneity",
+      "year": 2022,
+      "journal": "European Economic Review",
+      "volume": "148",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Durante E, A Ferrando and P Vermeulen (2022), 'Monetary Policy, Investment and Firm Heterogeneity', European Economic Review, 148, Article 104251."
+    },
+    {
+      "id": "ref_16",
+      "authors": [
+        "Edwards H",
+        "K Lane"
+      ],
+      "title": "Why Are Investment Hurdle Rates So Sticky?",
+      "year": 2021,
+      "journal": "RBA Bulletin",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Edwards H and K Lane (2021), 'Why Are Investment Hurdle Rates So Sticky?', RBA Bulletin, December."
+    },
+    {
+      "id": "ref_17",
+      "authors": [
+        "Gibbs CG, J Hambur",
+        "G Nodari"
+      ],
+      "title": "DSGE Reno: Adding a Housing Block to a Small Open Economy Model",
+      "year": 2018,
+      "journal": "RBA Research Discussion Paper No",
+      "volume": "2018",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Gibbs CG, J Hambur and G Nodari (2018), 'DSGE Reno: Adding a Housing Block to a Small Open Economy Model', RBA Research Discussion Paper No 2018-04."
+    },
+    {
+      "id": "ref_18",
+      "authors": [
+        "Hambur J"
+      ],
+      "title": "Did Labour Market Concentration Lower Wages Growth Pre-COVID?",
+      "year": 2023,
+      "journal": "RBA Research Discussion Paper No",
+      "volume": "2023",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Hambur J (2023), 'Did Labour Market Concentration Lower Wages Growth Pre-COVID?', RBA Research Discussion Paper No 2023-02."
+    },
+    {
+      "id": "ref_19",
+      "authors": [
+        "Hambur J",
+        "D Andrews"
+      ],
+      "title": "Doing Less, with Less: Capital Misallocation, Investment and the Productivity Slowdown in Australia",
+      "year": 2023,
+      "journal": "RBA Research Discussion Paper No",
+      "volume": "2023",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Hambur J and D Andrews (2023), 'Doing Less, with Less: Capital Misallocation, Investment and the Productivity Slowdown in Australia', RBA Research Discussion Paper No 2023-03."
+    },
+    {
+      "id": "ref_20",
+      "authors": [
+        "Hambur J",
+        "Q Haque"
+      ],
+      "title": "Can We Use High-frequency Yield Data to Better Understand the Effects of Monetary Policy and Its Communication? Yes and No!",
+      "year": 2023,
+      "journal": "RBA Research Discussion Paper No",
+      "volume": "2023",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Hambur J and Q Haque (2023), 'Can We Use High-frequency Yield Data to Better Understand the Effects of Monetary Policy and Its Communication? Yes and No!', RBA Research Discussion Paper No 2023-04."
+    },
+    {
+      "id": "ref_21",
+      "authors": [
+        "Hambur J",
+        "K Jenner"
+      ],
+      "title": "Can Structural Change Account for the Low Level of Non-mining Investment?",
+      "year": 2019,
+      "journal": "RBA Bulletin",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Hambur J and K Jenner (2019), 'Can Structural Change Account for the Low Level of Non-mining Investment?', RBA Bulletin, June."
+    },
+    {
+      "id": "ref_22",
+      "authors": [
+        "Hambur J",
+        "G La Cava"
+      ],
+      "title": "Do Interest Rates Affect Business Investment? Evidence from Australian Company-level Data",
+      "year": 2018,
+      "journal": "RBA Research Discussion Paper No",
+      "volume": "2018",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Hambur J and G La Cava (2018), 'Do Interest Rates Affect Business Investment? Evidence from Australian Company-level Data', RBA Research Discussion Paper No 2018-05."
+    },
+    {
+      "id": "ref_23",
+      "authors": [
+        "Hassett KA",
+        "RG Hubbard"
+      ],
+      "title": "Tax Policy and Business Investment",
+      "year": 2002,
+      "journal": "in AJ Auerbach and M Feldstein (eds), Handbook of Public Economics: Volume",
+      "volume": "3",
+      "pages": "1293-1343",
+      "doi": null,
+      "raw_text": "Hassett KA and RG Hubbard (2002), 'Tax Policy and Business Investment', in AJ Auerbach and M Feldstein (eds), Handbook of Public Economics: Volume 3, Handbooks in Economics 4, Elsevier Science, Amsterdam, pp 1293-1343."
+    },
+    {
+      "id": "ref_24",
+      "authors": [
+        "Heads of Treasuries"
+      ],
+      "title": "Intergovernmental Review of Business Investment",
+      "year": 2017,
+      "journal": "September",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Heads of Treasuries (2017), 'Intergovernmental Review of Business Investment', September."
+    },
+    {
+      "id": "ref_25",
+      "authors": [
+        "Holm MB, P Paul",
+        "A Tischbirek"
+      ],
+      "title": "The Transmission of Monetary Policy under the Microscope",
+      "year": 2021,
+      "journal": "Journal of Political Economy",
+      "volume": "129",
+      "pages": "2861-2904",
+      "doi": null,
+      "raw_text": "Holm MB, P Paul and A Tischbirek (2021), 'The Transmission of Monetary Policy under the Microscope', Journal of Political Economy, 129(10), pp 2861-2904."
+    },
+    {
+      "id": "ref_26",
+      "authors": [
+        "Jeenas P"
+      ],
+      "title": "Firm Balance Sheet Liquidity, Monetary Policy Shocks, and Investment Dynamics",
+      "year": 2023,
+      "journal": "Barcelona School of Economics, BSE Working Paper",
+      "volume": "1409",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Jeenas P (2023), 'Firm Balance Sheet Liquidity, Monetary Policy Shocks, and Investment Dynamics', Barcelona School of Economics, BSE Working Paper 1409."
+    },
+    {
+      "id": "ref_27",
+      "authors": [
+        "Jordà Ò"
+      ],
+      "title": "Estimation and Inference of Impulse Responses by Local Projections",
+      "year": 2005,
+      "journal": "The American Economic Review",
+      "volume": "95",
+      "pages": "161-182",
+      "doi": null,
+      "raw_text": "Jordà Ò (2005), 'Estimation and Inference of Impulse Responses by Local Projections', The American Economic Review, 95(1), pp 161-182."
+    },
+    {
+      "id": "ref_28",
+      "authors": [
+        "Kroen T, E Liu, AR Mian",
+        "A Sufi"
+      ],
+      "title": "Falling Rates and Rising Superstars",
+      "year": 2021,
+      "journal": "NBER Working Paper No",
+      "volume": "29368",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Kroen T, E Liu, AR Mian and A Sufi (2021), 'Falling Rates and Rising Superstars', NBER Working Paper No 29368, rev October 2022."
+    },
+    {
+      "id": "ref_29",
+      "authors": [
+        "La Cava G"
+      ],
+      "title": "Financial Constraints, the User Cost of Capital and Corporate Investment in Australia",
+      "year": 2005,
+      "journal": "RBA Research Discussion Paper No",
+      "volume": "2005",
+      "pages": null,
+      "doi": null,
+      "raw_text": "La Cava G (2005), 'Financial Constraints, the User Cost of Capital and Corporate Investment in Australia', RBA Research Discussion Paper No 2005-12."
+    },
+    {
+      "id": "ref_30",
+      "authors": [
+        "Lane K",
+        "T Rosewall"
+      ],
+      "title": "Firms",
+      "year": 2015,
+      "journal": "Invesment Decisions and Interest Rates', RBA Bulletin, June, pp",
+      "volume": "1",
+      "pages": "1-7",
+      "doi": null,
+      "raw_text": "Lane K and T Rosewall (2015), 'Firms' Invesment Decisions and Interest Rates', RBA Bulletin, June, pp 1-7."
+    },
+    {
+      "id": "ref_31",
+      "authors": [
+        "Liu E, A Sufi",
+        "A Mian"
+      ],
+      "title": "Low Interest Rates, Market Power, and Productivity Growth",
+      "year": 2022,
+      "journal": "Econometrica",
+      "volume": "90",
+      "pages": "193-221",
+      "doi": null,
+      "raw_text": "Liu E, A Sufi and A Mian (2022), 'Low Interest Rates, Market Power, and Productivity Growth', Econometrica, 90(1), pp 193-221."
+    },
+    {
+      "id": "ref_32",
+      "authors": [
+        "Morlacco M",
+        "D Zeke"
+      ],
+      "title": "Monetary Policy, Customer Capital, and Market Power",
+      "year": 2021,
+      "journal": "Journal of Monetary Economics",
+      "volume": "121",
+      "pages": "116-134",
+      "doi": null,
+      "raw_text": "Morlacco M and D Zeke (2021), 'Monetary Policy, Customer Capital, and Market Power', Journal of Monetary Economics, 121, pp 116-134."
+    },
+    {
+      "id": "ref_33",
+      "authors": [
+        "Ngyuen K"
+      ],
+      "title": "The Real Effects of Debt Covenants: Evidence from Australia",
+      "year": 2022,
+      "journal": "RBA Research Discussion Paper No",
+      "volume": "2022",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Ngyuen K (2022), 'The Real Effects of Debt Covenants: Evidence from Australia', RBA Research Discussion Paper No 2022-05."
+    },
+    {
+      "id": "ref_34",
+      "authors": [
+        "Ottonello P",
+        "T Winberry"
+      ],
+      "title": "Financial Heterogeneity and the Investment Channel of Monetary Policy",
+      "year": 2020,
+      "journal": "Econometrica, 88(6), pp 2473-2502. Plagborg‐Møller M and CK Wolf (2021), 'Local Projections and VARs Estimate the Same Impulse Responses', Econometrica",
+      "volume": "89",
+      "pages": "955-980",
+      "doi": null,
+      "raw_text": "Ottonello P and T Winberry (2020), 'Financial Heterogeneity and the Investment Channel of Monetary Policy', Econometrica, 88(6), pp 2473-2502. Plagborg‐Møller M and CK Wolf (2021), 'Local Projections and VARs Estimate the Same Impulse Responses', Econometrica, 89(2), pp 955-980."
+    },
+    {
+      "id": "ref_35",
+      "authors": [
+        "Ramey VA"
+      ],
+      "title": "Macroeconomic Shocks and Their Propagation",
+      "year": 2016,
+      "journal": "in JB Taylor and H Uhlig (eds), Handbook of Macroeconomics: Volume",
+      "volume": "2",
+      "pages": "71-162",
+      "doi": null,
+      "raw_text": "Ramey VA (2016), 'Macroeconomic Shocks and Their Propagation', in JB Taylor and H Uhlig (eds), Handbook of Macroeconomics: Volume 2A, Handbooks in Economics, Elsevier, Amsterdam, pp 71-162."
+    },
+    {
+      "id": "ref_36",
+      "authors": [
+        "Rajan RG",
+        "L Zingales"
+      ],
+      "title": "Financial Dependence and Growth",
+      "year": 1998,
+      "journal": "The American Economic Review",
+      "volume": "88",
+      "pages": "559-586",
+      "doi": null,
+      "raw_text": "Rajan RG and L Zingales (1998), 'Financial Dependence and Growth', The American Economic Review, 88(3), pp 559-586."
+    },
+    {
+      "id": "ref_37",
+      "authors": [
+        "Reiter M, T Sveen",
+        "L Weinke"
+      ],
+      "title": "Lumpy Investment and the Monetary Transmission Mechanism",
+      "year": 2013,
+      "journal": "Journal of Monetary Economics",
+      "volume": "60",
+      "pages": "821-834",
+      "doi": null,
+      "raw_text": "Reiter M, T Sveen and L Weinke (2013), 'Lumpy Investment and the Monetary Transmission Mechanism', Journal of Monetary Economics, 60(7), pp 821-834."
+    },
+    {
+      "id": "ref_38",
+      "authors": [
+        "Romer CD",
+        "DH Romer"
+      ],
+      "title": "A New Measure of Monetary Shocks: Derivation and Implications",
+      "year": 2004,
+      "journal": "The American Economic Review",
+      "volume": "94",
+      "pages": "1055-1084",
+      "doi": null,
+      "raw_text": "Romer CD and DH Romer (2004), 'A New Measure of Monetary Shocks: Derivation and Implications', The American Economic Review, 94(4), pp 1055-1084."
+    },
+    {
+      "id": "ref_39",
+      "authors": [
+        "Sharpe S",
+        "G Suarez"
+      ],
+      "title": "Do CFOs Think Investment is Sensitive to Interest Rates?",
+      "year": 2013,
+      "journal": "Board of Governors of the Federal Reserve System, FEDS Notes",
+      "volume": "26",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Sharpe S and G Suarez (2013), 'Do CFOs Think Investment is Sensitive to Interest Rates?', Board of Governors of the Federal Reserve System, FEDS Notes, 26 September."
+    },
+    {
+      "id": "ref_40",
+      "authors": [
+        "Sveen T",
+        "L Weinke"
+      ],
+      "title": "Lumpy Investment, Sticky Prices, and the Monetary Transmission Mechanism",
+      "year": 2007,
+      "journal": "Journal of Monetary Economics",
+      "volume": "54",
+      "pages": "23-36",
+      "doi": null,
+      "raw_text": "Sveen T and L Weinke (2007), 'Lumpy Investment, Sticky Prices, and the Monetary Transmission Mechanism', Journal of Monetary Economics, 54(Supplement), pp 23-36. van der Merwe M, L Cockerell, M Chambers and J Jääskelä (2018), 'Private Non-mining Investment in Australia', RBA Bulletin, June."
+    },
+    {
+      "id": "ref_41",
+      "authors": [
+        "Woodford M"
+      ],
+      "title": "Firm-specific Capital and the New-Keynesian Phillips Curve",
+      "year": 2005,
+      "journal": "NBER Working Paper No",
+      "volume": "11149",
+      "pages": null,
+      "doi": null,
+      "raw_text": "Woodford M (2005), 'Firm-specific Capital and the New-Keynesian Phillips Curve', NBER Working Paper No 11149. 34 Copyright and Disclaimer Notice BLADE Disclaimer The following Disclaimer Notice refers to data and graphs sourced from the Australian Bureau of Statistics' BLADE (Business Longitudinal Analysis Data Environment) database. The results of these studies are based, in part, on data supplied to the ABS under the Taxation Administration Act 1953, A New Tax System (Australian Business Number) Act 1999, Australian Border Force Act 2015, Social Security (Administration) Act 1999, A New Tax System (Family Assistance) (Administration) Act 1999, Paid Parental Leave Act 2010 and/or the Student Assistance Act 1973. Such data may only be used for the purpose of administering the Census and Statistics Act 1905 or performance of functions of the ABS as set out in section 6 of the Australian Bureau of Statistics Act 1975. No individual information collected under the Census and Statistics Act 1905 is provided back to custodians for administrative or regulatory purposes. Any discussion of data limitations or weaknesses is in the context of using the data for statistical purposes and is not related to the ability of the data to support the Australian Taxation Office, Australian Business Register, Department of Social Services and/or Department of Home Affairs' core operational requirements. Legislative requirements to ensure privacy and secrecy of these data have been followed. For access to MADIP and/or BLADE data under Section 16A of the ABS Act 1975 or enabled by section 15 of the Census and Statistics (Information Release and Access) Determination 2018, source data are de-identified and so data about specific individuals has not been viewed in conducting this analysis. In accordance with the Census and Statistics Act 1905, results have been treated where necessary to ensure that they are not likely to enable identification of a particular person or organisation."
+    },
+    {
+      "id": "ref_fake_01",
+      "authors": [
+        "Petrov, I. V.",
+        "Chen, L."
+      ],
+      "title": "This Paper Does Not Exist In Any Database Anywhere",
+      "year": 2099,
+      "journal": "Fictitious Review of Imaginary Science",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Petrov, I. V. and Chen, L. (2099) This Paper Does Not Exist."
+    },
+    {
+      "id": "ref_fake_02",
+      "authors": [
+        "Yang, Z.",
+        "Yang, D."
+      ],
+      "title": "Hierarchical Attention Networks for Document Classification",
+      "year": 2016,
+      "journal": "Proceedings of NAACL",
+      "volume": null,
+      "pages": null,
+      "doi": "10.9999/fake-doi-12345",
+      "raw_text": "Yang, Z. and Yang, D. (2016) Hierarchical Attention Networks."
+    },
+    {
+      "id": "ref_fake_03",
+      "authors": [
+        "Snoek, J.",
+        "Larochelle, H."
+      ],
+      "title": "Practical Bayesian Optimization of Machine Learning Algorithms",
+      "year": 2012,
+      "journal": "Advances in Neural Information Processing Systems",
+      "volume": null,
+      "pages": null,
+      "doi": null,
+      "raw_text": "Snoek, J. and Larochelle, H. (2012) Practical Bayesian Optimization."
+    }
+  ],
+  "model_used": "regex:harvard"
+}
