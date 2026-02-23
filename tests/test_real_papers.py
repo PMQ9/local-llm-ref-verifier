@@ -32,6 +32,11 @@ PAPER_CASES = [
     ("vancouver", "covid_open_access", 8, "single-column"),
     ("apa", "frontiers_discrimination_anxiety", 10, "single-column"),
     ("apa", "frontiers_scholarly_reading", 10, "single-column"),
+    ("harvard", "rba_monetary_policy", 40, "single-column"),
+    ("harvard", "rba_financial_conditions", 30, "single-column"),
+    ("chicago", "mdpi_humanities_toy_tourism", 15, "single-column"),
+    ("chicago", "mdpi_humanities_hui_identity", 10, "single-column"),
+    ("chicago", "nber_labor_force", 10, "single-column"),
 ]
 
 # Papers where auto-detect correctly identifies the style
@@ -43,6 +48,11 @@ DETECT_CORRECT = [
     ("vancouver", "covid_open_access"),
     ("apa", "frontiers_discrimination_anxiety"),
     ("apa", "frontiers_scholarly_reading"),
+    ("harvard", "rba_monetary_policy"),
+    ("harvard", "rba_financial_conditions"),
+    ("chicago", "mdpi_humanities_toy_tourism"),
+    ("chicago", "mdpi_humanities_hui_identity"),
+    ("chicago", "nber_labor_force"),
 ]
 
 

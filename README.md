@@ -69,7 +69,7 @@ Run all tests including live API verification:
 pytest -m slow
 ```
 
-The test suite includes 8 real research papers across 3 citation styles (IEEE, Vancouver, APA) with single-column and two-column layouts. Each paper has a companion JSON with 3 injected fake citations for verifier testing.
+The test suite includes 13 real research papers across all 5 citation styles (IEEE, Vancouver, APA, Harvard, Chicago) with single-column and two-column layouts. Each paper has a companion JSON with 3 injected fake citations for verifier testing.
 
 ## To do list
 
