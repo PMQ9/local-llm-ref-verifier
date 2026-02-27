@@ -1,0 +1,23 @@
+Windows Setup Guide
+===================
+
+1. Upgrade pip (required for pyproject.toml-based installs):
+
+   python -m pip install --upgrade pip
+
+2. Install the package:
+
+   pip install -e ".[dev]"
+
+3. Launch the GUI:
+
+   ref-verifier gui
+
+If "ref-verifier" is not recognized after install, use:
+
+   python -m ref_verifier gui
+
+Quick alternative (no install):
+
+   set PYTHONPATH=src
+   python -m ref_verifier gui

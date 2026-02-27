@@ -218,8 +218,9 @@ class RefVerifierGUI:
         pane.pack(fill=tk.BOTH, expand=True)
 
         # Table
+        tree_frame = ttk.Frame(pane)
         cols = ("id", "authors", "title", "year", "journal", "doi")
-        self.ext_tree = ttk.Treeview(pane, columns=cols, show="headings", height=10)
+        self.ext_tree = ttk.Treeview(tree_frame, columns=cols, show="headings", height=10)
         self.ext_tree.heading("id", text="ID")
         self.ext_tree.heading("authors", text="Authors")
         self.ext_tree.heading("title", text="Title")
@@ -234,8 +235,7 @@ class RefVerifierGUI:
         self.ext_tree.column("doi", width=120)
 
         # Scrollbar
-        tree_frame = ttk.Frame(pane)
-        self.ext_tree.pack(in_=tree_frame, side=tk.LEFT, fill=tk.BOTH, expand=True)
+        self.ext_tree.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
         ext_scroll = ttk.Scrollbar(tree_frame, orient=tk.VERTICAL, command=self.ext_tree.yview)
         ext_scroll.pack(side=tk.RIGHT, fill=tk.Y)
         self.ext_tree.configure(yscrollcommand=ext_scroll.set)
@@ -254,8 +254,9 @@ class RefVerifierGUI:
         pane.pack(fill=tk.BOTH, expand=True)
 
         # Table
+        tree_frame = ttk.Frame(pane)
         cols = ("ref_id", "status", "confidence", "source", "title", "year", "doi")
-        self.ver_tree = ttk.Treeview(pane, columns=cols, show="headings", height=10)
+        self.ver_tree = ttk.Treeview(tree_frame, columns=cols, show="headings", height=10)
         self.ver_tree.heading("ref_id", text="Ref ID")
         self.ver_tree.heading("status", text="Status")
         self.ver_tree.heading("confidence", text="Conf.")
@@ -275,8 +276,7 @@ class RefVerifierGUI:
         self.ver_tree.tag_configure("ambiguous", background="#fff3cd")
         self.ver_tree.tag_configure("not_found", background="#f8d7da")
 
-        tree_frame = ttk.Frame(pane)
-        self.ver_tree.pack(in_=tree_frame, side=tk.LEFT, fill=tk.BOTH, expand=True)
+        self.ver_tree.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
         ver_scroll = ttk.Scrollbar(tree_frame, orient=tk.VERTICAL, command=self.ver_tree.yview)
         ver_scroll.pack(side=tk.RIGHT, fill=tk.Y)
         self.ver_tree.configure(yscrollcommand=ver_scroll.set)
@@ -301,8 +301,9 @@ class RefVerifierGUI:
         pane.add(summary_frame, weight=1)
 
         # Table
+        tree_frame = ttk.Frame(pane)
         cols = ("severity", "type", "ref_id", "description")
-        self.aud_tree = ttk.Treeview(pane, columns=cols, show="headings", height=8)
+        self.aud_tree = ttk.Treeview(tree_frame, columns=cols, show="headings", height=8)
         self.aud_tree.heading("severity", text="Severity")
         self.aud_tree.heading("type", text="Type")
         self.aud_tree.heading("ref_id", text="Ref ID")
@@ -316,8 +317,7 @@ class RefVerifierGUI:
         self.aud_tree.tag_configure("warning", background="#fff3cd")
         self.aud_tree.tag_configure("info", background="#d1ecf1")
 
-        tree_frame = ttk.Frame(pane)
-        self.aud_tree.pack(in_=tree_frame, side=tk.LEFT, fill=tk.BOTH, expand=True)
+        self.aud_tree.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
         aud_scroll = ttk.Scrollbar(tree_frame, orient=tk.VERTICAL, command=self.aud_tree.yview)
         aud_scroll.pack(side=tk.RIGHT, fill=tk.Y)
         self.aud_tree.configure(yscrollcommand=aud_scroll.set)
@@ -477,6 +477,7 @@ class RefVerifierGUI:
 
         elif kind == "extract_done":
             self.progress.stop()
+            self.progress.configure(mode="determinate", value=0)
             self.extraction_result = msg[1]
             self._populate_extraction_table(self.extraction_result)
             self.notebook.select(0)
@@ -513,6 +514,7 @@ class RefVerifierGUI:
 
         elif kind == "audit_done":
             self.progress.stop()
+            self.progress.configure(mode="determinate", value=0)
             self.audit_report = msg[1]
             self._populate_audit_table(self.audit_report)
             self.notebook.select(2)
@@ -524,6 +526,7 @@ class RefVerifierGUI:
 
         elif kind == "error":
             self.progress.stop()
+            self.progress.configure(mode="determinate", value=0)
             self.status_label.configure(text=f"Error: {msg[1]}")
             self.pipeline_mode = False
             self._set_buttons_enabled(True)
