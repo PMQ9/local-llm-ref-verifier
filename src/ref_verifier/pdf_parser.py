@@ -150,13 +150,34 @@ def extract_text_pymupdf(pdf_path: Path) -> str:
 # ---------------------------------------------------------------------------
 
 
+_MIN_SPACE_RATIO = 0.06
+
+
+def _space_ratio(text: str) -> float:
+    """Return the fraction of characters that are spaces."""
+    if not text:
+        return 0.0
+    return text.count(" ") / len(text)
+
+
 def extract_text(pdf_path: Path) -> str:
-    """Extract full text from a PDF, trying pdfplumber first then PyMuPDF."""
+    """Extract full text from a PDF, trying pdfplumber first then PyMuPDF.
+
+    Falls back to PyMuPDF if pdfplumber returns empty text or produces
+    output with very few spaces (indicating broken word separation).
+    """
     try:
         text = extract_text_pdfplumber(pdf_path)
-        if text.strip():
+        if not text.strip():
+            logger.warning("pdfplumber returned empty text, trying PyMuPDF")
+        elif _space_ratio(text) < _MIN_SPACE_RATIO:
+            logger.warning(
+                "pdfplumber text has low space ratio (%.1f%%), "
+                "likely missing word separators; trying PyMuPDF",
+                _space_ratio(text) * 100,
+            )
+        else:
             return text
-        logger.warning("pdfplumber returned empty text, trying PyMuPDF")
     except Exception as e:
         logger.warning("pdfplumber failed: %s, trying PyMuPDF", e)
 
