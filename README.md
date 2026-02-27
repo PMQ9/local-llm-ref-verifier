@@ -26,6 +26,16 @@ ollama pull llama3.1
 
 ## Usage
 
+### GUI
+
+Launch the GUI:
+
+```
+ref-verifier gui
+```
+
+### CLI
+
 Run the full pipeline:
 
 ```
@@ -76,6 +86,6 @@ The test suite includes 13 real research papers across all 5 citation styles (IE
 - [ ] Support latex and .docx import
 - [ ] Measure different local LLM performance
 - [ ] Integrate the option for paid/premium scholar API
-- [ ] Improve front-end interface
+- [x] Improve front-end interface
 - [ ] Add JSON file cleanup
 - [ ] Improve test suite: download real papers with real citations and add fake citations

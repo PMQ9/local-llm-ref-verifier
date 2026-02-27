@@ -120,6 +120,14 @@ def audit(
 
 
 @main.command()
+def gui():
+    """Launch the graphical user interface."""
+    from .gui import launch_gui
+
+    launch_gui()
+
+
+@main.command()
 @click.argument("pdf_path", type=click.Path(exists=True, path_type=Path))
 @click.option("-o", "--output-dir", type=click.Path(path_type=Path), default=Path("output"))
 @click.option("-m", "--model", default="llama3.1", help="Ollama model name (for Stage 3 audit)")

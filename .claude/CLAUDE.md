@@ -39,5 +39,5 @@ Tests use pytest with pytest-httpx for HTTP mocking. Test fixtures live in `test
 
 ## After making changes
 
-- Update `CHANGELOG.md` — very short and concise, no emojis.
+- Update `CHANGELOG.md` — very short and concise, no emojis. Include the date with each entry.
 - Update `README.md` — very short and concise, no emojis.
