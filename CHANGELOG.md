@@ -3,6 +3,7 @@
 ## Unreleased
 
 ### Added
+- Vancouver parser: support for Springer/LNCS author format (LastName, I., LastName, I.I.)
 - Integration test suite with 13 real research papers across all 5 citation styles
 - Real PDF samples for Harvard (2 RBA working papers) and Chicago (2 MDPI Humanities, 1 NBER)
 - Harvard parser: custom split_references for line-wrapped author-date references

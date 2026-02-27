@@ -32,15 +32,39 @@ _VANC_PATTERN = re.compile(
 
 # Detection signals
 _INITIALS_NO_PERIODS = re.compile(r"[A-Z][a-z]+ [A-Z]{1,4}[,.]")
+# Springer/LNCS style: "LastName, A.B.," or "LastName, A.,"
+_INITIALS_COMMA_SEP = re.compile(r"[A-Z][a-z]+,\s+[A-Z]\.[A-Z]?\.?[,:]")
 _SEMICOLON_VOL = re.compile(r"\d{4}[^;]*;\d+")
 _NO_QUOTES = re.compile(r'^[^"\']*$')
 
 
+def _has_initials_style(text: str) -> bool:
+    """Check if text starts with an initials-based author format."""
+    return bool(_INITIALS_NO_PERIODS.match(text) or _INITIALS_COMMA_SEP.match(text))
+
+
 def _parse_vancouver_authors(author_str: str) -> list[str]:
-    """Parse Vancouver/AMA authors: LastName AB, LastName CD, et al."""
+    """Parse Vancouver/AMA authors: LastName AB, LastName CD, et al.
+
+    Also handles Springer/LNCS style: LastName, A.B., LastName, C.D.
+    """
     author_str = author_str.strip().rstrip(".")
     # Handle "et al" / "et al."
     author_str = re.sub(r",?\s*et al\.?$", "", author_str)
+
+    # Detect Springer/LNCS style: "LastName, A., LastName, B."
+    # In this format, initials follow a comma after the last name.
+    if _INITIALS_COMMA_SEP.match(author_str):
+        # Split into "LastName, A.B." groups by matching the pattern.
+        # The last initial's period may be stripped, so allow optional period.
+        authors = re.findall(
+            r"([A-Z][A-Za-z''\-]+(?:\s+[A-Z][A-Za-z''\-]+)*"
+            r",\s+(?:[A-Z]\.)*[A-Z]\.?)",
+            author_str,
+        )
+        if authors:
+            return [a.strip().rstrip(",") for a in authors]
+
     parts = [a.strip() for a in author_str.split(",") if a.strip()]
     return parts
 
@@ -52,8 +76,8 @@ class VancouverParser(BaseParser):
         score = 0.0
         text = _LEADING_NUM.sub("", raw_text).strip()
 
-        # LastName AB format (initials without periods)
-        if _INITIALS_NO_PERIODS.match(text):
+        # LastName AB or LastName, A. format (initials-based authors)
+        if _has_initials_style(text):
             score += 0.35
         # Year;Volume pattern (semicolon is distinctive)
         if _SEMICOLON_VOL.search(text):
@@ -112,13 +136,13 @@ class VancouverParser(BaseParser):
 
         # Try colon-separated format: "Authors: Title. Journal. Year;..."
         colon_match = re.match(r"^(.+?):\s+(.+)", text)
-        if colon_match and _INITIALS_NO_PERIODS.match(text):
+        if colon_match and _has_initials_style(text):
             return self._parse_colon_format(
                 colon_match, text, raw_text, ref_id, year_match
             )
 
         # Need initials-style authors for period-separated format
-        if not _INITIALS_NO_PERIODS.match(text):
+        if not _has_initials_style(text):
             return None
 
         # Split on periods to find authors, title, journal
