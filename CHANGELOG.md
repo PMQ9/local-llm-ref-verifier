@@ -19,6 +19,7 @@
 - Vancouver parser: fix split regex to avoid splitting on year strings like "2020."
 
 ### Fixed
+- PDF extraction: auto-fallback from pdfplumber to PyMuPDF when extracted text has low space ratio (missing word separators)
 - Harvard/Chicago style detection: improved scoring to distinguish Author-Date formats
 - Reference heading detection now handles leading dots from column extraction artifacts
 - Unicode normalization: added em-dash, non-breaking space, ff/ffi/ffl ligatures

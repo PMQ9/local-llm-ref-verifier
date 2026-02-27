@@ -2,11 +2,13 @@
 
 Privacy-preserving citation verification for unpublished research manuscripts. The manuscript text never leaves your local machine.
 
+<img src="doc/images/GUI.png" alt="Alt Text" width="100%"/>
+
 ## How it works
 
 Three-stage pipeline:
 
-<img src="doc/images/3_stages_pipeline.png" alt="Alt Text" width="75%"/>
+<img src="doc/images/3_stages_pipeline.png" alt="Alt Text" width="65%"/>
 
 1. **Extract** (local, no internet) -- Parses the PDF reference section using regex. Auto-detects citation style (APA, IEEE, Vancouver, Harvard, Chicago). Outputs structured JSON.
 2. **Verify** (online, metadata only) -- Checks each reference title/author against CrossRef, Semantic Scholar, and Google Scholar APIs. Only minimal metadata is sent. Computes confidence scores via fuzzy matching. Also fetches paper abstracts and summaries (when available) for correctness checking in Stage 3.
@@ -27,8 +29,6 @@ ollama pull llama3.1
 ## Usage
 
 ### GUI
-
-Launch the GUI:
 
 ```
 ref-verifier gui
@@ -88,4 +88,4 @@ The test suite includes 13 real research papers across all 5 citation styles (IE
 - [ ] Integrate the option for paid/premium scholar API
 - [x] Improve front-end interface
 - [ ] Add JSON file cleanup
-- [ ] Improve test suite: download real papers with real citations and add fake citations
+- [x] Improve test suite: download real papers with real citations and add fake citations
