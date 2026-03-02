@@ -3,6 +3,7 @@
 ## Unreleased
 
 ### Added
+- GUI Models tab: browse all Ollama models (200+ via a-z crawl), search the library, view tags/variants with sizes, and pull models directly from the GUI with streaming progress
 - Cross-platform GUI (tkinter): `ref-verifier gui` launches a graphical interface with PDF browsing, Ollama model selection, progress tracking, extraction/verification/audit result tables, and clickable verification links
 - Vancouver parser: support for Springer/LNCS author format (LastName, I., LastName, I.I.)
 - Integration test suite with 13 real research papers across all 5 citation styles

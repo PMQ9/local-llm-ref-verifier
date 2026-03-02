@@ -6,14 +6,115 @@ Launch via: ref-verifier gui
 
 import logging
 import queue
+import re
 import threading
 import tkinter as tk
 import webbrowser
 from collections import Counter
+from html.parser import HTMLParser
 from tkinter import filedialog, messagebox, ttk
 from urllib.parse import quote_plus
+from urllib.request import Request, urlopen
 
 logger = logging.getLogger(__name__)
+
+_OLLAMA_SEARCH_URL = "https://ollama.com/search"
+_OLLAMA_TAGS_URL = "https://ollama.com/library/{model}/tags"
+_HTTP_HEADERS = {"User-Agent": "ref-verifier/1.0"}
+
+
+def _fetch_url(url: str) -> str:
+    req = Request(url, headers=_HTTP_HEADERS)
+    with urlopen(req, timeout=15) as resp:
+        return resp.read().decode("utf-8", errors="replace")
+
+
+def _unescape_html(text: str) -> str:
+    """Unescape basic HTML entities."""
+    text = text.replace("&amp;", "&")
+    text = text.replace("&lt;", "<")
+    text = text.replace("&gt;", ">")
+    text = text.replace("&quot;", '"')
+    text = text.replace("&#39;", "'")
+    text = text.replace("&nbsp;", " ")
+    return text
+
+
+def _parse_search_results(html: str) -> list[dict]:
+    """Parse model cards from the ollama.com/search HTML page."""
+    results = []
+    cards = re.findall(
+        r'<li[^>]*>\s*<a[^>]*href="/library/([^"]+)"[^>]*>(.*?)</a>\s*</li>',
+        html,
+        re.DOTALL,
+    )
+
+    for model_name, card_html in cards:
+        name = model_name.strip()
+
+        # Description is in a <p> tag
+        desc_match = re.search(r"<p[^>]*>(.*?)</p>", card_html, re.DOTALL)
+        description = ""
+        if desc_match:
+            description = _unescape_html(
+                re.sub(r"<[^>]+>", "", desc_match.group(1)).strip()
+            )
+
+        # Pull count is in <span x-test-pull-count>
+        pulls = ""
+        pulls_match = re.search(
+            r'<span\s+x-test-pull-count>([\d.]+[KMB]?)</span>', card_html
+        )
+        if pulls_match:
+            pulls = pulls_match.group(1)
+
+        # Size tags are in <span x-test-size>
+        sizes_list = re.findall(
+            r'<span\s+x-test-size[^>]*>\s*(.*?)\s*</span>', card_html
+        )
+        sizes = ", ".join(sizes_list) if sizes_list else ""
+
+        results.append({
+            "name": name,
+            "description": description[:120],
+            "pulls": pulls,
+            "sizes": sizes,
+        })
+
+    return results
+
+
+def _parse_model_tags(html: str) -> list[dict]:
+    """Parse tag rows from an ollama.com/library/<model>/tags page."""
+    tags = []
+    # The page has mobile (md:hidden) and desktop versions of each row.
+    # We use the desktop rows which have: <a> with tag name, then <p> for size,
+    # then <p> for context length.
+    # Desktop links use class="group-hover:underline" (not "md:hidden").
+
+    # Split at desktop tag links
+    desktop_links = list(re.finditer(
+        r'<a\s+href="/library/[^:]+:([^"]+)"\s+class="group-hover:underline"',
+        html,
+    ))
+
+    for i, match in enumerate(desktop_links):
+        tag_name = match.group(1)
+        # Get text between this match and the next one (or end of file)
+        start = match.end()
+        end = desktop_links[i + 1].start() if i + 1 < len(desktop_links) else start + 2000
+        block = html[start:end]
+
+        # Size and context are in <p> tags with text-neutral-500
+        p_values = re.findall(
+            r'<p[^>]*text-neutral-500[^>]*>(.*?)</p>', block, re.DOTALL
+        )
+        size = p_values[0].strip() if len(p_values) > 0 else ""
+        context = p_values[1].strip() if len(p_values) > 1 else ""
+
+        tags.append({"tag": tag_name, "size": size, "context": context})
+
+    return tags
 
 
 class PipelineRunner:
@@ -232,7 +333,7 @@ class RefVerifierGUI:
         )
         self.btn_cancel.pack(side=tk.LEFT)
 
-    # ── Notebook with 3 tabs ────────────────────────────────────
+    # ── Notebook with 4 tabs ────────────────────────────────────
 
     def _build_notebook(self):
         self.notebook = ttk.Notebook(self.root)
@@ -252,6 +353,11 @@ class RefVerifierGUI:
         aud_frame = ttk.Frame(self.notebook)
         self.notebook.add(aud_frame, text="Audit")
         self._build_audit_tab(aud_frame)
+
+        # Tab 4: Models
+        mdl_frame = ttk.Frame(self.notebook)
+        self.notebook.add(mdl_frame, text="Models")
+        self._build_models_tab(mdl_frame)
 
     def _build_extraction_tab(self, parent):
         pane = ttk.PanedWindow(parent, orient=tk.VERTICAL)
@@ -370,6 +476,347 @@ class RefVerifierGUI:
         pane.add(detail_frame, weight=1)
 
         self.aud_tree.bind("<<TreeviewSelect>>", self._on_audit_select)
+
+    def _build_models_tab(self, parent):
+        # State for model operations
+        self._models_loaded = False
+        self._model_search_results: list[dict] = []
+        self._model_tags_results: list[dict] = []
+        self._pull_thread: threading.Thread | None = None
+
+        # Top bar: search
+        top = ttk.Frame(parent, padding=4)
+        top.pack(fill=tk.X)
+
+        ttk.Label(top, text="Search:").pack(side=tk.LEFT)
+        self.mdl_search_var = tk.StringVar()
+        search_entry = ttk.Entry(top, textvariable=self.mdl_search_var, width=40)
+        search_entry.pack(side=tk.LEFT, padx=(4, 4), fill=tk.X, expand=True)
+        search_entry.bind("<Return>", lambda _e: self._models_search())
+        self.btn_mdl_search = ttk.Button(
+            top, text="Search", command=self._models_search
+        )
+        self.btn_mdl_search.pack(side=tk.LEFT, padx=(0, 8))
+        ttk.Button(
+            top, text="Browse All", command=self._models_browse_popular
+        ).pack(side=tk.LEFT)
+
+        # Main area: left model list + right tag list
+        pane = ttk.PanedWindow(parent, orient=tk.HORIZONTAL)
+        pane.pack(fill=tk.BOTH, expand=True, padx=4, pady=4)
+
+        # Left: model list
+        left = ttk.LabelFrame(pane, text="Available Models")
+        cols = ("name", "description", "pulls", "sizes")
+        self.mdl_tree = ttk.Treeview(left, columns=cols, show="headings", height=12)
+        self.mdl_tree.heading("name", text="Name")
+        self.mdl_tree.heading("description", text="Description")
+        self.mdl_tree.heading("pulls", text="Pulls")
+        self.mdl_tree.heading("sizes", text="Sizes")
+        self.mdl_tree.column("name", width=130, stretch=False)
+        self.mdl_tree.column("description", width=280)
+        self.mdl_tree.column("pulls", width=70, stretch=False)
+        self.mdl_tree.column("sizes", width=100, stretch=False)
+
+        self.mdl_tree.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        mdl_scroll = ttk.Scrollbar(left, orient=tk.VERTICAL, command=self.mdl_tree.yview)
+        mdl_scroll.pack(side=tk.RIGHT, fill=tk.Y)
+        self.mdl_tree.configure(yscrollcommand=mdl_scroll.set)
+        pane.add(left, weight=3)
+
+        # Right: tag list for selected model
+        right = ttk.LabelFrame(pane, text="Tags / Variants")
+        cols_t = ("tag", "size", "context")
+        self.mdl_tags_tree = ttk.Treeview(
+            right, columns=cols_t, show="headings", height=12
+        )
+        self.mdl_tags_tree.heading("tag", text="Tag")
+        self.mdl_tags_tree.heading("size", text="Size")
+        self.mdl_tags_tree.heading("context", text="Context")
+        self.mdl_tags_tree.column("tag", width=180)
+        self.mdl_tags_tree.column("size", width=80, stretch=False)
+        self.mdl_tags_tree.column("context", width=70, stretch=False)
+
+        self.mdl_tags_tree.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        tags_scroll = ttk.Scrollbar(
+            right, orient=tk.VERTICAL, command=self.mdl_tags_tree.yview
+        )
+        tags_scroll.pack(side=tk.RIGHT, fill=tk.Y)
+        self.mdl_tags_tree.configure(yscrollcommand=tags_scroll.set)
+        pane.add(right, weight=2)
+
+        self.mdl_tree.bind("<<TreeviewSelect>>", self._on_model_select)
+
+        # Bottom bar: pull controls
+        bottom = ttk.Frame(parent, padding=4)
+        bottom.pack(fill=tk.X)
+
+        ttk.Label(bottom, text="Pull:").pack(side=tk.LEFT)
+        self.mdl_pull_var = tk.StringVar()
+        self.mdl_pull_entry = ttk.Entry(
+            bottom, textvariable=self.mdl_pull_var, width=30
+        )
+        self.mdl_pull_entry.pack(side=tk.LEFT, padx=(4, 4))
+        self.mdl_pull_entry.bind("<Return>", lambda _e: self._models_pull())
+        self.btn_mdl_pull = ttk.Button(
+            bottom, text="Pull Model", command=self._models_pull
+        )
+        self.btn_mdl_pull.pack(side=tk.LEFT, padx=(0, 8))
+        self.btn_mdl_cancel = ttk.Button(
+            bottom, text="Cancel", command=self._models_cancel_pull, state="disabled"
+        )
+        self.btn_mdl_cancel.pack(side=tk.LEFT, padx=(0, 8))
+
+        self.mdl_progress = ttk.Progressbar(
+            bottom, orient=tk.HORIZONTAL, length=250, mode="determinate"
+        )
+        self.mdl_progress.pack(side=tk.LEFT, padx=(0, 8))
+        self.mdl_status = ttk.Label(bottom, text="")
+        self.mdl_status.pack(side=tk.LEFT, fill=tk.X, expand=True)
+
+        # Auto-select tag on click to populate pull entry
+        self.mdl_tags_tree.bind("<<TreeviewSelect>>", self._on_tag_select)
+
+        # Load popular models when tab is first shown
+        self.notebook.bind("<<NotebookTabChanged>>", self._on_tab_changed)
+
+    # ── Models tab actions ─────────────────────────────────────
+
+    def _on_tab_changed(self, _event):
+        if self.notebook.index(self.notebook.select()) == 3 and not self._models_loaded:
+            self._models_loaded = True
+            self._models_browse_popular()
+
+    def _models_browse_popular(self):
+        self.mdl_search_var.set("")
+        self.btn_mdl_search.configure(state="disabled")
+        self.mdl_status.configure(text="Loading all models (a-z)...")
+        self.mdl_tree.delete(*self.mdl_tree.get_children())
+        self.mdl_tags_tree.delete(*self.mdl_tags_tree.get_children())
+        threading.Thread(
+            target=self._bg_browse_all, daemon=True
+        ).start()
+
+    def _bg_browse_all(self):
+        """Crawl a-z + digits to collect a comprehensive model list."""
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+
+        queries = list("abcdefghijklmnopqrstuvwxyz") + list("0123456789")
+        all_results: dict[str, dict] = {}
+
+        def fetch_one(q: str) -> list[dict]:
+            try:
+                html = _fetch_url(f"{_OLLAMA_SEARCH_URL}?q={quote_plus(q)}")
+                return _parse_search_results(html)
+            except Exception:
+                return []
+
+        try:
+            with ThreadPoolExecutor(max_workers=8) as pool:
+                futures = {pool.submit(fetch_one, q): q for q in queries}
+                done = 0
+                for future in as_completed(futures):
+                    done += 1
+                    self.root.after(
+                        0, self.mdl_status.configure,
+                        {"text": f"Loading models... ({done}/{len(queries)})"},
+                    )
+                    for m in future.result():
+                        if m["name"] not in all_results:
+                            all_results[m["name"]] = m
+
+            # Sort by pull count (descending) — parse suffix K/M/B
+            def pull_sort_key(m: dict) -> float:
+                p = m.get("pulls", "")
+                if not p:
+                    return 0
+                multiplier = 1
+                if p.endswith("K"):
+                    multiplier, p = 1e3, p[:-1]
+                elif p.endswith("M"):
+                    multiplier, p = 1e6, p[:-1]
+                elif p.endswith("B"):
+                    multiplier, p = 1e9, p[:-1]
+                try:
+                    return float(p) * multiplier
+                except ValueError:
+                    return 0
+
+            results = sorted(all_results.values(), key=pull_sort_key, reverse=True)
+            self.root.after(0, self._on_search_done, results, None)
+        except Exception as e:
+            logger.exception("Browse all models failed")
+            self.root.after(0, self._on_search_done, [], str(e))
+
+    def _models_search(self):
+        query = self.mdl_search_var.get().strip()
+        self.btn_mdl_search.configure(state="disabled")
+        self.mdl_status.configure(text="Searching...")
+        self.mdl_tree.delete(*self.mdl_tree.get_children())
+        self.mdl_tags_tree.delete(*self.mdl_tags_tree.get_children())
+        threading.Thread(
+            target=self._bg_search_models, args=(query,), daemon=True
+        ).start()
+
+    def _bg_search_models(self, query: str):
+        try:
+            url = _OLLAMA_SEARCH_URL
+            if query:
+                url = f"{_OLLAMA_SEARCH_URL}?q={quote_plus(query)}"
+            html = _fetch_url(url)
+            results = _parse_search_results(html)
+            self.root.after(0, self._on_search_done, results, None)
+        except Exception as e:
+            logger.exception("Model search failed")
+            self.root.after(0, self._on_search_done, [], str(e))
+
+    def _on_search_done(self, results: list[dict], error: str | None):
+        self.btn_mdl_search.configure(state="normal")
+        if error:
+            self.mdl_status.configure(text=f"Search failed: {error}")
+            return
+        self._model_search_results = results
+        self.mdl_tree.delete(*self.mdl_tree.get_children())
+        for i, m in enumerate(results):
+            self.mdl_tree.insert(
+                "", tk.END,
+                iid=str(i),
+                values=(m["name"], m["description"], m["pulls"], m["sizes"]),
+            )
+        self.mdl_status.configure(text=f"Found {len(results)} models.")
+
+    def _on_model_select(self, _event):
+        sel = self.mdl_tree.selection()
+        if not sel:
+            return
+        idx = int(sel[0])
+        if idx >= len(self._model_search_results):
+            return
+        model = self._model_search_results[idx]
+        model_name = model["name"]
+        # Set pull entry to model name (user can pick a specific tag later)
+        self.mdl_pull_var.set(model_name)
+        # Fetch tags
+        self.mdl_tags_tree.delete(*self.mdl_tags_tree.get_children())
+        self.mdl_status.configure(text=f"Loading tags for {model_name}...")
+        threading.Thread(
+            target=self._bg_fetch_tags, args=(model_name,), daemon=True
+        ).start()
+
+    def _bg_fetch_tags(self, model_name: str):
+        try:
+            url = _OLLAMA_TAGS_URL.format(model=model_name)
+            html = _fetch_url(url)
+            tags = _parse_model_tags(html)
+            self.root.after(0, self._on_tags_done, model_name, tags, None)
+        except Exception as e:
+            logger.exception("Tag fetch failed")
+            self.root.after(0, self._on_tags_done, model_name, [], str(e))
+
+    def _on_tags_done(self, model_name: str, tags: list[dict], error: str | None):
+        if error:
+            self.mdl_status.configure(text=f"Failed to load tags: {error}")
+            return
+        self._model_tags_results = tags
+        self._current_model_name = model_name
+        self.mdl_tags_tree.delete(*self.mdl_tags_tree.get_children())
+        for i, t in enumerate(tags):
+            self.mdl_tags_tree.insert(
+                "", tk.END,
+                iid=str(i),
+                values=(t["tag"], t["size"], t["context"]),
+            )
+        self.mdl_status.configure(
+            text=f"{model_name}: {len(tags)} tags available."
+        )
+
+    def _on_tag_select(self, _event):
+        sel = self.mdl_tags_tree.selection()
+        if not sel:
+            return
+        idx = int(sel[0])
+        if idx >= len(self._model_tags_results):
+            return
+        tag = self._model_tags_results[idx]["tag"]
+        model_name = getattr(self, "_current_model_name", "")
+        if model_name:
+            self.mdl_pull_var.set(f"{model_name}:{tag}")
+
+    def _models_pull(self):
+        model_tag = self.mdl_pull_var.get().strip()
+        if not model_tag:
+            messagebox.showwarning("No model", "Enter a model name to pull.")
+            return
+        if not self.ollama_connected:
+            messagebox.showwarning(
+                "Ollama offline",
+                "Ollama is not running. Start it with 'ollama serve'.",
+            )
+            return
+        if self._pull_thread and self._pull_thread.is_alive():
+            return
+        self.btn_mdl_pull.configure(state="disabled")
+        self.btn_mdl_cancel.configure(state="normal")
+        self._pull_cancelled = False
+        self.mdl_progress.configure(mode="determinate", value=0, maximum=100)
+        self.mdl_status.configure(text=f"Pulling {model_tag}...")
+        self._pull_thread = threading.Thread(
+            target=self._bg_pull_model, args=(model_tag,), daemon=True
+        )
+        self._pull_thread.start()
+
+    def _models_cancel_pull(self):
+        self._pull_cancelled = True
+        self.btn_mdl_cancel.configure(state="disabled")
+        self.mdl_status.configure(text="Cancelling pull...")
+
+    def _bg_pull_model(self, model_tag: str):
+        try:
+            import ollama
+
+            client = ollama.Client()
+            for resp in client.pull(model_tag, stream=True):
+                if self._pull_cancelled:
+                    self.root.after(0, self._on_pull_done, model_tag, "Cancelled.")
+                    return
+                status = resp.status or ""
+                total = getattr(resp, "total", None) or 0
+                completed = getattr(resp, "completed", None) or 0
+                if total > 0:
+                    pct = int(completed / total * 100)
+                    size_mb = completed / (1024 * 1024)
+                    total_mb = total / (1024 * 1024)
+                    msg = f"{status} — {size_mb:.0f}/{total_mb:.0f} MB ({pct}%)"
+                    self.root.after(0, self._on_pull_progress, pct, msg)
+                else:
+                    self.root.after(0, self._on_pull_progress, -1, status)
+            self.root.after(0, self._on_pull_done, model_tag, None)
+        except Exception as e:
+            logger.exception("Model pull failed")
+            self.root.after(0, self._on_pull_done, model_tag, str(e))
+
+    def _on_pull_progress(self, pct: int, status: str):
+        if pct >= 0:
+            self.mdl_progress.configure(mode="determinate", value=pct, maximum=100)
+        else:
+            if str(self.mdl_progress.cget("mode")) != "indeterminate":
+                self.mdl_progress.configure(mode="indeterminate")
+                self.mdl_progress.start(15)
+        self.mdl_status.configure(text=status)
+
+    def _on_pull_done(self, model_tag: str, error: str | None):
+        self.mdl_progress.stop()
+        self.mdl_progress.configure(mode="determinate", value=0)
+        self.btn_mdl_pull.configure(state="normal")
+        self.btn_mdl_cancel.configure(state="disabled")
+        if error:
+            self.mdl_status.configure(text=f"Pull failed: {error}")
+            if error != "Cancelled.":
+                messagebox.showerror("Pull failed", error)
+        else:
+            self.mdl_status.configure(text=f"Successfully pulled {model_tag}.")
+            # Refresh the local model list in the Settings bar
+            self._refresh_ollama()
 
     # ── Status / progress bar ───────────────────────────────────
 
