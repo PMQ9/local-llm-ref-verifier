@@ -17,47 +17,70 @@ logger = logging.getLogger(__name__)
 
 
 class PipelineRunner:
-    """Runs pipeline stages in background threads, posting updates to a queue."""
+    """Runs pipeline stages in background threads, posting updates to a queue.
+
+    Each run is tagged with a monotonically increasing run_id.  The GUI uses
+    this to silently discard messages from abandoned (cancelled) runs so that
+    cancel feels instant even when a blocking LLM call is still in flight.
+    """
 
     def __init__(self, msg_queue: queue.Queue):
         self.queue = msg_queue
         self._thread: threading.Thread | None = None
+        self._cancel = threading.Event()
+        self._run_id = 0
 
     @property
     def is_running(self) -> bool:
         return self._thread is not None and self._thread.is_alive()
 
-    def run_extract(self, pdf_path: str, style: str | None):
+    @property
+    def run_id(self) -> int:
+        return self._run_id
+
+    def cancel(self):
+        """Signal the running thread to stop."""
+        self._cancel.set()
+
+    def _start(self, target, args):
+        self._cancel.clear()
+        self._run_id += 1
+        run_id = self._run_id
         self._thread = threading.Thread(
-            target=self._do_extract, args=(pdf_path, style), daemon=True
+            target=target, args=(run_id, *args), daemon=True
         )
         self._thread.start()
+
+    def run_extract(self, pdf_path: str, style: str | None):
+        self._start(self._do_extract, (pdf_path, style))
 
     def run_verify(self, extraction, use_google_scholar: bool):
-        self._thread = threading.Thread(
-            target=self._do_verify, args=(extraction, use_google_scholar), daemon=True
-        )
-        self._thread.start()
+        self._start(self._do_verify, (extraction, use_google_scholar))
 
     def run_audit(self, pdf_path: str, verification, model: str):
-        self._thread = threading.Thread(
-            target=self._do_audit, args=(pdf_path, verification, model), daemon=True
-        )
-        self._thread.start()
+        self._start(self._do_audit, (pdf_path, verification, model))
 
-    def _do_extract(self, pdf_path, style):
-        self.queue.put(("stage_start", "extract"))
+    def _put(self, run_id, *msg):
+        """Post a message tagged with run_id."""
+        self.queue.put((run_id, *msg))
+
+    def _do_extract(self, run_id, pdf_path, style):
+        self._put(run_id, "stage_start", "extract")
         try:
             from .reference_extractor import extract_from_pdf
 
             result = extract_from_pdf(pdf_path, style=style if style != "auto" else None)
-            self.queue.put(("extract_done", result))
+            if self._cancel.is_set():
+                return
+            self._put(run_id, "extract_done", result)
         except Exception as e:
+            if self._cancel.is_set():
+                return
             logger.exception("Extraction failed")
-            self.queue.put(("error", f"Extraction failed: {e}"))
+            self._put(run_id, "error", f"Extraction failed: {e}")
 
-    def _do_verify(self, extraction, use_google_scholar):
-        self.queue.put(("stage_start", "verify"))
+    def _do_verify(self, run_id, extraction, use_google_scholar):
+        self._put(run_id, "stage_start", "verify")
         try:
             from .models import VerificationResult
             from .verifier import verify_single_reference
@@ -65,7 +88,9 @@ class PipelineRunner:
             verified = []
             total = len(extraction.references)
             for i, ref in enumerate(extraction.references):
-                self.queue.put(("verify_progress", i + 1, total))
+                if self._cancel.is_set():
+                    return
+                self._put(run_id, "verify_progress", i + 1, total)
                 result = verify_single_reference(ref, use_google_scholar=use_google_scholar)
                 verified.append(result)
 
@@ -77,13 +102,17 @@ class PipelineRunner:
                 "not_found": status_counts.get("not_found", 0),
             }
             result = VerificationResult(references=verified, stats=stats)
-            self.queue.put(("verify_done", result))
+            self._put(run_id, "verify_done", result)
         except Exception as e:
+            if self._cancel.is_set():
+                return
             logger.exception("Verification failed")
-            self.queue.put(("error", f"Verification failed: {e}"))
+            self._put(run_id, "error", f"Verification failed: {e}")
 
-    def _do_audit(self, pdf_path, verification, model):
-        self.queue.put(("stage_start", "audit"))
+    def _do_audit(self, run_id, pdf_path, verification, model):
+        if self._cancel.is_set():
+            return
+        self._put(run_id, "stage_start", "audit")
         try:
             from .auditor import audit_manuscript
             from .ollama_client import OllamaClient
@@ -91,11 +120,17 @@ class PipelineRunner:
 
             client = OllamaClient(model=model)
             parsed = parse_pdf(pdf_path)
+            if self._cancel.is_set():
+                return
             report = audit_manuscript(parsed.body_text, verification, client)
-            self.queue.put(("audit_done", report))
+            if self._cancel.is_set():
+                return
+            self._put(run_id, "audit_done", report)
         except Exception as e:
+            if self._cancel.is_set():
+                return
             logger.exception("Audit failed")
-            self.queue.put(("error", f"Audit failed: {e}"))
+            self._put(run_id, "error", f"Audit failed: {e}")
 
 
 class RefVerifierGUI:
@@ -190,7 +225,12 @@ class RefVerifierGUI:
         self.btn_verify = ttk.Button(
             row3, text="Verify Only", command=self._run_verify
         )
-        self.btn_verify.pack(side=tk.LEFT)
+        self.btn_verify.pack(side=tk.LEFT, padx=(0, 8))
+
+        self.btn_cancel = ttk.Button(
+            row3, text="Cancel", command=self._cancel_pipeline, state="disabled"
+        )
+        self.btn_cancel.pack(side=tk.LEFT)
 
     # ── Notebook with 3 tabs ────────────────────────────────────
 
@@ -403,6 +443,17 @@ class RefVerifierGUI:
         self.btn_pipeline.configure(state=state)
         self.btn_extract.configure(state=state)
         self.btn_verify.configure(state=state)
+        # Cancel button is the inverse: enabled while running
+        self.btn_cancel.configure(state="disabled" if enabled else "normal")
+
+    def _cancel_pipeline(self):
+        self.runner.cancel()
+        # Reset UI immediately — don't wait for the thread to notice
+        self.progress.stop()
+        self.progress.configure(mode="determinate", value=0)
+        self.status_label.configure(text="Cancelled.")
+        self.pipeline_mode = False
+        self._set_buttons_enabled(True)
 
     def _run_extract(self):
         path = self._validate_pdf()
@@ -443,7 +494,12 @@ class RefVerifierGUI:
         try:
             while True:
                 msg = self.msg_queue.get_nowait()
-                self._handle_message(msg)
+                # Messages are (run_id, kind, ...).  Discard stale messages
+                # from cancelled runs so the UI stays in its reset state.
+                run_id = msg[0]
+                if run_id != self.runner.run_id:
+                    continue
+                self._handle_message(msg[1:])
         except queue.Empty:
             pass
         self.root.after(100, self._poll_queue)
